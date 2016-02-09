@@ -94,7 +94,7 @@
     @include _md-dropdown($map);
     @content;
   }
-  [dropdown]{
+  [md-dropdown]{
     position:relative;
   }
 };
