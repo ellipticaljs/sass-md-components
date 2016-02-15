@@ -1153,7 +1153,7 @@
 ///@public
 ///@param {String} $class
 ///@param {Map} $map
-@mixin md-forms($class:md,$map:()){
+@mixin md-forms($class:null,$map:()){
 
   button:focus {
     outline: none;

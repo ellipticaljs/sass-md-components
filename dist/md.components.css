@@ -1890,17 +1890,17 @@ button:focus {
 *[disabled] {
   opacity: .5; }
 
-.md input[type="text"],
-.md input[type="password"],
-.md input[type="date"],
-.md input[type="datetime"],
-.md input[type="email"],
-.md input[type="number"],
-.md input[type="search"],
-.md input[type="tel"],
-.md input[type="time"],
-.md input[type="url"],
-.md textarea {
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #9E9E9E;
@@ -1916,103 +1916,103 @@ button:focus {
   -webkit-transition: all .3s;
   transition: all .3s;
   color: inherit; }
-  .md input[type="text"]::-webkit-input-placeholder,
-  .md input[type="password"]::-webkit-input-placeholder,
-  .md input[type="date"]::-webkit-input-placeholder,
-  .md input[type="datetime"]::-webkit-input-placeholder,
-  .md input[type="email"]::-webkit-input-placeholder,
-  .md input[type="number"]::-webkit-input-placeholder,
-  .md input[type="search"]::-webkit-input-placeholder,
-  .md input[type="tel"]::-webkit-input-placeholder,
-  .md input[type="time"]::-webkit-input-placeholder,
-  .md input[type="url"]::-webkit-input-placeholder,
-  .md textarea::-webkit-input-placeholder {
+  input[type="text"]::-webkit-input-placeholder,
+  input[type="password"]::-webkit-input-placeholder,
+  input[type="date"]::-webkit-input-placeholder,
+  input[type="datetime"]::-webkit-input-placeholder,
+  input[type="email"]::-webkit-input-placeholder,
+  input[type="number"]::-webkit-input-placeholder,
+  input[type="search"]::-webkit-input-placeholder,
+  input[type="tel"]::-webkit-input-placeholder,
+  input[type="time"]::-webkit-input-placeholder,
+  input[type="url"]::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
     color: rgba(158, 158, 158, 0.54) !important; }
-  .md input[type="text"]::-moz-placeholder,
-  .md input[type="password"]::-moz-placeholder,
-  .md input[type="date"]::-moz-placeholder,
-  .md input[type="datetime"]::-moz-placeholder,
-  .md input[type="email"]::-moz-placeholder,
-  .md input[type="number"]::-moz-placeholder,
-  .md input[type="search"]::-moz-placeholder,
-  .md input[type="tel"]::-moz-placeholder,
-  .md input[type="time"]::-moz-placeholder,
-  .md input[type="url"]::-moz-placeholder,
-  .md textarea::-moz-placeholder {
+  input[type="text"]::-moz-placeholder,
+  input[type="password"]::-moz-placeholder,
+  input[type="date"]::-moz-placeholder,
+  input[type="datetime"]::-moz-placeholder,
+  input[type="email"]::-moz-placeholder,
+  input[type="number"]::-moz-placeholder,
+  input[type="search"]::-moz-placeholder,
+  input[type="tel"]::-moz-placeholder,
+  input[type="time"]::-moz-placeholder,
+  input[type="url"]::-moz-placeholder,
+  textarea::-moz-placeholder {
     color: rgba(158, 158, 158, 0.54) !important; }
-  .md input[type="text"]::-o-placeholder,
-  .md input[type="password"]::-o-placeholder,
-  .md input[type="date"]::-o-placeholder,
-  .md input[type="datetime"]::-o-placeholder,
-  .md input[type="email"]::-o-placeholder,
-  .md input[type="number"]::-o-placeholder,
-  .md input[type="search"]::-o-placeholder,
-  .md input[type="tel"]::-o-placeholder,
-  .md input[type="time"]::-o-placeholder,
-  .md input[type="url"]::-o-placeholder,
-  .md textarea::-o-placeholder {
+  input[type="text"]::-o-placeholder,
+  input[type="password"]::-o-placeholder,
+  input[type="date"]::-o-placeholder,
+  input[type="datetime"]::-o-placeholder,
+  input[type="email"]::-o-placeholder,
+  input[type="number"]::-o-placeholder,
+  input[type="search"]::-o-placeholder,
+  input[type="tel"]::-o-placeholder,
+  input[type="time"]::-o-placeholder,
+  input[type="url"]::-o-placeholder,
+  textarea::-o-placeholder {
     color: rgba(158, 158, 158, 0.54) !important; }
-  .md input[type="text"]:-ms-input-placeholder,
-  .md input[type="password"]:-ms-input-placeholder,
-  .md input[type="date"]:-ms-input-placeholder,
-  .md input[type="datetime"]:-ms-input-placeholder,
-  .md input[type="email"]:-ms-input-placeholder,
-  .md input[type="number"]:-ms-input-placeholder,
-  .md input[type="search"]:-ms-input-placeholder,
-  .md input[type="tel"]:-ms-input-placeholder,
-  .md input[type="time"]:-ms-input-placeholder,
-  .md input[type="url"]:-ms-input-placeholder,
-  .md textarea:-ms-input-placeholder {
+  input[type="text"]:-ms-input-placeholder,
+  input[type="password"]:-ms-input-placeholder,
+  input[type="date"]:-ms-input-placeholder,
+  input[type="datetime"]:-ms-input-placeholder,
+  input[type="email"]:-ms-input-placeholder,
+  input[type="number"]:-ms-input-placeholder,
+  input[type="search"]:-ms-input-placeholder,
+  input[type="tel"]:-ms-input-placeholder,
+  input[type="time"]:-ms-input-placeholder,
+  input[type="url"]:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
     color: rgba(158, 158, 158, 0.54) !important; }
-  .md input[type="text"][disabled],
-  .md input[type="password"][disabled],
-  .md input[type="date"][disabled],
-  .md input[type="datetime"][disabled],
-  .md input[type="email"][disabled],
-  .md input[type="number"][disabled],
-  .md input[type="search"][disabled],
-  .md input[type="tel"][disabled],
-  .md input[type="time"][disabled],
-  .md input[type="url"][disabled],
-  .md textarea[disabled] {
+  input[type="text"][disabled],
+  input[type="password"][disabled],
+  input[type="date"][disabled],
+  input[type="datetime"][disabled],
+  input[type="email"][disabled],
+  input[type="number"][disabled],
+  input[type="search"][disabled],
+  input[type="tel"][disabled],
+  input[type="time"][disabled],
+  input[type="url"][disabled],
+  textarea[disabled] {
     opacity: .5;
     background: none !important; }
-  .md input[type="text"]:focus:not([readonly]),
-  .md input[type="password"]:focus:not([readonly]),
-  .md input[type="date"]:focus:not([readonly]),
-  .md input[type="datetime"]:focus:not([readonly]),
-  .md input[type="email"]:focus:not([readonly]),
-  .md input[type="number"]:focus:not([readonly]),
-  .md input[type="search"]:focus:not([readonly]),
-  .md input[type="tel"]:focus:not([readonly]),
-  .md input[type="time"]:focus:not([readonly]),
-  .md input[type="url"]:focus:not([readonly]),
-  .md textarea:focus:not([readonly]) {
+  input[type="text"]:focus:not([readonly]),
+  input[type="password"]:focus:not([readonly]),
+  input[type="date"]:focus:not([readonly]),
+  input[type="datetime"]:focus:not([readonly]),
+  input[type="email"]:focus:not([readonly]),
+  input[type="number"]:focus:not([readonly]),
+  input[type="search"]:focus:not([readonly]),
+  input[type="tel"]:focus:not([readonly]),
+  input[type="time"]:focus:not([readonly]),
+  input[type="url"]:focus:not([readonly]),
+  textarea:focus:not([readonly]) {
     border-bottom: 1px solid #2196F3;
     box-shadow: 0 1px 0 0 #2196F3; }
-  .md input[type="text"]:focus:not([readonly]) + label,
-  .md input[type="password"]:focus:not([readonly]) + label,
-  .md input[type="date"]:focus:not([readonly]) + label,
-  .md input[type="datetime"]:focus:not([readonly]) + label,
-  .md input[type="email"]:focus:not([readonly]) + label,
-  .md input[type="number"]:focus:not([readonly]) + label,
-  .md input[type="search"]:focus:not([readonly]) + label,
-  .md input[type="tel"]:focus:not([readonly]) + label,
-  .md input[type="time"]:focus:not([readonly]) + label,
-  .md input[type="url"]:focus:not([readonly]) + label,
-  .md textarea:focus:not([readonly]) + label {
+  input[type="text"]:focus:not([readonly]) + label,
+  input[type="password"]:focus:not([readonly]) + label,
+  input[type="date"]:focus:not([readonly]) + label,
+  input[type="datetime"]:focus:not([readonly]) + label,
+  input[type="email"]:focus:not([readonly]) + label,
+  input[type="number"]:focus:not([readonly]) + label,
+  input[type="search"]:focus:not([readonly]) + label,
+  input[type="tel"]:focus:not([readonly]) + label,
+  input[type="time"]:focus:not([readonly]) + label,
+  input[type="url"]:focus:not([readonly]) + label,
+  textarea:focus:not([readonly]) + label {
     color: #2196F3; }
-  .md input[type="text"] + label:after,
-  .md input[type="password"] + label:after,
-  .md input[type="date"] + label:after,
-  .md input[type="datetime"] + label:after,
-  .md input[type="email"] + label:after,
-  .md input[type="number"] + label:after,
-  .md input[type="search"] + label:after,
-  .md input[type="tel"] + label:after,
-  .md input[type="time"] + label:after,
-  .md input[type="url"] + label:after,
-  .md textarea + label:after {
+  input[type="text"] + label:after,
+  input[type="password"] + label:after,
+  input[type="date"] + label:after,
+  input[type="datetime"] + label:after,
+  input[type="email"] + label:after,
+  input[type="number"] + label:after,
+  input[type="search"] + label:after,
+  input[type="tel"] + label:after,
+  input[type="time"] + label:after,
+  input[type="url"] + label:after,
+  textarea + label:after {
     display: block;
     content: "";
     position: absolute;
@@ -2021,22 +2021,22 @@ button:focus {
     -webkit-transition: .2s opacity ease-out, .2s color ease-out;
     transition: .2s opacity ease-out, .2s color ease-out; }
 
-.md label {
+label {
   font-size: .8em;
   color: #9E9E9E; }
 
-.md textarea {
+textarea {
   width: 100%;
   height: 3em;
   background-color: transparent; }
 
-.md md-input, .md md-textarea {
+md-input, md-textarea {
   position: relative;
   margin-top: 1em;
   display: block; }
-  .md md-input span.icon-, .md md-textarea span.icon- {
+  md-input span.icon-, md-textarea span.icon- {
     display: none; }
-  .md md-input label, .md md-textarea label {
+  md-input label, md-textarea label {
     color: #9E9E9E;
     position: absolute;
     top: 0.65em;
@@ -2045,14 +2045,14 @@ button:focus {
     cursor: text;
     -webkit-transiton: .2s ease-out;
     transition: .2s ease-out; }
-  .md md-input label.active, .md md-textarea label.active {
+  md-input label.active, md-textarea label.active {
     font-size: .8em;
     -webkit-transform: translateY(-90%);
     transform: translateY(-90%); }
-  .md md-input[disabled], .md md-textarea[disabled] {
+  md-input[disabled], md-textarea[disabled] {
     opacity: .5;
     background: none !important; }
-  .md md-input .prefix, .md md-textarea .prefix {
+  md-input .prefix, md-textarea .prefix {
     display: inherit;
     position: absolute;
     width: 2em;
@@ -2061,44 +2061,37 @@ button:focus {
     transition: color 0.2s;
     color: rgba(158, 158, 158, 0.54);
     top: 10px; }
-    .md md-input .prefix.active, .md md-textarea .prefix.active {
+    md-input .prefix.active, md-textarea .prefix.active {
       color: #2196F3; }
-  .md md-input .prefix ~ input,
-  .md md-input .prefix ~ textarea, .md md-textarea .prefix ~ input,
-  .md md-textarea .prefix ~ textarea {
+  md-input .prefix ~ input,
+  md-input .prefix ~ textarea, md-textarea .prefix ~ input,
+  md-textarea .prefix ~ textarea {
     margin-left: 2em;
     width: calc(100% - 2em); }
-  .md md-input .prefix ~ textarea, .md md-textarea .prefix ~ textarea {
+  md-input .prefix ~ textarea, md-textarea .prefix ~ textarea {
     padding-top: .8em; }
-  .md md-input .prefix ~ label, .md md-textarea .prefix ~ label {
+  md-input .prefix ~ label, md-textarea .prefix ~ label {
     margin-left: 2.5em; }
-  .md md-input[readonly], .md md-textarea[readonly] {
+  md-input[readonly], md-textarea[readonly] {
     color: rgba(158, 158, 158, 0.54); }
 
-.md md-textarea {
+md-textarea {
   margin-top: 1.25em; }
-  .md md-textarea label.active {
+  md-textarea label.active {
     -webkit-transform: translateY(-130%);
     transform: translateY(-130%); }
-
-.md {
-  /* Unchecked styles */
-  /* Checked styles */
-  /* Radio With concentric gap */
-  /* Disabled Radio With concentric gap */
-  /* Disabled style */ }
-  .md md-radio {
+  md-radio {
     visibility: hidden;
     margin: 0 0 1em 0; }
-    .md md-radio.margin-left {
+    md-radio.margin-left {
       margin-left: .5em; }
-  .md [type="radio"]:not(:checked),
-  .md [type="radio"]:checked {
+  [type="radio"]:not(:checked),
+  [type="radio"]:checked {
     position: absolute;
     left: -9999px;
     visibility: hidden; }
-  .md [type="radio"]:not(:checked) + label,
-  .md [type="radio"]:checked + label {
+  [type="radio"]:not(:checked) + label,
+  [type="radio"]:checked + label {
     position: relative;
     padding-left: 25px;
     cursor: pointer;
@@ -2112,8 +2105,8 @@ button:focus {
     -moz-user-select: none;
     -khtml-user-select: none;
     -ms-user-select: none; }
-  .md [type="radio"] + label:before,
-  .md [type="radio"] + label:after {
+  [type="radio"] + label:before,
+  [type="radio"] + label:after {
     content: '';
     position: absolute;
     left: 0;
@@ -2124,66 +2117,62 @@ button:focus {
     z-index: 0;
     -webkit-transition: 0.28s ease;
     transition: 0.28s ease; }
-  .md [type="radio"]:not(:checked) + label:before {
+  [type="radio"]:not(:checked) + label:before {
     border-radius: 50%;
     border: 2px solid #9E9E9E; }
-  .md [type="radio"]:not(:checked) + label:after {
+  [type="radio"]:not(:checked) + label:after {
     border-radius: 50%;
     border: 2px solid #9E9E9E;
     z-index: -1;
     -webkit-transform: scale(0);
     transform: scale(0); }
-  .md [type="radio"]:checked + label:before {
+  [type="radio"]:checked + label:before {
     border-radius: 50%;
     border: 2px solid transparent; }
-  .md [type="radio"]:checked + label:after {
+  [type="radio"]:checked + label:after {
     border-radius: 50%;
     border: 2px solid #1976D2;
     background-color: #1976D2;
     z-index: 0;
     -webkit-transform: scale(1.02);
     transform: scale(1.02); }
-  .md [type="radio"].concentric:checked + label:before {
+  [type="radio"].concentric:checked + label:before {
     border-radius: 50%;
     border: 2px solid #1976D2; }
-  .md [type="radio"].concentric:checked + label:after {
+  [type="radio"].concentric:checked + label:after {
     border-radius: 50%;
     border: 2px solid #1976D2;
     background-color: #1976D2;
     z-index: 0;
     -webkit-transform: scale(0.5);
     transform: scale(0.5); }
-  .md [type="radio"].concentric:disabled:checked + label:before {
+  [type="radio"].concentric:disabled:checked + label:before {
     border: 2px solid rgba(158, 158, 158, 0.26); }
-  .md [type="radio"].concentric:disabled:checked + label:after {
+  [type="radio"].concentric:disabled:checked + label:after {
     border: none;
     background-color: rgba(158, 158, 158, 0.26); }
-  .md [type="radio"]:disabled:not(:checked) + label:before,
-  .md [type="radio"]:disabled:checked + label:before {
+  [type="radio"]:disabled:not(:checked) + label:before,
+  [type="radio"]:disabled:checked + label:before {
     background-color: transparent;
     border-color: rgba(158, 158, 158, 0.26); }
-  .md [type="radio"]:disabled + label {
+  [type="radio"]:disabled + label {
     color: rgba(158, 158, 158, 0.26); }
-  .md [type="radio"]:disabled:not(:checked) + label:before {
+  [type="radio"]:disabled:not(:checked) + label:before {
     border-color: rgba(158, 158, 158, 0.26); }
-  .md [type="radio"]:disabled:checked + label:after {
+  [type="radio"]:disabled:checked + label:after {
     background-color: rgba(158, 158, 158, 0.26);
     border-color: rgba(158, 158, 158, 0.26); }
-
-.md {
-  /* Remove default checkbox */
-  /* Indeterminate checkbox */ }
-  .md md-checkbox {
+  md-checkbox {
     visibility: hidden;
     position: relative;
     margin: 0 0 1em 0; }
-  .md [type="checkbox"]:not(:checked),
-  .md [type="checkbox"]:checked {
+  [type="checkbox"]:not(:checked),
+  [type="checkbox"]:checked {
     position: absolute;
     visibility: hidden; }
-  .md [type="checkbox"] {
+  [type="checkbox"] {
     /* checkbox aspect */ }
-    .md [type="checkbox"] + label {
+    [type="checkbox"] + label {
       position: relative;
       padding-left: 30px;
       cursor: pointer;
@@ -2195,7 +2184,7 @@ button:focus {
       -moz-user-select: none;
       -khtml-user-select: none;
       -ms-user-select: none; }
-    .md [type="checkbox"] + label:before {
+    [type="checkbox"] + label:before {
       content: '';
       position: absolute;
       top: 0;
@@ -2208,10 +2197,10 @@ button:focus {
       margin-top: 2px;
       -webkit-transition: 0.2s;
       transition: 0.2s; }
-    .md [type="checkbox"]:not(:checked):disabled + label:before {
+    [type="checkbox"]:not(:checked):disabled + label:before {
       border: none;
       background-color: #9E9E9E; }
-  .md [type="checkbox"]:checked + label:before {
+  [type="checkbox"]:checked + label:before {
     top: -4px;
     left: -3px;
     width: 12px;
@@ -2225,10 +2214,10 @@ button:focus {
     -webkit-backface-visibility: hidden;
     -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%; }
-  .md [type="checkbox"]:checked:disabled + label:before {
+  [type="checkbox"]:checked:disabled + label:before {
     border-right: 2px solid #1976D2;
     border-bottom: 2px solid #1976D2; }
-  .md [type="checkbox"]:indeterminate + label:before {
+  [type="checkbox"]:indeterminate + label:before {
     left: -10px;
     top: -11px;
     width: 10px;
@@ -2242,20 +2231,20 @@ button:focus {
     -webkit-backface-visibility: hidden;
     -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%; }
-  .md [type="checkbox"]:indeterminate:disabled + label:before {
+  [type="checkbox"]:indeterminate:disabled + label:before {
     border-right: 2px solid rgba(158, 158, 158, 0.26);
     background-color: transparent; }
-  .md [type="checkbox"].filled + label:after {
+  [type="checkbox"].filled + label:after {
     border-radius: 2px; }
-  .md [type="checkbox"].filled + label:before,
-  .md [type="checkbox"].filled + label:after {
+  [type="checkbox"].filled + label:before,
+  [type="checkbox"].filled + label:after {
     content: '';
     left: 0;
     position: absolute;
     -webkit-transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
     transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
     z-index: 1; }
-  .md [type="checkbox"].filled:not(:checked) + label:before {
+  [type="checkbox"].filled:not(:checked) + label:before {
     width: 0;
     height: 0;
     border: 3px solid transparent;
@@ -2265,14 +2254,14 @@ button:focus {
     transform: rotateZ(37deg);
     -webkit-transform-origin: 20% 40%;
     transform-origin: 100% 100%; }
-  .md [type="checkbox"].filled:not(:checked) + label:after {
+  [type="checkbox"].filled:not(:checked) + label:after {
     height: 20px;
     width: 20px;
     background-color: transparent;
     border: 2px solid #9E9E9E;
     top: 0;
     z-index: 0; }
-  .md [type="checkbox"].filled:checked + label:before {
+  [type="checkbox"].filled:checked + label:before {
     top: 0;
     left: 1px;
     width: 8px;
@@ -2285,71 +2274,71 @@ button:focus {
     transform: rotateZ(37deg);
     -webkit-transform-origin: 100% 100%;
     transform-origin: 100% 100%; }
-  .md [type="checkbox"].filled:checked + label:after {
+  [type="checkbox"].filled:checked + label:after {
     top: 0;
     width: 20px;
     height: 20px;
     border: 2px solid #1976D2;
     background-color: #1976D2;
     z-index: 0; }
-  .md [type="checkbox"].filled:disabled:not(:checked) + label:before {
+  [type="checkbox"].filled:disabled:not(:checked) + label:before {
     background-color: transparent;
     border: 2px solid transparent; }
-  .md [type="checkbox"].filled:disabled:not(:checked) + label:after {
+  [type="checkbox"].filled:disabled:not(:checked) + label:after {
     border-color: transparent;
     background-color: rgba(158, 158, 158, 0.26); }
-  .md [type="checkbox"].filled:disabled:checked + label:before {
+  [type="checkbox"].filled:disabled:checked + label:before {
     background-color: transparent; }
-  .md [type="checkbox"].filled:disabled:checked + label:after {
+  [type="checkbox"].filled:disabled:checked + label:after {
     background-color: rgba(158, 158, 158, 0.26);
     border-color: rgba(158, 158, 158, 0.26); }
 
 @-moz-document url-prefix() {
-  .md md-range .progress {
+  md-range .progress {
     top: -12px !important; }
-  .md md-range .thumb {
+  md-range .thumb {
     top: -25px !important; }
-  .md md-range .value {
+  md-range .value {
     top: -23px; } }
 
-.md md-range {
+md-range {
   position: relative; }
 
-.md .value {
+.value {
   width: calc(100% + 50px);
   position: absolute;
   right: 0;
   top: 1px;
   left: 0; }
   @media only screen and (max-width: 640px) {
-    .md .value {
+    .value {
       width: calc(100% + 40px); } }
-  .md .value .range-display {
+  .value .range-display {
     right: 0;
     width: 40px;
     position: absolute; }
     @media only screen and (max-width: 640px) {
-      .md .value .range-display {
+      .value .range-display {
         width: 35px; } }
-  .md .value .range-value-container {
+  .value .range-value-container {
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: center;
     justify-content: center;
     -webkit-align-items: flex-start;
     align-items: flex-start; }
-  .md .value .range-value {
+  .value .range-value {
     font-size: 1em;
     color: #000; }
     @media only screen and (max-width: 640px) {
-      .md .value .range-value {
+      .value .range-value {
         font-size: .9em; } }
-  .md .value .range-value-border {
+  .value .range-value-border {
     height: 1px;
     background: #9E9E9E;
     margin-top: 3px; }
 
-.md .progress {
+.progress {
   position: absolute;
   height: 2px;
   background-color: #1976D2;
@@ -2362,10 +2351,10 @@ button:focus {
   transform: scaleX(0);
   width: 99%; }
 
-.md input[type=range], .md input[type=range] + .thumb {
+input[type=range], input[type=range] + .thumb {
   cursor: pointer; }
 
-.md input[type=range] {
+input[type=range] {
   position: relative;
   background-color: transparent;
   border: none;
@@ -2374,10 +2363,10 @@ button:focus {
   margin: 15px 0;
   padding: 0; }
   @media only screen and (max-width: 640px) {
-    .md input[type=range] {
+    input[type=range] {
       width: calc(100% - 40px); } }
 
-.md .thumb {
+.thumb {
   position: absolute;
   border: none;
   height: 0;
@@ -2387,18 +2376,18 @@ button:focus {
   top: 0;
   margin-left: -6px; }
 
-.md input[type=range]:focus {
+input[type=range]:focus {
   outline: none; }
 
-.md input[type=range] {
+input[type=range] {
   -webkit-appearance: none; }
 
-.md input[type=range]::-webkit-slider-runnable-track {
+input[type=range]::-webkit-slider-runnable-track {
   height: 2px;
   background: #E0E0E0;
   border: none; }
 
-.md input[type=range]::-webkit-slider-thumb {
+input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: none;
   height: 14px;
@@ -2411,20 +2400,20 @@ button:focus {
   -webkit-transition: 0.3s;
   transition: 0.3s; }
 
-.md input[type=range]:focus::-webkit-slider-runnable-track {
+input[type=range]:focus::-webkit-slider-runnable-track {
   background: #E0E0E0; }
 
-.md input[type=range] {
+input[type=range] {
   /* fix for FF unable to apply focus style bug  */
   border: 1px solid white;
   /*required for proper track sizing in FF*/ }
 
-.md input[type=range]::-moz-range-track {
+input[type=range]::-moz-range-track {
   height: 2px;
   background: #E0E0E0;
   border: none; }
 
-.md input[type=range]::-moz-range-thumb {
+input[type=range]::-moz-range-thumb {
   border: none;
   height: 14px;
   width: 14px;
@@ -2432,10 +2421,10 @@ button:focus {
   background: #1976D2;
   margin-top: -5px; }
 
-.md input[type=range]:focus::-moz-range-track {
+input[type=range]:focus::-moz-range-track {
   background: #E0E0E0; }
 
-.md input[type=range]::-ms-track {
+input[type=range]::-ms-track {
   height: 2px;
   /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
   background: transparent;
@@ -2445,47 +2434,47 @@ button:focus {
   /*remove default tick marks*/
   color: transparent; }
 
-.md input[type=range]::-ms-fill-lower {
+input[type=range]::-ms-fill-lower {
   background: #E0E0E0; }
 
-.md input[type=range]::-ms-fill-upper {
+input[type=range]::-ms-fill-upper {
   background: #E0E0E0; }
 
-.md input[type=range]::-ms-thumb {
+input[type=range]::-ms-thumb {
   border: none;
   height: 14px;
   width: 14px;
   border-radius: 50%;
   background: #1976D2; }
 
-.md input[type=range]:focus::-ms-fill-lower {
+input[type=range]:focus::-ms-fill-lower {
   background: #E0E0E0; }
 
-.md input[type=range]:focus::-ms-fill-upper {
+input[type=range]:focus::-ms-fill-upper {
   background: #E0E0E0; }
 
-.md md-switch,
-.md md-switch * {
+md-switch,
+md-switch * {
   -webkit-user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
   -ms-user-select: none; }
 
-.md md-switch label {
+md-switch label {
   cursor: pointer; }
 
-.md md-switch label input[type=checkbox] {
+md-switch label input[type=checkbox] {
   opacity: 0;
   width: 0;
   height: 0; }
 
-.md md-switch label input[type=checkbox]:checked + .lever {
+md-switch label input[type=checkbox]:checked + .lever {
   background-color: #8eb5dd; }
 
-.md md-switch label input[type=checkbox]:checked + .lever:after {
+md-switch label input[type=checkbox]:checked + .lever:after {
   background-color: #1976D2; }
 
-.md md-switch label .lever {
+md-switch label .lever {
   content: "";
   display: inline-block;
   position: relative;
@@ -2499,7 +2488,7 @@ button:focus {
   vertical-align: middle;
   margin: 0 16px; }
 
-.md md-switch label .lever:after {
+md-switch label .lever:after {
   content: "";
   position: absolute;
   display: inline-block;
@@ -2512,31 +2501,31 @@ button:focus {
   top: -3px;
   transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease; }
 
-.md input[type=checkbox]:checked:not(:disabled) ~ .lever:active:after {
+input[type=checkbox]:checked:not(:disabled) ~ .lever:active:after {
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(25, 118, 210, 0.1); }
 
-.md input[type=checkbox]:not(:disabled) ~ .lever:active:after {
+input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
 
-.md md-switch label input[type=checkbox]:checked + .lever:after {
+md-switch label input[type=checkbox]:checked + .lever:after {
   left: 24px; }
 
-.md md-switch input[type=checkbox][disabled] + .lever {
+md-switch input[type=checkbox][disabled] + .lever {
   cursor: default; }
 
-.md md-switch[disabled] {
+md-switch[disabled] {
   background: none !important;
   cursor: default;
   opacity: .5; }
 
-.md md-switch input[type=checkbox][disabled] {
+md-switch input[type=checkbox][disabled] {
   background: none !important; }
 
-.md md-select, .md [md-select] {
+md-select, [md-select] {
   position: relative;
   margin: 1em 0 2em 0;
   display: block; }
-  .md md-select > select, .md [md-select] > select {
+  md-select > select, [md-select] > select {
     background: none;
     display: block;
     appearance: none;
@@ -2553,23 +2542,23 @@ button:focus {
     border-radius: 0;
     box-shadow: none;
     padding: 0 1.5em 0 0; }
-    .md md-select > select:focus:not([readonly]), .md [md-select] > select:focus:not([readonly]) {
+    md-select > select:focus:not([readonly]), [md-select] > select:focus:not([readonly]) {
       border-bottom: 1px solid #2196F3;
       box-shadow: 0 1px 0 0 #2196F3; }
-    .md md-select > select:focus:not([readonly]) + label, .md [md-select] > select:focus:not([readonly]) + label {
+    md-select > select:focus:not([readonly]) + label, [md-select] > select:focus:not([readonly]) + label {
       color: #2196F3; }
-  .md md-select .icon-arrow-drop-down, .md [md-select] .icon-arrow-drop-down {
+  md-select .icon-arrow-drop-down, [md-select] .icon-arrow-drop-down {
     color: initial;
     position: absolute;
     right: 5px;
     top: 8px;
     font-size: 24px;
     pointer-events: none; }
-  .md md-select label, .md [md-select] label {
+  md-select label, [md-select] label {
     position: absolute;
     top: -1.3em;
     font-size: .8em; }
-  .md md-select .prefix, .md [md-select] .prefix {
+  md-select .prefix, [md-select] .prefix {
     display: inherit;
     position: absolute;
     width: 2em;
@@ -2578,30 +2567,30 @@ button:focus {
     transition: color 0.2s;
     color: rgba(158, 158, 158, 0.54);
     top: 10px; }
-    .md md-select .prefix.active, .md [md-select] .prefix.active {
+    md-select .prefix.active, [md-select] .prefix.active {
       color: #2196F3; }
-  .md md-select .prefix ~ select, .md [md-select] .prefix ~ select {
+  md-select .prefix ~ select, [md-select] .prefix ~ select {
     margin-left: 2em;
     width: calc(100% - 2em); }
-  .md md-select .prefix ~ label, .md [md-select] .prefix ~ label {
+  md-select .prefix ~ label, [md-select] .prefix ~ label {
     margin-left: 2.5em; }
-  .md md-select[readonly], .md [md-select][readonly] {
+  md-select[readonly], [md-select][readonly] {
     color: rgba(158, 158, 158, 0.54); }
 
-.md md-file {
+md-file {
   position: relative; }
-  .md md-file input.file-path {
+  md-file input.file-path {
     margin-left: 100px;
     width: calc(100% - 100px); }
-  .md md-file .button {
+  md-file .button {
     position: absolute;
     top: 0;
     left: 0;
     height: 3rem;
     line-height: 3rem; }
-  .md md-file span {
+  md-file span {
     cursor: pointer; }
-  .md md-file input[type=file] {
+  md-file input[type=file] {
     position: absolute;
     top: 0;
     right: 0;
@@ -2615,7 +2604,7 @@ button:focus {
     opacity: 0;
     filter: alpha(opacity=0); }
 
-.md md-input-icon-button {
+md-input-icon-button {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
@@ -2624,7 +2613,7 @@ button:focus {
   align-items: flex-end;
   position: relative;
   margin-top: 1em; }
-  .md md-input-icon-button label {
+  md-input-icon-button label {
     color: #9E9E9E;
     position: absolute;
     top: 0.65em;
@@ -2633,35 +2622,35 @@ button:focus {
     cursor: text;
     -webkit-transiton: .2s ease-out;
     transition: .2s ease-out; }
-  .md md-input-icon-button label.active {
+  md-input-icon-button label.active {
     font-size: .8em;
     -webkit-transform: translateY(-90%);
     transform: translateY(-90%); }
-  .md md-input-icon-button input[type=text] {
+  md-input-icon-button input[type=text] {
     margin: 0; }
-  .md md-input-icon-button button {
+  md-input-icon-button button {
     background: transparent;
     border: 0;
     border-bottom: 1px solid #9E9E9E;
     color: #9E9E9E;
     -webkit-transition: 50ms ease-out;
     transition: 50ms ease-out; }
-    .md md-input-icon-button button span {
+    md-input-icon-button button span {
       font-size: 24px; }
-    .md md-input-icon-button button:hover, .md md-input-icon-button button:focus {
+    md-input-icon-button button:hover, md-input-icon-button button:focus {
       color: #2196F3; }
-  .md md-input-icon-button input[type=text] {
+  md-input-icon-button input[type=text] {
     -webkit-transiton: 10ms ease-in;
     transition: 10ms ease-in;
     color: inherit; }
-    .md md-input-icon-button input[type=text]:focus:not([readonly]) {
+    md-input-icon-button input[type=text]:focus:not([readonly]) {
       border-bottom: 1px solid #2196F3;
       box-shadow: 0 1px 0 0 #2196F3; }
-    .md md-input-icon-button input[type=text]:focus:not([readonly]) + label + button {
+    md-input-icon-button input[type=text]:focus:not([readonly]) + label + button {
       color: #2196F3;
       border-bottom: 1px solid #2196F3;
       box-shadow: 0 1px 0 0 #2196F3; }
-  .md md-input-icon-button[disabled] {
+  md-input-icon-button[disabled] {
     opacity: .5;
     background: none !important; }
 
