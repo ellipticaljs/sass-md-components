@@ -1,24 +1,32 @@
 @import "../variables";
 
-
 /////private
 
 ///_md-radio
 ///@private
 ///@param {Map} $map
-@mixin _md-radio($map:()){
-  $_label:map-get-default($map,label,map-get($Palette,label));
-  $_primary:map-get-default($map,primary,map-get($Palette,primary));
-  $_secondary:map-get-default($map,secondary,map-get($Palette,primary-3));
-  $_placeholder:map-get-default($map,placeholder,map-get($Palette,placeholder));
-  $_disabled:map-get-default($map,disabled,map-get($Palette,hint));
+@mixin _md-radio($map:()) {
+  $_label: map-get-default($map, label, map-get($Palette, label));
+  $_primary: map-get-default($map, primary, map-get($Palette, primary));
+  $_placeholder: map-get-default($map, placeholder, map-get($Palette, placeholder));
+  $_disabled: map-get-default($map, disabled, map-get($Palette, hint));
 
-  md-radio{
+  md-radio {
     visibility: hidden;
     @content;
-    margin:0 0 1em 0;
-    &.margin-left{
-      margin-left:.5em;
+    margin: 0 0 1em 0;
+    &.margin-left {
+      margin-left: .5em;
+    }
+  }
+  &[disabled=true] {
+    background: none !important;
+    color: inherit;
+  }
+  [type="radio"] {
+    &[disabled] {
+      opacity: .5;
+      background: none !important;
     }
   }
   [type="radio"]:not(:checked),
@@ -58,7 +66,6 @@
     @include transition(.28s ease);
   }
 
-
   /* Unchecked styles */
   [type="radio"]:not(:checked) + label:before {
     border-radius: 50%;
@@ -79,8 +86,8 @@
   }
   [type="radio"]:checked + label:after {
     border-radius: 50%;
-    border: 2px solid $_secondary;
-    background-color: $_secondary;
+    border: 2px solid $_primary;
+    background-color: $_primary;
     z-index: 0;
     @include transform(scale(1.02));
   }
@@ -88,12 +95,12 @@
   /* Radio With concentric gap */
   [type="radio"].concentric:checked + label:before {
     border-radius: 50%;
-    border: 2px solid $_secondary;
+    border: 2px solid $_primary;
   }
   [type="radio"].concentric:checked + label:after {
     border-radius: 50%;
-    border: 2px solid $_secondary;
-    background-color: $_secondary;
+    border: 2px solid $_primary;
+    background-color: $_primary;
     z-index: 0;
     @include transform(scale(.5));
   }
@@ -123,27 +130,23 @@
     background-color: $_disabled;
     border-color: $_disabled;
   }
-};
-
+}
 
 
 ///_md-checkbox
 ///@private
 ///@param {Map} $map
-@mixin _md-checkbox($map:()){
-  $_label:map-get-default($map,label,map-get($Palette,label));
-  $_primary:map-get-default($map,primary,map-get($Palette,primary));
-  $_secondary:map-get-default($map,secondary,map-get($Palette,primary-3));
-  $_secondary-text:map-get-default($map,secondary,map-get($Palette,primary-3-text));
-  $_placeholder:map-get-default($map,placeholder,map-get($Palette,placeholder));
-  $_disabled:map-get-default($map,disabled,map-get($Palette,hint));
+@mixin _md-checkbox($map:()) {
+  $_label: map-get-default($map, label, map-get($Palette, label));
+  $_primary: map-get-default($map, primary, map-get($Palette, primary));
+  $_primary-text: map-get-default($map, primary, map-get($Palette, primary-text));
+  $_placeholder: map-get-default($map, placeholder, map-get($Palette, placeholder));
+  $_disabled: map-get-default($map, disabled, map-get($Palette, hint));
 
-
-
-  md-checkbox{
+  md-checkbox {
     visibility: hidden;
-    position:relative;
-    margin:0 0 1em 0;
+    position: relative;
+    margin: 0 0 1em 0;
   }
   /* Remove default checkbox */
   [type="checkbox"]:not(:checked),
@@ -152,7 +155,17 @@
     //left: -9999px;
     visibility: hidden;
   }
-
+  // Disabled style
+  &[disabled=true] {
+    background: none !important;
+    color: inherit;
+  }
+  [type="checkbox"] {
+    &[disabled] {
+      opacity: .5;
+      background: none !important;
+    }
+  }
   // Checkbox Styles
   [type="checkbox"] {
 
@@ -187,7 +200,7 @@
       @include transition(.2s);
     }
 
-    &:not(:checked):disabled + label:before {
+    label:before {
       border: none;
       background-color: $_label;
     }
@@ -198,32 +211,34 @@
     + label:before {
       top: -4px;
       left: -3px;
-      width: 12px; height: 22px;
+      width: 12px;
+      height: 22px;
       border-top: 2px solid transparent;
       border-left: 2px solid transparent;
-      border-right: 2px solid $_secondary;
-      border-bottom: 2px solid $_secondary;
+      border-right: 2px solid $_primary;
+      border-bottom: 2px solid $_primary;
       @include transform(rotate(40deg));
       -webkit-backface-visibility: hidden;
       @include transform-origin(100% 100%);
     }
 
     &:disabled + label:before {
-      border-right: 2px solid $_secondary;
-      border-bottom: 2px solid $_secondary;
+      border-right: 2px solid $_primary;
+      border-bottom: 2px solid $_primary;
     }
 
   }
 
   /* Indeterminate checkbox */
   [type="checkbox"]:indeterminate {
-    +label:before {
+    + label:before {
       left: -10px;
       top: -11px;
-      width: 10px; height: 22px;
+      width: 10px;
+      height: 22px;
       border-top: none;
       border-left: none;
-      border-right: 2px solid $_secondary;
+      border-right: 2px solid $_primary;
       border-bottom: none;
       @include transform(rotate(90deg));
       -webkit-backface-visibility: hidden;
@@ -237,7 +252,6 @@
     }
   }
 
-
   // Filled Style
   [type="checkbox"].filled {
     + label:after {
@@ -248,7 +262,7 @@
       content: '';
       left: 0;
       position: absolute;
-      -webkit-transition:border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+      -webkit-transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
       transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
       z-index: 1;
     }
@@ -282,8 +296,8 @@
         height: 13px;
         border-top: 2px solid transparent;
         border-left: 2px solid transparent;
-        border-right: 2px solid $_secondary-text;
-        border-bottom: 2px solid $_secondary-text;
+        border-right: 2px solid $_primary-text;
+        border-bottom: 2px solid $_primary-text;
         -webkit-transform: rotateZ(37deg);
         transform: rotateZ(37deg);
 
@@ -294,100 +308,79 @@
         top: 0;
         width: 20px;
         height: 20px;
-        border: 2px solid $_secondary;
-        background-color: $_secondary;
+        border: 2px solid $_primary;
+        background-color: $_primary;
         z-index: 0;
       }
     }
-    // Disabled style
-    &:disabled:not(:checked) + label:before {
-
-      background-color: transparent;
-      border: 2px solid transparent;
-    }
-    &:disabled:not(:checked) + label:after {
-      border-color: transparent;
-      background-color: $_disabled;
-    }
-    &:disabled:checked + label:before {
-      background-color: transparent;
-
-    }
-    &:disabled:checked + label:after {
-      background-color: $_disabled;
-      border-color: $_disabled;
-    }
-
   }
 
-};
-
+}
 
 
 ///_md-range
 ///@private
 ///@param {Map} $map
-@mixin _md-range($map:()){
-  $_label:map-get-default($map,label,map-get($Palette,label));
-  $_label-accent:map-get-default($map,label-accent,map-get($Palette,label-accent));
-  $_primary:map-get-default($map,primary,map-get($Palette,primary));
-  $_text:map-get-default($map,text,map-get($Palette,label-dark-light));
-  $_secondary:map-get-default($map,secondary,map-get($Palette,primary-3));
-  $_secondary-text:map-get-default($map,secondary,map-get($Palette,primary-3-text));
-  $_placeholder:map-get-default($map,placeholder,map-get($Palette,placeholder));
-  $_disabled:map-get-default($map,disabled,map-get($Palette,hint));
-  $_width:map-get-default($map,width,100%);
+@mixin _md-range($map:()) {
+  $_label: map-get-default($map, label, map-get($Palette, label));
+  $_label-accent: map-get-default($map, label-accent, map-get($Palette, label-accent));
+  $_primary: map-get-default($map, primary, map-get($Palette, primary));
+  $_text: map-get-default($map, text, map-get($Palette, label-dark-light));
+  $_secondary: map-get-default($map, secondary, map-get($Palette, primary-3));
+  $_secondary-text: map-get-default($map, secondary, map-get($Palette, primary-3-text));
+  $_placeholder: map-get-default($map, placeholder, map-get($Palette, placeholder));
+  $_disabled: map-get-default($map, disabled, map-get($Palette, hint));
+  $_width: map-get-default($map, width, 100%);
 
-  md-range {
-    position: relative;
-    @content;
-  }
-  .value{
-    width:calc(#{$_width} + 50px);
-    position:absolute;
-    right:0;
-    top:1px;
-    left:0;
-    @include phone-content(){
-      width:calc(#{$_width} + 40px);
+  display: block;
+
+  .value {
+    width: calc(#{$_width} + 50px);
+    position: absolute;
+    right: 0;
+    top: 1px;
+    left: 0;
+
+    @include phone-content() {
+      width: calc(#{$_width} + 40px);
     }
-    .range-display{
-      right:0;
-      width:40px;
-      position:absolute;
-      @include phone-content(){
-        width:35px;
+    .range-display {
+      right: 0;
+      width: 40px;
+      position: absolute;
+      @include phone-content() {
+        width: 35px;
       }
     }
-    .range-value-container{
-      @include flexbox($justification:center);
+    .range-value-container {
+      @include flexbox($justification: center);
     }
-    .range-value{
-      font-size:1em;
-      color:$_text;
-      @include phone-content(){
-        font-size:.9em;
+    .range-value {
+      font-size: 1em;
+      color: $_text;
+      @include phone-content() {
+        font-size: .9em;
       }
     }
-    .range-value-border{
-      height:1px;
-      background:$_label;
-      margin-top:3px;
+    .range-value-border {
+      height: 1px;
+      background: $_label;
+      margin-top: 3px;
     }
   }
 
-  .progress{
-    position:absolute;
-    height:2px;
-    background-color: $_secondary;
-    left:0;
-    top:14px;
-    right:0;
+  .progress {
+    position: absolute;
+    height: 2px;
+    background-color: $_primary;
+    left: 0;
+    top: 16px;
+    right: 0;
     -webkit-transform-origin: left center;
     transform-origin: left center;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
-    width:99%;
+    width: calc(#{$_width} - 50px);
   }
 
   input[type=range], input[type=range] + .thumb {
@@ -400,11 +393,11 @@
     background-color: transparent;
     border: none;
     outline: none;
-    width:calc(#{$_width} - 50px);
+    width: calc(#{$_width} - 50px);
     margin: 15px 0;
     padding: 0;
-    @include phone-content(){
-      width:calc(#{$_width} - 40px);
+    @include phone-content() {
+      width: calc(#{$_width} - 40px);
     }
   }
   .thumb {
@@ -422,11 +415,11 @@
   }
 
   input[type=range]:focus {
-    outline: none;
+    outline: none !important;
   }
 
   // WebKit
-  input[type=range]{
+  input[type=range] {
     -webkit-appearance: none;
   }
 
@@ -442,7 +435,7 @@
     height: 14px;
     width: 14px;
     border-radius: 50%;
-    background-color: $_secondary;
+    background-color: $_primary;
     -webkit-transform-origin: left center;
     transform-origin: left center;
     margin: -5px 0 0 0;
@@ -454,7 +447,7 @@
   }
 
   // FireFox
-  input[type=range]{
+  input[type=range] {
     /* fix for FF unable to apply focus style bug  */
     border: 1px solid white;
 
@@ -472,7 +465,7 @@
     height: 14px;
     width: 14px;
     border-radius: 50%;
-    background: $_secondary;
+    background: $_primary;
     margin-top: -5px;
   }
 
@@ -505,7 +498,7 @@
     height: 14px;
     width: 14px;
     border-radius: 50%;
-    background: $_secondary;
+    background: $_primary;
   }
   input[type=range]:focus::-ms-fill-lower {
     background: $_label-accent;
@@ -513,24 +506,27 @@
   input[type=range]:focus::-ms-fill-upper {
     background: $_label-accent;
   }
+  &[disabled] {
+    background: none !important;
+    cursor: default;
+    opacity: .5;
+  }
 
-};
-
+}
 
 
 ///_md-switch
 ///@private
 ///@param {Map} $map
-@mixin _md-switch($map:()){
-  $_label:map-get-default($map,label,map-get($Palette,label));
-  $_primary:map-get-default($map,primary,map-get($Palette,primary));
-  $_secondary:map-get-default($map,secondary,map-get($Palette,primary-3));
-  $_placeholder:map-get-default($map,placeholder,map-get($Palette,placeholder));
-  $_disabled:map-get-default($map,disabled,map-get($Palette,hint));
+@mixin _md-switch($map:()) {
+  $_label: map-get-default($map, label, map-get($Palette, label));
+  $_primary: map-get-default($map, primary, map-get($Palette, primary));
+  $_placeholder: map-get-default($map, placeholder, map-get($Palette, placeholder));
+  $_disabled: map-get-default($map, disabled, map-get($Palette, hint));
 
-  $_switch-checked-lever-bg: desaturate(lighten($_secondary, 25%), 25%);
-  $_switch-unchecked-bg: map-get-default($map,switch,map-get($Palette,switch));
-  $_switch-unchecked-lever-bg: map-get-default($map,switch-track,map-get($Palette,switch-track));
+  $_switch-checked-lever-bg: desaturate(lighten($_primary, 25%), 25%);
+  $_switch-unchecked-bg: map-get-default($map, switch, map-get($Palette, switch));
+  $_switch-unchecked-lever-bg: map-get-default($map, switch-track, map-get($Palette, switch-track));
 
   md-switch,
   md-switch * {
@@ -542,16 +538,16 @@
   md-switch label {
     cursor: pointer;
   }
-  md-switch label input[type=checkbox]{
+  md-switch label input[type=checkbox] {
     opacity: 0;
     width: 0;
     height: 0;
   }
   md-switch label input[type=checkbox]:checked + .lever {
-    background-color: $_switch-checked-lever-bg;
+    background-color: $_switch-checked-lever-bg !important;
   }
   md-switch label input[type=checkbox]:checked + .lever:after {
-    background-color: $_secondary;
+    background-color: $_primary;
   }
   md-switch label .lever {
     content: "";
@@ -559,13 +555,13 @@
     position: relative;
     width: 40px;
     height: 15px;
-    background-color: $_switch-unchecked-lever-bg;
+    background-color: $_switch-unchecked-lever-bg !important;
     border-radius: 15px;
     margin-right: 10px;
-    -webkit-transition:background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
     transition: background 0.3s ease;
     vertical-align: middle;
-    margin: 0 16px;
+    margin: 0;
   }
   md-switch label .lever:after {
     content: "";
@@ -575,17 +571,17 @@
     height: 21px;
     background-color: $_switch-unchecked-bg;
     border-radius: 21px;
-    box-shadow: 0 1px 3px 1px rgba(0,0,0,.4);
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4);
     left: -5px;
     top: -3px;
     transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease;
   }
   // Switch active style
-  input[type=checkbox]:checked:not(:disabled) ~ .lever:active:after {
-    box-shadow: 0 1px 3px 1px rgba(0,0,0,.4), 0 0 0 15px transparentize($_secondary, .9);
+  input[type=checkbox]:checked ~ .lever:active:after {
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4), 0 0 0 15px transparentize($_primary, .9);
   }
-  input[type=checkbox]:not(:disabled) ~ .lever:active:after {
-    box-shadow: 0 1px 3px 1px rgba(0,0,0,.4), 0 0 0 15px rgba(0, 0, 0, .08);
+  input[type=checkbox] ~ .lever:active:after {
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4), 0 0 0 15px rgba(0, 0, 0, .08);
   }
   md-switch label input[type=checkbox]:checked + .lever:after {
     left: 24px;
@@ -593,30 +589,26 @@
 
   // Disabled Styles
 
-  md-switch input[type=checkbox][disabled] + .lever{
+  md-switch input[type=checkbox][disabled] + .lever {
     cursor: default;
   }
-  md-switch label input[type=checkbox][disabled] + .lever:after,
-  md-switch label input[type=checkbox][disabled]:checked + .lever:after {
+
+  md-switch[disabled] {
+    background: none !important;
+    cursor: default;
+    opacity: .5;
   }
-  md-switch[disabled]{
-    background:none !important;
-    cursor:default;
-    opacity:.5;
-  }
-  md-switch input[type=checkbox][disabled]{
-    background:none !important;
+  md-switch input[type=checkbox][disabled] {
+    background: none !important;
   }
 
-
-};
-
+}
 
 
 ///_md-file
 ///@private
-@mixin _md-file($map:()){
-  $_width:map-get-default($map,width,100%);
+@mixin _md-file($map:()) {
+  $_width: map-get-default($map, width, 100%);
 
   md-file {
     position: relative;
@@ -655,23 +647,27 @@
 
   }
 
-};
+}
+
 
 ///_md-input
 ///@private
 ///@param {Map} $map
-@mixin _md-input($map:()){
+@mixin _md-input($map:()) {
 
-  $_label:map-get-default($map,label,map-get($Palette,label));
-  $_primary:map-get-default($map,primary,map-get($Palette,primary));
-  $_secondary:map-get-default($map,secondary,map-get($Palette,primary-3));
-  $_placeholder:map-get-default($map,placeholder,map-get($Palette,placeholder));
-  $_disabled:map-get-default($map,disabled,map-get($Palette,hint));
-  $_height:map-get-default($map,height,2.75em);
-  $_width:map-get-default($map,width,100%);
-  $_color:map-get-default($map,color,inherit);
+  $_label: map-get-default($map, label, map-get($Palette, label));
+  $_primary: map-get-default($map, primary, map-get($Palette, primary));
+  $_placeholder: map-get-default($map, placeholder, map-get($Palette, placeholder));
+  $_disabled: map-get-default($map, disabled, map-get($Palette, hint));
+  $_height: map-get-default($map, height, 2.75em);
+  $_width: map-get-default($map, width, 100%);
+  $_color: map-get-default($map, color, inherit);
 
-  @include input(){
+  position: relative;
+  margin-top: 1em;
+  display: block;
+
+  @include input() {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid $_label;
@@ -683,23 +679,42 @@
     margin: 0 0 15px 0;
     padding: 0;
     box-shadow: none;
-    box-sizing:content-box;
+    box-sizing: content-box;
     -webkit-transition: all .3s;
     transition: all .3s;
-    color:$_color;
+    color: $_color;
     @include component-placeholder($_placeholder);
 
-    &[disabled]{
-      opacity:.5;
-      background:none !important;
+    &[disabled] {
+      opacity: .5;
+      background: none !important;
+      border-bottom: 1px solid $_label !important;
+      &:focus, &:active {
+        outline: 0 !important;
+        border-bottom: 1px solid $_label !important;
+        border-radius: 0;
+        box-shadow: none;
+      }
     }
-
-    &:focus:not([readonly]) {
+    &[readonly] {
+      background: none !important;
+      border-bottom: 1px solid $_label !important;
+      &:focus, &:active {
+        border: 0;
+        outline: 0 !important;
+        border-bottom: 1px solid $_label !important;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+    &:focus, &:active {
+      outline: 0 !important;
+      border: 0;
       border-bottom: 1px solid $_primary;
       box-shadow: 0 1px 0 0 $_primary;
     }
 
-    &:focus:not([readonly])+label {
+    &:focus:not([readonly]) + label {
       color: $_primary;
     }
 
@@ -726,394 +741,449 @@
     background-color: transparent;
   }
 
-  md-input,md-textarea {
-    position: relative;
-    margin-top: 1em;
-    display:block;
-    span{
-      &.icon-{
-        display:none;
-      }
+  span {
+    &.icon- {
+      display: none;
     }
-
-    label {
-      color: $_label;
-      position: absolute;
-      top: 0.65em;
-      left: 0;
-      font-size: 1em;
-      cursor: text;
-      -webkit-transiton:.2s ease-out;
-      transition:.2s ease-out;
-    }
-
-    label.active {
-      font-size: .8em;
-      @include transform(translateY(-90%));
-    }
-
-    &[disabled]{
-      opacity:.5;
-      background:none !important;
-    }
-
-    // Prefix Icons
-    .prefix {
-      display:inherit;
-      position: absolute;
-      width: 2em;
-      font-size: 24px;
-      @include transition(color .2s);
-      color:$_placeholder;
-      top:10px;
-      &.active { color: $_primary; }
-    }
-    .prefix ~ input,
-    .prefix ~ textarea {
-      margin-left: 2em;
-      width: calc(#{$_width} - 2em);
-    }
-    .prefix ~ textarea { padding-top: .8em; }
-    .prefix ~ label { margin-left: 2.5em; }
-
-    &[readonly]{
-      color:$_placeholder;
-    }
-
-    @content;
-
   }
+
+  label {
+    color: $_label;
+    position: absolute;
+    top: 0.65em;
+    left: 0;
+    font-size: 1em;
+    cursor: text;
+    -webkit-transiton: .2s ease-out;
+    transition: .2s ease-out;
+  }
+
+  label.active {
+    font-size: .8em;
+    @include transform(translateY(-90%));
+  }
+
+  &[disabled] {
+    opacity: .5;
+    background: none !important;
+  }
+
+  // Prefix Icons
+  .prefix {
+    display: inherit;
+    position: absolute;
+    width: 2em;
+    font-size: 24px;
+    @include transition(color .2s);
+    color: $_placeholder;
+    top: 10px;
+    &.active {
+      color: $_primary;
+    }
+  }
+  .prefix ~ input,
+  .prefix ~ textarea {
+    margin-left: 2em;
+    width: calc(#{$_width} - 2em);
+  }
+  .prefix ~ textarea {
+    padding-top: .8em;
+  }
+  .prefix ~ label {
+    margin-left: 2.5em;
+  }
+
+  &[readonly] {
+    color: $_placeholder;
+  }
+
+  @content;
+
+}
+
+
+
+@mixin _md-textarea() {
   md-textarea {
     margin-top: 1.25em;
     label {
-      &.active{
+      &.active {
         @include transform(translateY(-130%));
       }
     }
   }
+}
 
-};
 
 ///_md-select
 ///@private
 ///@param {Map} $map
-@mixin _md-select($map:()){
-  $_label:map-get-default($map,label,map-get($Palette,label));
-  $_primary:map-get-default($map,primary,map-get($Palette,primary));
-  $_secondary:map-get-default($map,secondary,map-get($Palette,primary-3));
-  $_placeholder:map-get-default($map,placeholder,map-get($Palette,placeholder));
-  $_disabled:map-get-default($map,disabled,map-get($Palette,hint));
-  $_text:map-get-default($map,text,map-get($Palette,label-dark-light));
-  $_height:map-get-default($map,height,2.75em);
-  $_width:map-get-default($map,width,100%);
-  $_color:map-get-default($map,color,inherit);
+@mixin _md-select($map:()) {
+  $_label: map-get-default($map, label, map-get($Palette, label));
+  $_primary: map-get-default($map, primary, map-get($Palette, primary));
+  $_secondary: map-get-default($map, secondary, map-get($Palette, primary-3));
+  $_placeholder: map-get-default($map, placeholder, map-get($Palette, placeholder));
+  $_disabled: map-get-default($map, disabled, map-get($Palette, hint));
+  $_text: map-get-default($map, text, map-get($Palette, label-dark-light));
+  $_height: map-get-default($map, height, 2.75em);
+  $_width: map-get-default($map, width, 100%);
+  $_color: map-get-default($map, color, inherit);
 
-  md-select,[md-select] {
-    position: relative;
-    margin: 1em 0 2em 0;
-    display:block;
-    &>select{
-      background:none;
-      display: block;
-      appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      height: $_height;
-      width: 100%;
-      font-size: 1em;
-      outline: none;
-      cursor:pointer;
-      color:$_color;
-      border: none;
-      border-bottom: 1px solid $_label;
-      border-radius: 0;
-      box-shadow: none;
-      padding: 0 1.5em 0 0;
-      // Focused input style
-      &:focus:not([readonly]) {
-        border-bottom: 1px solid $_primary;
-        box-shadow: 0 1px 0 0 $_primary;
+  position: relative;
+  margin: 1em 0 2em 0;
+  display: block;
+  &[disabled] {
+    background: none !important;
+    opacity: .5;
+    * {
+      opacity: 1;
+    }
+    select {
+      background: none !important;
+      border-bottom: 1px solid $_label !important;
+      &:hover {
+        border-bottom: 1px solid $_label !important;
       }
-      // Focused label style
-      &:focus:not([readonly]) + label{
-        color: $_primary;
-      }
-    }
-    .icon-arrow-drop-down {
-      color: initial;
-      position: absolute;
-      right: 5px;
-      top: 8px;
-      font-size: 24px;
-      pointer-events: none;
-
-    }
-    label {
-      position: absolute;
-      top: -1.3em;
-      font-size: .8em;
-    }
-    .prefix {
-      display:inherit;
-      position: absolute;
-      width: 2em;
-      font-size: 24px;
-      @include transition(color .2s);
-      color:$_placeholder;
-      top:10px;
-      &.active { color: $_primary; }
-    }
-    .prefix ~ select{
-      margin-left: 2em;
-      width: calc(#{$_width} - 2em);
-    }
-    .prefix ~ label { margin-left: 2.5em; }
-
-    &[readonly]{
-      color:$_placeholder;
     }
   }
-};
+  & > select {
+    background: none;
+    display: block;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: $_height;
+    width: 100%;
+    font-size: 1em;
+    outline: none;
+    cursor: pointer;
+    color: $_color;
+    border: none;
+    border-bottom: 1px solid $_label;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0 1.5em 0 0;
+    // Focused input style
+    &:focus {
+      border-bottom: 1px solid $_primary;
+      box-shadow: 0 1px 0 0 $_primary;
+      outline: 0 !important;
+    }
+    // Focused label style
+    &:focus + label {
+      color: $_primary;
+    }
+  }
+  @include span-icon() {
+    color: initial;
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    font-size: 24px;
+    pointer-events: none;
+  }
+
+  label {
+    position: absolute;
+    top: -1.3em;
+    font-size: .8em;
+  }
+  .prefix {
+    display: inherit;
+    position: absolute;
+    width: 2em;
+    font-size: 24px;
+    @include transition(color .2s);
+    color: $_placeholder;
+    top: 10px;
+    &.active {
+      color: $_primary;
+    }
+  }
+  .prefix ~ select {
+    margin-left: 2em;
+    width: calc(#{$_width} - 2em);
+  }
+  .prefix ~ label {
+    margin-left: 2.5em;
+  }
+
+  &[readonly] {
+    color: $_placeholder;
+  }
+
+}
+
 
 ///_md-input-icon-button
 ///@private
 ///@param {Map} $map
-@mixin _md-input-icon-button($map:()){
+@mixin _md-input-icon-button($map:()) {
 
-  $_label:map-get-default($map,label,map-get($Palette,label));
-  $_primary:map-get-default($map,primary,map-get($Palette,primary));
-  $_secondary:map-get-default($map,secondary,map-get($Palette,primary-3));
-  $_placeholder:map-get-default($map,placeholder,map-get($Palette,placeholder));
-  $_disabled:map-get-default($map,disabled,map-get($Palette,hint));
-  $_color:map-get-default($map,color,inherit);
+  $_label: map-get-default($map, label, map-get($Palette, label));
+  $_primary: map-get-default($map, primary, map-get($Palette, primary));
+  $_secondary: map-get-default($map, secondary, map-get($Palette, primary-3));
+  $_placeholder: map-get-default($map, placeholder, map-get($Palette, placeholder));
+  $_disabled: map-get-default($map, disabled, map-get($Palette, hint));
+  $_color: map-get-default($map, color, inherit);
+  $_height: map-get-default($map, height, 2.75em);
 
-  md-input-icon-button {
-    @include flexbox($justification:space-between,$alignment:flex-end);
-    position: relative;
-    margin-top: 1em;
-    label {
-      color: $_label;
-      position: absolute;
-      top: 0.65em;
-      left: 0;
-      font-size: 1em;
-      cursor: text;
-      -webkit-transiton:.2s ease-out;
-      transition:.2s ease-out;
-    }
-    label.active {
-      font-size: .8em;
-      @include transform(translateY(-90%));
-    }
-    input[type=text]{
-      margin:0;
-    }
-    button{
-      background:transparent;
-      border:0;
-      border-bottom:1px solid $_label;
-      color:$_label;
-      span{
-        font-size:24px;
-      }
-      -webkit-transition: 50ms ease-out;
-      transition: 50ms ease-out;
-      &:hover,&:focus{
-        color: $_primary;
+  @include flexbox($justification: space-between, $alignment: flex-end);
+  position: relative;
+  margin-top: 1em;
 
-      }
-    }
-    input[type=text]{
-      -webkit-transiton:10ms ease-in;
-      transition:10ms ease-in;
-      color:$_color;
-      &:focus:not([readonly]) {
-        border-bottom: 1px solid $_primary;
-        box-shadow: 0 1px 0 0 $_primary;
-      }
-      &:focus:not([readonly])+label+button {
-        color: $_primary;
-        border-bottom: 1px solid $_primary;
-        box-shadow: 0 1px 0 0 $_primary;
-
-      }
-    }
-    &[disabled]{
-      opacity:.5;
-      background:none !important;
-    }
-
+  @include input() {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $_label;
+    border-radius: 0;
+    outline: none;
+    font-size: 1em;
+    margin: 0 0 15px 0;
+    padding: 0;
+    height: $_height;
+    box-shadow: none;
+    box-sizing: content-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    color: $_color;
+    @include component-placeholder($_placeholder);
   }
 
+  label {
+    color: $_label;
+    position: absolute;
+    top: 0.65em;
+    left: 0;
+    font-size: 1em;
+    cursor: text;
+    -webkit-transiton: .2s ease-out;
+    transition: .2s ease-out;
+  }
+  label.active {
+    font-size: .8em;
+    @include transform(translateY(-90%));
+  }
+  input[type=text] {
+    margin: 0;
+  }
+  button {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid $_label;
+    color: $_label;
+    span {
+      font-size: 24px;
+    }
+    -webkit-transition: 50ms ease-out;
+    transition: 50ms ease-out;
+    &:hover, &:focus {
+      color: $_primary;
+    }
+  }
+  input[type=text] {
+    -webkit-transiton: 10ms ease-in;
+    transition: 10ms ease-in;
+    color: $_color;
+    &:focus, &:active {
+      border: 0;
+      outline: none !important;
+      border-bottom: 1px solid $_primary;
+      box-shadow: 0 1px 0 0 $_primary;
+    }
+    &:focus + label + button {
+      color: $_primary;
+      border-bottom: 1px solid $_primary;
+      box-shadow: 0 1px 0 0 $_primary;
+    }
+    &[disabled], &[disabled]:active {
+      background: none !important;
+      border-bottom: 1px solid $_label !important;
+      box-shadow: none;
+      &:hover {
+        background: none !important;
+        background: none !important;
+        border-bottom: 1px solid $_label !important;
+        box-shadow: none;
+      }
+    }
+    &[readonly] {
+      background: none !important;
+      border-bottom: 1px solid $_label !important;
+      box-shadow: none;
+      &:hover {
+        background: none !important;
+        background: none !important;
+        border-bottom: 1px solid $_label !important;
+        box-shadow: none;
+      }
 
-};
+    }
+  }
+  input[type=text]:focus {
+    &[readonly] {
+      border: 0 !important;
+      border-bottom: 1px solid $_label !important;
+    }
+  }
+  &[disabled] {
+    opacity: .5;
+    background: none !important;
+    button {
+      box-shadow: none;
+      opacity: .5;
+    }
+  }
+  &[readonly] {
+    opacity: 1;
+    button {
+      opacity: 1 !important;
+      box-shadow: none;
+      opacity: .5;
+    }
+    input:focus ~ button {
+      border-bottom: 1px solid $_label !important;
+      color: $_label !important;
+      box-shadow: none !important;
+    }
+  }
+}
 
+;
 
 ////////Public
 
 /// @access public
-@mixin md-radio-list(){
-  md-radio-list{
-    &>label{
-      font-size:1em !important;
+@mixin md-radio-list() {
+  md-radio-list {
+    & > label {
+      font-size: 1em !important;
     }
-    width:100%;
-    @include flexbox($alignment:center);
+    width: 100%;
+    @include flexbox($alignment: center);
     @include flex-wrap(wrap);
-    margin:1em 0 2em 0;
-    &>*{
-      margin:0 1em 0 0 !important;
+    margin: 1em 0 2em 0;
+    & > * {
+      margin: 0 1em 0 0 !important;
     }
-    &.column{
+    &.column {
       @include flexbox-column();
-      &>*{
-        margin-top:1em;
+      & > * {
+        margin-top: 1em;
       }
     }
   }
 }
 
 /// @access public
-@mixin md-checkbox-list(){
-  md-checkbox-list{
-    &>label{
-      font-size:1em !important;
+@mixin md-checkbox-list() {
+  md-checkbox-list {
+    & > label {
+      font-size: 1em !important;
     }
-    width:100%;
-    @include flexbox($alignment:center);
+    width: 100%;
+    @include flexbox($alignment: center);
     @include flex-wrap(wrap);
-    margin:1em 0 2em 0;
-    &>*{
-      margin:0 1em 0 0 !important;
+    margin: 1em 0 2em 0;
+    & > * {
+      margin: 0 1em 0 0 !important;
     }
-    &.column{
+    &.column {
       @include flexbox-column();
-      &>md-checkbox{
-        margin-top:1em;
+      & > md-checkbox {
+        margin-top: 1em;
       }
     }
   }
 }
-
-
 
 ///md-radio
 ///@public
 ///@param {String} $class
 ///@param {Map} $map
-@mixin md-radio($class:md,$map:()){
-
-  &.#{$class}{
+@mixin md-radio($class:md,$map:()) {
+  md-radio {
     @include _md-radio($map);
-    md-radio{
-      @content;
-    }
-
+    @content;
   }
-
-};
-
-
+}
 
 ///md-checkbox
 ///@public
 ///@param {String} $class
 ///@param {Map} $map
-@mixin md-checkbox($class:md,$map:()){
-
-  &.#{$class}{
+@mixin md-checkbox($class:md,$map:()) {
+  md-checkbox {
     @include _md-checkbox($map);
-    md-checkbox{
-      @content;
-    }
+    @content;
   }
 
-};
-
-
-
+}
 
 ///md-range
 ///@public
 ///@param {String} $class
 ///@param {Map} $map
-@mixin md-range($class:md,$map:()){
+@mixin md-range($class:md,$map:()) {
+  md-range {
+    position: relative;
+    @include _md-range($map);
+    @content;
 
+  }
   @-moz-document url-prefix() {
-    &.#{$class}{
-      md-range{
-        .progress{
-          top:-12px !important;
-        }
-        .thumb {
-          top: -25px !important;
-        }
-        .value{
-          top:-23px;
-        }
+    md-range {
+      .progress {
+        top: -12px !important;
+      }
+      .thumb {
+        top: -25px !important;
+      }
+      .value {
+        top: -23px;
       }
     }
   }
 
-  &.#{$class}{
-    @include _md-range($map);
-    md-range{
-      @content;
-    }
-  }
-
-};
-
-
-
+}
 
 
 ///md-switch
 ///@public
 ///@param {String} $class
 ///@param {Map} $map
-@mixin md-switch($class:md,$map:()){
-
-  &.#{$class}{
-    @include _md-switch($map);
-    md-switch{
-      @content;
-    }
+@mixin md-switch($class:md,$map:()) {
+  @include _md-switch($map);
+  md-switch {
+    @content;
   }
 
-};
+}
 
 
 ///md-select
 ///@public
 ///@param {String} $class
 ///@param {Map} $map
-@mixin md-select($class:md,$map:()){
-
-  &.#{$class}{
+@mixin md-select($class:md,$map:()) {
+  md-select {
     @include _md-select($map);
-    md-select{
-      @content;
-    }
+    @content;
   }
+}
 
-};
 
 
 ///md-file
 ///@public
 ///@param {String} $class
-@mixin md-file($class:md,$map:()){
-
-  &.#{$class}{
+@mixin md-file($class:md,$map:()) {
+  md-file {
     @include _md-file($map);
-    md-file{
-      @content;
-    }
+    @content;
   }
 
-};
-
+}
 
 
 
@@ -1121,31 +1191,27 @@
 ///@public
 ///@param {String} $class
 ///@param {Map} $map
-@mixin md-input($class:md,$map:()){
-
-  &.#{$class}{
+@mixin md-input($class:md,$map:()) {
+  md-input, md-textarea {
     @include _md-input($map);
-    md-input,md-textarea{
-      @content;
-    }
+    @content;
   }
+  @include _md-textarea();
 
-};
+}
+
+
 
 ///md-input-icon-button
 ///@public
 ///@param {String} $class
 ///@param {Map} $map
-@mixin md-input-icon-button($class:md,$map:()){
-
-  &.#{$class}{
+@mixin md-input-icon-button($class:md,$map:()) {
+  md-input-icon-button {
     @include _md-input-icon-button($map);
-    md-input-icon-button{
-      @content;
-    }
+    @content;
   }
-
-};
+}
 
 
 
@@ -1153,27 +1219,27 @@
 ///@public
 ///@param {String} $class
 ///@param {Map} $map
-@mixin md-forms($class:null,$map:()){
+@mixin md-forms($class:null,$map:()) {
 
   button:focus {
     outline: none;
   }
 
-  *[disabled]{
-    opacity:.5;
+  *[disabled] {
+    opacity: .5;
   }
 
-  @include md-input($class,$map);
-  @include md-radio($class,$map);
-  @include md-checkbox($class,$map);
-  @include md-range($class,$map);
-  @include md-switch($class,$map);
-  @include md-select($class,$map);
+  @include md-input($class, $map);
+  @include md-radio($class, $map);
+  @include md-checkbox($class, $map);
+  @include md-range($class, $map);
+  @include md-switch($class, $map);
+  @include md-select($class, $map);
   @include md-file($class);
-  @include md-input-icon-button($class,$map);
+  @include md-input-icon-button($class, $map);
   @include md-radio-list();
   @include md-checkbox-list();
   @content;
-};
+}
 
 

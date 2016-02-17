@@ -1,16 +1,12 @@
 
 $palette-primary:map-deep-get($MD-Color,blue,value) !default;
 $palette-primary-text:map-deep-get($MD-Color,blue,element) !default;
-$palette-primary-2:map-deep-get($MD-Color,blue,primary,900,value) !default;
-$palette-primary-2-text:map-deep-get($MD-Color,blue,primary,900,element) !default;
-$palette-primary-3:map-deep-get($MD-Color,blue,primary,700,value) !default;
-$palette-primary-3-text:map-deep-get($MD-Color,blue,primary,700,element) !default;
 $palette-primary-accent:map-deep-get($MD-Color,blue,accent,100,value) !default;
 $palette-primary-accent-text:map-deep-get($MD-Color,blue,accent,100,element) !default;
-$palette-secondary:map-deep-get($MD-Color,pink,value) !default;
-$palette-secondary-text:map-deep-get($MD-Color,pink,element) !default;
-$palette-secondary-accent:map-deep-get($MD-Color,pink,accent,200,value) !default;
-$palette-secondary-accent-text:map-deep-get($MD-Color,pink,accent,200,element) !default;
+$palette-secondary:map-deep-get($MD-Color,green,value) !default;
+$palette-secondary-text:map-deep-get($MD-Color,green,element) !default;
+$palette-secondary-accent:map-deep-get($MD-Color,green,accent,200,value) !default;
+$palette-secondary-accent-text:map-deep-get($MD-Color,green,accent,200,element) !default;
 $palette-label:map-deep-get($MD-Color,grey,value) !default;
 $palette-label-accent:map-deep-get($MD-Color,grey,primary,300,value) !default;
 $palette-label-dark-light:#000 !default;
@@ -23,10 +19,6 @@ $palette-switch-track:#818181 !default;
 $Palette:(
         primary:$palette-primary,
         primary-text:$palette-primary-text,
-        primary-2:$palette-primary-2,
-        primary-2-text:$palette-primary-2-text,
-        primary-3:$palette-primary-3,
-        primary-3-text:$palette-primary-3-text,
         primary-accent:$palette-primary-accent,
         primary-accent-text:$palette-primary-accent-text,
         secondary:$palette-secondary,
