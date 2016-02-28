@@ -11,7 +11,7 @@
 @mixin md-content(){
   md-content,.md-content{
     width:100%;
-    background:#fff;
+    background:map-get($Palette,light);
     @extend .md.elevation-05;
     border-radius:2px;
     margin-bottom:1.5em;

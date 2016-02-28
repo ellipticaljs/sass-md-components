@@ -4,17 +4,17 @@
 @mixin _md-dropdown($map){
   $_border-radius:map-get-default($map,border-radius,2px);
   $_z-index:map-get-default($map,z-index,10);
-  $_background:map-get-default($map,background,#fff);
-  $_border:map-get-default($map,border,#fff);
+  $_background:map-get-default($map,background,map-get($Palette,light));
+  $_border:map-get-default($map,border,map-get($Palette,light));
   $_font-size:map-get-default($map,font-size,14px);
   $_font-family:map-get-default($map,font-family,'robotoregular');
   $_padding:map-get-default($map,padding,1em .5em);
   $_min-width:map-get-default($map,min-width,10em);
-  $_divider-border:map-get-default($map,divider-border,#eaeaea);
+  $_divider-border:map-get-default($map,divider-border,map-get($Palette,dropdown-divider-border));
   $_item-padding:map-nested-get-default($map,item,padding,.5em);
-  $_item-color:map-nested-get-default($map,item,color,#515151);
+  $_item-color:map-nested-get-default($map,item,color,map-get($Palette,dropdown-item-color));
   $_item-line-height:map-nested-get-default($map,item,line-height,24px);
-  $_item-background-hover:map-nested-get-default($map,item,background-hover,#e7e7e7);
+  $_item-background-hover:map-nested-get-default($map,item,background-hover,map-get($Palette,dropdown-item-background-hover));
   $_item-icon-margin:map-nested-get-default($map,item,icon-margin,0 .5em 0 0);
 
   border-radius:$_border-radius;

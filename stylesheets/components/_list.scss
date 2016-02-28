@@ -4,14 +4,14 @@
 /// @access private
 /// @param {Map} $map
 @mixin _md-list($map){
-  $_nth-type-1-default:map-deep-get($MD-Color,blue,value);
-  $_nth-type-2-default:map-deep-get($MD-Color,light-green,primary,400,value);
-  $_nth-type-3-default:map-deep-get($MD-Color,red,value);
-  $_nth-type-4-default:map-deep-get($MD-Color,yellow,value);
+  $_nth-type-1-default:map-get($Palette,list-color-1);
+  $_nth-type-2-default:map-get($Palette,list-color-2);
+  $_nth-type-3-default:map-get($Palette,list-color-3);
+  $_nth-type-4-default:map-get($Palette,list-color-4);
 
   $_font-size:map-get-default($map,font-size,14px);
   $_padding:map-nested-get-default($map,item,padding,.5em 3em .5em 1em);
-  $_border-bottom:map-nested-get-default($map,item,border-bottom,1px solid #f0f0f0);
+  $_border-bottom:map-nested-get-default($map,item,border-bottom,1px solid map-get($Palette,list-border));
   $_nth-type-1:map-nested-get-default($map,item,n-type-1,$_nth-type-1-default);
   $_nth-type-2:map-nested-get-default($map,item,n-type-1,$_nth-type-2-default);
   $_nth-type-3:map-nested-get-default($map,item,n-type-1,$_nth-type-3-default);

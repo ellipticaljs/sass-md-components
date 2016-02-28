@@ -7,7 +7,7 @@
 ///@param {Map} $map
 @mixin _md-radio($map:()) {
   $_label: map-get-default($map, label, map-get($Palette, label));
-  $_primary: map-get-default($map, primary, map-get($Palette, primary));
+  $_secondary: map-get-default($map,secondary, map-get($Palette, input-secondary));
   $_placeholder: map-get-default($map, placeholder, map-get($Palette, placeholder));
   $_disabled: map-get-default($map, disabled, map-get($Palette, hint));
 
@@ -86,8 +86,8 @@
   }
   [type="radio"]:checked + label:after {
     border-radius: 50%;
-    border: 2px solid $_primary;
-    background-color: $_primary;
+    border: 2px solid $_secondary;
+    background-color: $_secondary;
     z-index: 0;
     @include transform(scale(1.02));
   }
@@ -95,12 +95,12 @@
   /* Radio With concentric gap */
   [type="radio"].concentric:checked + label:before {
     border-radius: 50%;
-    border: 2px solid $_primary;
+    border: 2px solid $_secondary;
   }
   [type="radio"].concentric:checked + label:after {
     border-radius: 50%;
-    border: 2px solid $_primary;
-    background-color: $_primary;
+    border: 2px solid $_secondary;
+    background-color: $_secondary;
     z-index: 0;
     @include transform(scale(.5));
   }
@@ -138,8 +138,7 @@
 ///@param {Map} $map
 @mixin _md-checkbox($map:()) {
   $_label: map-get-default($map, label, map-get($Palette, label));
-  $_primary: map-get-default($map, primary, map-get($Palette, primary));
-  $_primary-text: map-get-default($map, primary, map-get($Palette, primary-text));
+  $_secondary: map-get-default($map, secondary, map-get($Palette, input-secondary));
   $_placeholder: map-get-default($map, placeholder, map-get($Palette, placeholder));
   $_disabled: map-get-default($map, disabled, map-get($Palette, hint));
 
@@ -215,16 +214,16 @@
       height: 22px;
       border-top: 2px solid transparent;
       border-left: 2px solid transparent;
-      border-right: 2px solid $_primary;
-      border-bottom: 2px solid $_primary;
+      border-right: 2px solid $_secondary;
+      border-bottom: 2px solid $_secondary;
       @include transform(rotate(40deg));
       -webkit-backface-visibility: hidden;
       @include transform-origin(100% 100%);
     }
 
     &:disabled + label:before {
-      border-right: 2px solid $_primary;
-      border-bottom: 2px solid $_primary;
+      border-right: 2px solid $_secondary;
+      border-bottom: 2px solid $_secondary;
     }
 
   }
@@ -238,7 +237,7 @@
       height: 22px;
       border-top: none;
       border-left: none;
-      border-right: 2px solid $_primary;
+      border-right: 2px solid $_secondary;
       border-bottom: none;
       @include transform(rotate(90deg));
       -webkit-backface-visibility: hidden;
@@ -296,8 +295,8 @@
         height: 13px;
         border-top: 2px solid transparent;
         border-left: 2px solid transparent;
-        border-right: 2px solid $_primary-text;
-        border-bottom: 2px solid $_primary-text;
+        border-right: 2px solid transparent;
+        border-bottom: 2px solid transparent;
         -webkit-transform: rotateZ(37deg);
         transform: rotateZ(37deg);
 
@@ -308,8 +307,8 @@
         top: 0;
         width: 20px;
         height: 20px;
-        border: 2px solid $_primary;
-        background-color: $_primary;
+        border: 2px solid $_secondary;
+        background-color: $_secondary;
         z-index: 0;
       }
     }
@@ -324,10 +323,8 @@
 @mixin _md-range($map:()) {
   $_label: map-get-default($map, label, map-get($Palette, label));
   $_label-accent: map-get-default($map, label-accent, map-get($Palette, label-accent));
-  $_primary: map-get-default($map, primary, map-get($Palette, primary));
+  $_secondary: map-get-default($map, secondary, map-get($Palette, input-secondary));
   $_text: map-get-default($map, text, map-get($Palette, label-dark-light));
-  $_secondary: map-get-default($map, secondary, map-get($Palette, primary-3));
-  $_secondary-text: map-get-default($map, secondary, map-get($Palette, primary-3-text));
   $_placeholder: map-get-default($map, placeholder, map-get($Palette, placeholder));
   $_disabled: map-get-default($map, disabled, map-get($Palette, hint));
   $_width: map-get-default($map, width, 100%);
@@ -372,7 +369,7 @@
   .progress {
     position: absolute;
     height: 2px;
-    background-color: $_primary;
+    background-color: $_secondary;
     left: 0;
     top: 16px;
     right: 0;
@@ -406,7 +403,7 @@
     height: 0;
     width: 0;
     border-radius: 50%;
-    background-color: $_secondary;
+    //background-color: $_secondary;
     top: 0;
     margin-left: -6px;
     &.active {
@@ -435,7 +432,7 @@
     height: 14px;
     width: 14px;
     border-radius: 50%;
-    background-color: $_primary;
+    background-color: $_secondary;
     -webkit-transform-origin: left center;
     transform-origin: left center;
     margin: -5px 0 0 0;
@@ -465,7 +462,7 @@
     height: 14px;
     width: 14px;
     border-radius: 50%;
-    background: $_primary;
+    background: $_secondary;
     margin-top: -5px;
   }
 
@@ -498,7 +495,7 @@
     height: 14px;
     width: 14px;
     border-radius: 50%;
-    background: $_primary;
+    background: $_secondary;
   }
   input[type=range]:focus::-ms-fill-lower {
     background: $_label-accent;
@@ -520,11 +517,11 @@
 ///@param {Map} $map
 @mixin _md-switch($map:()) {
   $_label: map-get-default($map, label, map-get($Palette, label));
-  $_primary: map-get-default($map, primary, map-get($Palette, primary));
+  $_secondary: map-get-default($map, secondary, map-get($Palette, input-secondary));
   $_placeholder: map-get-default($map, placeholder, map-get($Palette, placeholder));
   $_disabled: map-get-default($map, disabled, map-get($Palette, hint));
 
-  $_switch-checked-lever-bg: desaturate(lighten($_primary, 25%), 25%);
+  $_switch-checked-lever-bg: desaturate(lighten($_secondary, 25%), 25%);
   $_switch-unchecked-bg: map-get-default($map, switch, map-get($Palette, switch));
   $_switch-unchecked-lever-bg: map-get-default($map, switch-track, map-get($Palette, switch-track));
 
@@ -547,7 +544,7 @@
     background-color: $_switch-checked-lever-bg !important;
   }
   md-switch label input[type=checkbox]:checked + .lever:after {
-    background-color: $_primary;
+    background-color: $_secondary;
   }
   md-switch label .lever {
     content: "";
@@ -578,7 +575,7 @@
   }
   // Switch active style
   input[type=checkbox]:checked ~ .lever:active:after {
-    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4), 0 0 0 15px transparentize($_primary, .9);
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4), 0 0 0 15px transparentize($_secondary, .9);
   }
   input[type=checkbox] ~ .lever:active:after {
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4), 0 0 0 15px rgba(0, 0, 0, .08);
@@ -656,7 +653,7 @@
 @mixin _md-input($map:()) {
 
   $_label: map-get-default($map, label, map-get($Palette, label));
-  $_primary: map-get-default($map, primary, map-get($Palette, primary));
+  $_secondary: map-get-default($map, secondary, map-get($Palette, input-primary));
   $_placeholder: map-get-default($map, placeholder, map-get($Palette, placeholder));
   $_disabled: map-get-default($map, disabled, map-get($Palette, hint));
   $_height: map-get-default($map, height, 2.75em);
@@ -710,12 +707,12 @@
     &:focus, &:active {
       outline: 0 !important;
       border: 0;
-      border-bottom: 1px solid $_primary;
-      box-shadow: 0 1px 0 0 $_primary;
+      border-bottom: 1px solid $_secondary;
+      box-shadow: 0 1px 0 0 $_secondary;
     }
 
     &:focus:not([readonly]) + label {
-      color: $_primary;
+      color: $_secondary;
     }
 
     & + label:after {
@@ -778,7 +775,7 @@
     color: $_placeholder;
     top: 10px;
     &.active {
-      color: $_primary;
+      color: $_secondary;
     }
   }
   .prefix ~ input,
@@ -820,8 +817,7 @@
 ///@param {Map} $map
 @mixin _md-select($map:()) {
   $_label: map-get-default($map, label, map-get($Palette, label));
-  $_primary: map-get-default($map, primary, map-get($Palette, primary));
-  $_secondary: map-get-default($map, secondary, map-get($Palette, primary-3));
+  $_secondary: map-get-default($map, secondary, map-get($Palette, input-primary));
   $_placeholder: map-get-default($map, placeholder, map-get($Palette, placeholder));
   $_disabled: map-get-default($map, disabled, map-get($Palette, hint));
   $_text: map-get-default($map, text, map-get($Palette, label-dark-light));
@@ -865,13 +861,13 @@
     padding: 0 1.5em 0 0;
     // Focused input style
     &:focus {
-      border-bottom: 1px solid $_primary;
-      box-shadow: 0 1px 0 0 $_primary;
+      border-bottom: 1px solid $_secondary;
+      box-shadow: 0 1px 0 0 $_secondary;
       outline: 0 !important;
     }
     // Focused label style
     &:focus + label {
-      color: $_primary;
+      color: $_secondary;
     }
   }
   @include span-icon() {
@@ -897,7 +893,7 @@
     color: $_placeholder;
     top: 10px;
     &.active {
-      color: $_primary;
+      color: $_secondary;
     }
   }
   .prefix ~ select {
@@ -921,8 +917,7 @@
 @mixin _md-input-icon-button($map:()) {
 
   $_label: map-get-default($map, label, map-get($Palette, label));
-  $_primary: map-get-default($map, primary, map-get($Palette, primary));
-  $_secondary: map-get-default($map, secondary, map-get($Palette, primary-3));
+  $_secondary: map-get-default($map,secondary, map-get($Palette, input-primary));
   $_placeholder: map-get-default($map, placeholder, map-get($Palette, placeholder));
   $_disabled: map-get-default($map, disabled, map-get($Palette, hint));
   $_color: map-get-default($map, color, inherit);
@@ -978,7 +973,7 @@
     -webkit-transition: 50ms ease-out;
     transition: 50ms ease-out;
     &:hover, &:focus {
-      color: $_primary;
+      color: $_secondary;
     }
   }
   input[type=text] {
@@ -988,13 +983,13 @@
     &:focus, &:active {
       border: 0;
       outline: none !important;
-      border-bottom: 1px solid $_primary;
-      box-shadow: 0 1px 0 0 $_primary;
+      border-bottom: 1px solid $_secondary;
+      box-shadow: 0 1px 0 0 $_secondary;
     }
     &:focus + label + button {
-      color: $_primary;
-      border-bottom: 1px solid $_primary;
-      box-shadow: 0 1px 0 0 $_primary;
+      color: $_secondary;
+      border-bottom: 1px solid $_secondary;
+      box-shadow: 0 1px 0 0 $_secondary;
     }
     &[disabled], &[disabled]:active {
       background: none !important;

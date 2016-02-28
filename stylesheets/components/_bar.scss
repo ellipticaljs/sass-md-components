@@ -3,13 +3,13 @@
 /// @access private
 /// @param {Map} $map
 @mixin _md-bar($map){
-  $_background:map-get-default($map,background,#fff);
+  $_background:map-get-default($map,background,map-get($Palette,light));
   $_font-size:map-get-default($map,font-size,14px);
   $_height:map-get-default($map,height,60px);
-  $_border:map-get-default($map,border-bottom,1px solid #f0f0f0);
+  $_border:map-get-default($map,border-bottom,1px solid map-get($Palette,bar-border));
   $_width:map-nested-get-default($map,side-panel,width,225px);
   $_side-panel-padding:map-nested-get-default($map,side-panel,padding,1em);
-  $_side-panel-border:map-nested-get-default($map,side-panel,border-right,1px solid #f0f0f0);
+  $_side-panel-border:map-nested-get-default($map,side-panel,border-right,1px solid map-get($Palette,bar-border));
   $_main-panel-padding:map-nested-get-default($map,main-panel,padding,0 3em 0 1em);
 
   height:$_height;

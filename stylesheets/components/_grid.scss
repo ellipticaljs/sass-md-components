@@ -21,23 +21,22 @@
 ///   md-grid($map:(columns:7))
 
 @mixin md-grid($class:null,$map:(),$columns:()){
-  $_color:lighten(#666,10%);
-  $_pagination-bg:map-deep-get($MD-Color,purple,primary,300,value);
-  $_grid-color:map-deep-get($MD-Color,indigo,primary,300,value);
-
+  $_color:map-get($Palette,grid-font-color);
+  $_section-color:map-nested-get-default($map,section,color,$_color);
+  //$_grid-color:map-get($Palette,grid-header-selected);
+  //map-deep-get($MD-Color,indigo,primary,300,value);
   $_columns:map-get-default($map,columns,4);
   $_header-font-family:map-nested-get-default($map,header,font-family,'robotomedium');
-  $_header-border-bottom:map-nested-get-default($map,header,border-bottom,1px solid #999);
-  $_header-icon-color:map-nested-get-default($map,header,icon-color,#d8d8d8);
-  $_header-active-color:map-nested-get-default($map,header,active,$_grid-color);
-
-  $_section-color:map-nested-get-default($map,section,color,$_color);
-
-  $_pagination-background:map-nested-get-default($map,pagination,background,#fff);
-  $_pagination-color:map-nested-get-default($map,pagination,color,#666);
-  $_pagination-background-active:map-nested-get-default($map,pagination,background-active,$_pagination-bg);
-  $_pagination-color-active:map-nested-get-default($map,pagination,color-active,#fff);
-  $_pagination-refresh:map-nested-get-default($map,pagination,refresh,#bbb);
+  $_header-border-bottom:map-nested-get-default($map,header,border-bottom,1px solid map-get($Palette,grid-header-border));
+  $_header-icon-color:map-nested-get-default($map,header,icon-color,map-get($Palette,grid-header-icon));
+  $_header-active-color:map-nested-get-default($map,header,active,map-get($Palette,grid-header-selected));
+  
+  $_pagination-bg:map-get($Palette,grid-pagination-background-active);
+  $_pagination-background:map-nested-get-default($map,pagination,background,map-get($Palette,grid-pagination-background));
+  $_pagination-color:map-nested-get-default($map,pagination,color,map-get($Palette,grid-pagination-color));
+  $_pagination-background-active:$_pagination-bg;
+  $_pagination-color-active:map-nested-get-default($map,pagination,color-active,map-get($Palette,grid-pagination-color-active));
+  $_pagination-refresh:map-nested-get-default($map,pagination,refresh,map-get($Palette,grid-pagination-icon));
 
   @include flex-grid($class:$class,$tags:(md-grid),$map:(cell:(show-borders:false,alt-type:odd),touch:(header-font:'robotomedium')),$columns:$columns){
     border:0;

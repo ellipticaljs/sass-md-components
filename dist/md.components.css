@@ -45,10 +45,10 @@ md-menu > menu-item.expand > menu-dropdown > menu-item > a.active {
   color: #009688; }
 
 md-menu > menu-item > header:hover, md-menu > menu-item.expand > header {
-  background: none; }
+  background: #f6f6f6; }
 
 md-menu > menu-item > header.active {
-  background: #009688; }
+  background: #eee; }
 
 md-menu > menu-item > header > span, md-menu > menu-item > header.dropdown:after, md-menu > menu-item > header, md-menu > menu-item > header > a {
   text-shadow: none; }
@@ -58,13 +58,13 @@ md-menu > menu-item > header.active, md-menu > menu-item > header.active > a, md
   color: #009688; }
 
 md-menu > menu-item > header.active, md-menu > menu-item > header.active > a {
-  color: white; }
+  color: #009688; }
 
 md-menu > menu-item > header:hover > span, md-menu > menu-item > header.dropdown:hover:after, md-menu > menu-item.expand .dropdown:after {
   color: #009688; }
 
 md-menu > menu-item > header.active > span {
-  color: white; }
+  color: #009688; }
 
 md-menu > menu-item.expand {
   background: none; }
@@ -80,10 +80,10 @@ md-menu > menu-item.expand > menu-dropdown > menu-item > a.active {
   color: #009688; }
 
 md-menu > menu-item > header:hover, md-menu > menu-item.expand > header {
-  background: none; }
+  background: #f6f6f6; }
 
 md-menu > menu-item > header.active {
-  background: #009688; }
+  background: #eee; }
 
 md-menu > menu-item > header > span, md-menu > menu-item > header.dropdown:after, md-menu > menu-item > header, md-menu > menu-item > header > a {
   text-shadow: none; }
@@ -93,13 +93,13 @@ md-menu > menu-item > header.active, md-menu > menu-item > header.active > a, md
   color: #009688; }
 
 md-menu > menu-item > header.active, md-menu > menu-item > header.active > a {
-  color: white; }
+  color: #009688; }
 
 md-menu > menu-item > header:hover > span, md-menu > menu-item > header.dropdown:hover:after, md-menu > menu-item.expand .dropdown:after {
   color: #009688; }
 
 md-menu > menu-item > header.active > span {
-  color: white; }
+  color: #009688; }
 
 md-avatar {
   display: block; }
@@ -1494,13 +1494,13 @@ flex-grid, md-grid {
         margin-left: .25em;
         color: #d8d8d8; }
       flex-grid > header > *.active, md-grid > header > *.active {
-        color: #7986CB;
-        border-bottom: 3px solid #7986CB !important;
+        color: #009688;
+        border-bottom: 3px solid #009688 !important;
         padding-bottom: 2px; }
         flex-grid > header > *.active span[class*='icon-'], md-grid > header > *.active span[class*='icon-'] {
-          color: #7986CB; }
+          color: #009688; }
   flex-grid > section, md-grid > section {
-    color: gray; }
+    color: #808080; }
 
 grid-pagination {
   display: -webkit-flex;
@@ -2515,8 +2515,8 @@ md-checkbox {
     height: 13px;
     border-top: 2px solid transparent;
     border-left: 2px solid transparent;
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
     -webkit-transform: rotateZ(37deg);
     transform: rotateZ(37deg);
     -webkit-transform-origin: 100% 100%;
@@ -3915,3 +3915,30 @@ md-checkbox-list {
       color: rgba(70, 136, 71, 0.7) !important; }
     *.success *:-ms-input-placeholder {
       color: rgba(70, 136, 71, 0.7) !important; }
+
+.md.elevation-0 {
+  box-shadow: none !important; }
+
+.md.elevation-01 {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+
+.md.elevation-02 {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
+
+.md.elevation-05, md-content, .md-content {
+  box-shadow: 0 1px 2px rgba(151, 151, 151, 0.58); }
+
+.md.elevation-1 {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+
+.md.elevation-2 {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4); }
+
+.md.elevation-3 {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4); }
+
+.md.elevation-4 {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4); }
+
+.md.elevation-5 {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4); }

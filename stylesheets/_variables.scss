@@ -1,12 +1,11 @@
 
-$palette-primary:map-deep-get($MD-Color,blue,value) !default;
-$palette-primary-text:map-deep-get($MD-Color,blue,element) !default;
-$palette-primary-accent:map-deep-get($MD-Color,blue,accent,100,value) !default;
-$palette-primary-accent-text:map-deep-get($MD-Color,blue,accent,100,element) !default;
-$palette-secondary:map-deep-get($MD-Color,green,value) !default;
-$palette-secondary-text:map-deep-get($MD-Color,green,element) !default;
-$palette-secondary-accent:map-deep-get($MD-Color,green,accent,200,value) !default;
-$palette-secondary-accent-text:map-deep-get($MD-Color,green,accent,200,element) !default;
+$palette-primary:map-deep-get($MD-Color,teal,value) !default;
+$palette-primary-accent:map-deep-get($MD-Color,teal,accent,200,value) !default;
+$palette-secondary:map-deep-get($MD-Color,purple,primary,300,value) !default;
+$palette-secondary-accent:map-deep-get($MD-Color,indigo,primary,300,value) !default;
+$palette-input-primary:map-deep-get($MD-Color,blue,value) !default;
+$palette-input-secondary:$palette-input-primary !default;
+$palette-light:#fff;
 $palette-label:map-deep-get($MD-Color,grey,value) !default;
 $palette-label-accent:map-deep-get($MD-Color,grey,primary,300,value) !default;
 $palette-label-dark-light:#000 !default;
@@ -14,35 +13,80 @@ $palette-placeholder:rgba($palette-label,0.54) !default;
 $palette-hint:rgba($palette-label,0.26) !default;
 $palette-switch:#F1F1F1 !default;
 $palette-switch-track:#818181 !default;
-
+$palette-menu-hover:#f6f6f6 !default;
+$palette-menu-active:#eee !default;
+$palette-layout-panel:#f6f6f6 !default;
+$palette-bar-border:#f0f0f0 !default;
+$palette-button-group-border:#eee !default;
+$palette-button-group-icon:#999 !default;
+$palette-dropdown-divider-border:#eaeaea !default;
+$palette-dropdown-item-color:#515151 !default;
+$palette-dropdown-item-background-hover:#e7e7e7 !default;
+$palette-grid-font-color:#808080 !default;
+$palette-grid-header-selected:$palette-primary !default;
+$palette-grid-header-border:#999 !default;
+$palette-grid-header-icon:#d8d8d8 !default;
+$palette-grid-pagination-background:#fff !default;
+$palette-grid-pagination-color:#666 !default;
+$palette-grid-pagination-background-active:$palette-secondary !default;
+$palette-grid-pagination-color-active:#fff !default;
+$palette-grid-pagination-icon:#bbb !default;
+$palette-list-border:#f0f0f0 !default;
+$palette-list-color-1:map-deep-get($MD-Color,blue,value) !default;
+$palette-list-color-2:map-deep-get($MD-Color,light-green,primary,400,value) !default;
+$palette-list-color-3:map-deep-get($MD-Color,red,value) !default;
+$palette-list-color-4:map-deep-get($MD-Color,yellow,value) !default;
 
 $Palette:(
         primary:$palette-primary,
-        primary-text:$palette-primary-text,
         primary-accent:$palette-primary-accent,
-        primary-accent-text:$palette-primary-accent-text,
         secondary:$palette-secondary,
-        secondary-text:$palette-secondary-text,
         secondary-accent:$palette-secondary-accent,
-        secondary-accent-text:$palette-secondary-accent-text,
+        input-primary:$palette-input-primary,
+        input-secondary:$palette-input-secondary,
         label:$palette-label,
         label-accent:$palette-label-accent,
         label-dark-light:$palette-label-dark-light,
         placeholder:$palette-placeholder,
         hint:$palette-hint,
         switch:$palette-switch,
-        switch-track:$palette-switch-track
+        switch-track:$palette-switch-track,
+        light:$palette-light,
+        menu-hover:$palette-menu-hover,
+        menu-active:$palette-menu-active,
+        layout-panel:$palette-layout-panel,
+        bar-border:$palette-bar-border,
+        button-group-border:$palette-button-group-border,
+        button-group-icon:$palette-button-group-icon,
+        dropdown-divider-border:$palette-dropdown-divider-border,
+        dropdown-item-color:$palette-dropdown-item-color,
+        dropdown-item-background-hover:$palette-dropdown-item-background-hover,
+        grid-font-color:$palette-grid-font-color,
+        grid-header-selected:$palette-grid-header-selected,
+        grid-header-border:$palette-grid-header-border,
+        grid-header-icon:$palette-grid-header-icon,
+        grid-pagination-color:$palette-grid-pagination-color,
+        grid-pagination-color-active:$palette-grid-pagination-color-active,
+        grid-pagination-background:$palette-grid-pagination-background,
+        grid-pagination-background-active:$palette-grid-pagination-background-active,
+        grid-pagination-icon:$palette-grid-pagination-icon,
+        list-border:$palette-list-border,
+        list-color-1:$palette-list-color-1,
+        list-color-2:$palette-list-color-2,
+        list-color-3:$palette-list-color-3,
+        list-color-4:$palette-list-color-4
+        
 );
 
 @include component(md-menu, (
         background:none,
         font-color:inherit,
         hover:(
-                font-color:map-deep-get($MD-Color, teal, value)
+                font-color:$palette-primary
 
         ),
         active:(
-                font-color:map-deep-get($MD-Color, teal, value)
+                font-color:$palette-primary
         )
 ));
 
@@ -50,14 +94,14 @@ $Palette:(
         font-color:inherit,
         icon-color:inherit,
         hover:(
-                background:none,
-                font-color:map-deep-get($MD-Color, teal, value),
-                icon-color:map-deep-get($MD-Color, teal, value)
+                background:$palette-menu-hover,
+                font-color:$palette-primary,
+                icon-color:$palette-primary
         ),
         active:(
-                background:map-deep-get($MD-Color, teal, value),
-                font-color:map-deep-get($MD-Color, teal, element),
-                icon-color:map-deep-get($MD-Color, teal, element)
+                background:$palette-menu-active,
+                font-color:$palette-primary,
+                icon-color:$palette-primary
         )
 ));
 

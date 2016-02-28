@@ -4,9 +4,9 @@
 @mixin _md-layout($map){
 
   $_side-panel-width:map-nested-get-default($map,side-panel,width,225px);
-  $_side-panel-background:map-nested-get-default($map,side-panel,background,#f6f6f6);
+  $_side-panel-background:map-nested-get-default($map,side-panel,background,map-get($Palette,layout-panel));
   $_side-panel-padding:map-nested-get-default($map,side-panel,padding,1em 0 0 1em);
-  $_main-panel-background:map-nested-get-default($map,main-panel,background,#fff);
+  $_main-panel-background:map-nested-get-default($map,main-panel,background,map-get($Palette,light));
 
   @include flexbox();
   max-height:102%;

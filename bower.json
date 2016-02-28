@@ -1,7 +1,7 @@
 {
   "name": "sass-md-components",
   "description": "Sass Material Design Components",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "dist/md.components.css",
   "authors": [
     "S. Francis"

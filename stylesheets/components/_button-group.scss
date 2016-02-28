@@ -6,10 +6,10 @@
 /// @param {Map} $map
 @mixin _md-button-group($map){
   $_size:map-nested-get-default($map,item,size,35px);
-  $_background:map-nested-get-default($map,item,background,#fff);
-  $_border:map-nested-get-default($map,item,border,1px solid #eee);
+  $_background:map-nested-get-default($map,item,background,map-get($Palette,light));
+  $_border:map-nested-get-default($map,item,border,1px solid map-get($Palette,button-group-border));
   $_icon-size:map-nested-get-default($map,icon,size,18px);
-  $_icon-color:map-nested-get-default($map,icon,color,#999);
+  $_icon-color:map-nested-get-default($map,icon,color,map-get($Palette,button-group-icon));
 
   @include flexbox();
 

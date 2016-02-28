@@ -5,7 +5,7 @@
 @mixin _md-icon-badge($map){
   $_size:map-get-default($map,size,24px);
   $_margin:map-get-default($map,margin,0);
-  $_color:map-get-default($map,color,#fff);
+  $_color:map-get-default($map,color,map-get($Palette,light));
   $_top:map-nested-get-default($map,badge,top,-.2em);
   $_left:map-nested-get-default($map,badge,left,-.7em);
 
