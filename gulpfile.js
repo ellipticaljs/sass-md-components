@@ -17,18 +17,30 @@ gulp.task('sassdoc', function () {
 });
 
 gulp.task('dist', function () {
-    compileSass();
+    compileSass('md.components.scss');
+    compileSass('md.grid.scss');
 });
 
 gulp.task('minify',function(){
+    minifyComponents();
+    minifyGrid();
+});
+
+function compileSass(src){
+    gulp.src('./src/' + src)
+        .pipe(sass())
+        .pipe(gulp.dest('./dist'));
+}
+
+function minifyComponents(){
     concatStream('./dist/md.components.css','md.components.min.css')
         .pipe(minify())
         .pipe(gulp.dest('./dist'));
-});
+}
 
-function compileSass(){
-    gulp.src('./src/md.components.scss')
-        .pipe(sass())
+function minifyGrid(){
+    concatStream('./dist/md.grid.css','md.grid.min.css')
+        .pipe(minify())
         .pipe(gulp.dest('./dist'));
 }
 

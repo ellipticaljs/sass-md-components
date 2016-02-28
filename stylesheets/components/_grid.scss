@@ -20,7 +20,8 @@
 /// @example
 ///   md-grid($map:(columns:7))
 
-@mixin md-grid($class:null,$map:(),$columns:()){
+@mixin md-grid($class:null,$map:()){
+  $_columns:map-get-default($map,columns,4);
   $_color:map-get($Palette,grid-font-color);
   $_section-color:map-nested-get-default($map,section,color,$_color);
   //$_grid-color:map-get($Palette,grid-header-selected);
@@ -38,7 +39,7 @@
   $_pagination-color-active:map-nested-get-default($map,pagination,color-active,map-get($Palette,grid-pagination-color-active));
   $_pagination-refresh:map-nested-get-default($map,pagination,refresh,map-get($Palette,grid-pagination-icon));
 
-  @include flex-grid($class:$class,$tags:(md-grid),$map:(cell:(show-borders:false,alt-type:odd),touch:(header-font:'robotomedium')),$columns:$columns){
+  @include flex-grid($class:$class,$tags:(md-grid,md-table),$map:(columns:$_columns,cell:(show-borders:false,alt-type:odd),touch:(header-font:'robotomedium'))){
     border:0;
     &>header{
       border-bottom:0;
