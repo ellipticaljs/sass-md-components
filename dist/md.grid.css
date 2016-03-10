@@ -571,6 +571,8 @@ flex-grid, md-grid, md-table {
           color: #009688; }
   flex-grid > section, md-grid > section, md-table > section {
     color: #808080; }
+    flex-grid > section > grid-item, md-grid > section > grid-item, md-table > section > grid-item {
+      min-height: 55px; }
   @media only screen and (max-width: 1024px) {
     flex-grid[columns="2"][breakpoint="1024"] section grid-item, md-grid[columns="2"][breakpoint="1024"] section grid-item, md-table[columns="2"][breakpoint="1024"] section grid-item {
       width: 100%;

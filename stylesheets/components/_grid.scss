@@ -27,6 +27,7 @@
   //$_grid-color:map-get($Palette,grid-header-selected);
   //map-deep-get($MD-Color,indigo,primary,300,value);
   $_columns:map-get-default($map,columns,4);
+  $_grid-item-height:map-nested-get-default($map,item,height,55px);
   $_header-font-family:map-nested-get-default($map,header,font-family,'robotomedium');
   $_header-border-bottom:map-nested-get-default($map,header,border-bottom,1px solid map-get($Palette,grid-header-border));
   $_header-icon-color:map-nested-get-default($map,header,icon-color,map-get($Palette,grid-header-icon));
@@ -65,6 +66,9 @@
     }
     &>section{
       color:$_section-color;
+      &>grid-item{
+        min-height:$_grid-item-height;
+      }
     }
 
     @content;
