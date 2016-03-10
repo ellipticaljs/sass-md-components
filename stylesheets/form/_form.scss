@@ -877,24 +877,24 @@
     top: 8px;
     font-size: 24px;
     pointer-events: none;
+    &.prefix{
+      width: 2em;
+      font-size: 24px;
+      @include transition(color .2s);
+      color: $_placeholder;
+      top: 10px;
+      left:0;
+      right:auto;
+      &.active {
+        color: $_secondary;
+      }
+    }
   }
 
   label {
     position: absolute;
     top: -1.3em;
     font-size: .8em;
-  }
-  .prefix {
-    display: inherit;
-    position: absolute;
-    width: 2em;
-    font-size: 24px;
-    @include transition(color .2s);
-    color: $_placeholder;
-    top: 10px;
-    &.active {
-      color: $_secondary;
-    }
   }
   .prefix ~ select {
     margin-left: 2em;

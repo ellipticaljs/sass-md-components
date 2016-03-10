@@ -1842,21 +1842,21 @@ md-select, [md-select] {
     top: 8px;
     font-size: 24px;
     pointer-events: none; }
+    md-select span[class*='icon-'].prefix, [md-select] span[class*='icon-'].prefix {
+      width: 2em;
+      font-size: 24px;
+      -webkit-transition: color 0.2s;
+      transition: color 0.2s;
+      color: rgba(158, 158, 158, 0.54);
+      top: 10px;
+      left: 0;
+      right: auto; }
+      md-select span[class*='icon-'].prefix.active, [md-select] span[class*='icon-'].prefix.active {
+        color: #2196F3; }
   md-select label, [md-select] label {
     position: absolute;
     top: -1.3em;
     font-size: .8em; }
-  md-select .prefix, [md-select] .prefix {
-    display: inherit;
-    position: absolute;
-    width: 2em;
-    font-size: 24px;
-    -webkit-transition: color 0.2s;
-    transition: color 0.2s;
-    color: rgba(158, 158, 158, 0.54);
-    top: 10px; }
-    md-select .prefix.active, [md-select] .prefix.active {
-      color: #2196F3; }
   md-select .prefix ~ select, [md-select] .prefix ~ select {
     margin-left: 2em;
     width: calc(100% - 2em); }
