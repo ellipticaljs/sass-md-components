@@ -130,118 +130,6 @@ flex-grid, md-grid, md-table {
         @media only screen and (max-width: 640px) {
           flex-grid section:empty:after, md-grid section:empty:after, md-table section:empty:after {
             font-size: .9em; } }
-  flex-grid[columns="2"] > header > *, md-grid[columns="2"] > header > *, md-table[columns="2"] > header > * {
-    width: 50%; }
-  flex-grid[columns="2"] section > grid-item, md-grid[columns="2"] section > grid-item, md-table[columns="2"] section > grid-item {
-    width: 50%; }
-    flex-grid[columns="2"] section > grid-item:nth-of-type(4n + 3), md-grid[columns="2"] section > grid-item:nth-of-type(4n + 3), md-table[columns="2"] section > grid-item:nth-of-type(4n + 3) {
-      background: #f5f5f5; }
-    flex-grid[columns="2"] section > grid-item:nth-of-type(4n + 4), md-grid[columns="2"] section > grid-item:nth-of-type(4n + 4), md-table[columns="2"] section > grid-item:nth-of-type(4n + 4) {
-      background: #f5f5f5; }
-  flex-grid[columns="2"] footer > column-footer, md-grid[columns="2"] footer > column-footer, md-table[columns="2"] footer > column-footer {
-    width: 50%; }
-  flex-grid[columns="3"] > header > *, md-grid[columns="3"] > header > *, md-table[columns="3"] > header > * {
-    width: 33.33333%; }
-  flex-grid[columns="3"] section > grid-item, md-grid[columns="3"] section > grid-item, md-table[columns="3"] section > grid-item {
-    width: 33.33333%; }
-    flex-grid[columns="3"] section > grid-item:nth-of-type(6n + 4), md-grid[columns="3"] section > grid-item:nth-of-type(6n + 4), md-table[columns="3"] section > grid-item:nth-of-type(6n + 4) {
-      background: #f5f5f5; }
-    flex-grid[columns="3"] section > grid-item:nth-of-type(6n + 5), md-grid[columns="3"] section > grid-item:nth-of-type(6n + 5), md-table[columns="3"] section > grid-item:nth-of-type(6n + 5) {
-      background: #f5f5f5; }
-    flex-grid[columns="3"] section > grid-item:nth-of-type(6n + 6), md-grid[columns="3"] section > grid-item:nth-of-type(6n + 6), md-table[columns="3"] section > grid-item:nth-of-type(6n + 6) {
-      background: #f5f5f5; }
-  flex-grid[columns="3"] footer > column-footer, md-grid[columns="3"] footer > column-footer, md-table[columns="3"] footer > column-footer {
-    width: 33.33333%; }
-  flex-grid[columns="4"] > header > *, md-grid[columns="4"] > header > *, md-table[columns="4"] > header > * {
-    width: 25%; }
-  flex-grid[columns="4"] section > grid-item, md-grid[columns="4"] section > grid-item, md-table[columns="4"] section > grid-item {
-    width: 25%; }
-    flex-grid[columns="4"] section > grid-item:nth-of-type(8n + 5), md-grid[columns="4"] section > grid-item:nth-of-type(8n + 5), md-table[columns="4"] section > grid-item:nth-of-type(8n + 5) {
-      background: #f5f5f5; }
-    flex-grid[columns="4"] section > grid-item:nth-of-type(8n + 6), md-grid[columns="4"] section > grid-item:nth-of-type(8n + 6), md-table[columns="4"] section > grid-item:nth-of-type(8n + 6) {
-      background: #f5f5f5; }
-    flex-grid[columns="4"] section > grid-item:nth-of-type(8n + 7), md-grid[columns="4"] section > grid-item:nth-of-type(8n + 7), md-table[columns="4"] section > grid-item:nth-of-type(8n + 7) {
-      background: #f5f5f5; }
-    flex-grid[columns="4"] section > grid-item:nth-of-type(8n + 8), md-grid[columns="4"] section > grid-item:nth-of-type(8n + 8), md-table[columns="4"] section > grid-item:nth-of-type(8n + 8) {
-      background: #f5f5f5; }
-  flex-grid[columns="4"] footer > column-footer, md-grid[columns="4"] footer > column-footer, md-table[columns="4"] footer > column-footer {
-    width: 25%; }
-  flex-grid[columns="5"] > header > *, md-grid[columns="5"] > header > *, md-table[columns="5"] > header > * {
-    width: 20%; }
-  flex-grid[columns="5"] section > grid-item, md-grid[columns="5"] section > grid-item, md-table[columns="5"] section > grid-item {
-    width: 20%; }
-    flex-grid[columns="5"] section > grid-item:nth-of-type(10n + 6), md-grid[columns="5"] section > grid-item:nth-of-type(10n + 6), md-table[columns="5"] section > grid-item:nth-of-type(10n + 6) {
-      background: #f5f5f5; }
-    flex-grid[columns="5"] section > grid-item:nth-of-type(10n + 7), md-grid[columns="5"] section > grid-item:nth-of-type(10n + 7), md-table[columns="5"] section > grid-item:nth-of-type(10n + 7) {
-      background: #f5f5f5; }
-    flex-grid[columns="5"] section > grid-item:nth-of-type(10n + 8), md-grid[columns="5"] section > grid-item:nth-of-type(10n + 8), md-table[columns="5"] section > grid-item:nth-of-type(10n + 8) {
-      background: #f5f5f5; }
-    flex-grid[columns="5"] section > grid-item:nth-of-type(10n + 9), md-grid[columns="5"] section > grid-item:nth-of-type(10n + 9), md-table[columns="5"] section > grid-item:nth-of-type(10n + 9) {
-      background: #f5f5f5; }
-    flex-grid[columns="5"] section > grid-item:nth-of-type(10n + 10), md-grid[columns="5"] section > grid-item:nth-of-type(10n + 10), md-table[columns="5"] section > grid-item:nth-of-type(10n + 10) {
-      background: #f5f5f5; }
-  flex-grid[columns="5"] footer > column-footer, md-grid[columns="5"] footer > column-footer, md-table[columns="5"] footer > column-footer {
-    width: 20%; }
-  flex-grid[columns="6"] > header > *, md-grid[columns="6"] > header > *, md-table[columns="6"] > header > * {
-    width: 16.66667%; }
-  flex-grid[columns="6"] section > grid-item, md-grid[columns="6"] section > grid-item, md-table[columns="6"] section > grid-item {
-    width: 16.66667%; }
-    flex-grid[columns="6"] section > grid-item:nth-of-type(12n + 7), md-grid[columns="6"] section > grid-item:nth-of-type(12n + 7), md-table[columns="6"] section > grid-item:nth-of-type(12n + 7) {
-      background: #f5f5f5; }
-    flex-grid[columns="6"] section > grid-item:nth-of-type(12n + 8), md-grid[columns="6"] section > grid-item:nth-of-type(12n + 8), md-table[columns="6"] section > grid-item:nth-of-type(12n + 8) {
-      background: #f5f5f5; }
-    flex-grid[columns="6"] section > grid-item:nth-of-type(12n + 9), md-grid[columns="6"] section > grid-item:nth-of-type(12n + 9), md-table[columns="6"] section > grid-item:nth-of-type(12n + 9) {
-      background: #f5f5f5; }
-    flex-grid[columns="6"] section > grid-item:nth-of-type(12n + 10), md-grid[columns="6"] section > grid-item:nth-of-type(12n + 10), md-table[columns="6"] section > grid-item:nth-of-type(12n + 10) {
-      background: #f5f5f5; }
-    flex-grid[columns="6"] section > grid-item:nth-of-type(12n + 11), md-grid[columns="6"] section > grid-item:nth-of-type(12n + 11), md-table[columns="6"] section > grid-item:nth-of-type(12n + 11) {
-      background: #f5f5f5; }
-    flex-grid[columns="6"] section > grid-item:nth-of-type(12n + 12), md-grid[columns="6"] section > grid-item:nth-of-type(12n + 12), md-table[columns="6"] section > grid-item:nth-of-type(12n + 12) {
-      background: #f5f5f5; }
-  flex-grid[columns="6"] footer > column-footer, md-grid[columns="6"] footer > column-footer, md-table[columns="6"] footer > column-footer {
-    width: 16.66667%; }
-  flex-grid[columns="7"] > header > *, md-grid[columns="7"] > header > *, md-table[columns="7"] > header > * {
-    width: 14.28571%; }
-  flex-grid[columns="7"] section > grid-item, md-grid[columns="7"] section > grid-item, md-table[columns="7"] section > grid-item {
-    width: 14.28571%; }
-    flex-grid[columns="7"] section > grid-item:nth-of-type(14n + 8), md-grid[columns="7"] section > grid-item:nth-of-type(14n + 8), md-table[columns="7"] section > grid-item:nth-of-type(14n + 8) {
-      background: #f5f5f5; }
-    flex-grid[columns="7"] section > grid-item:nth-of-type(14n + 9), md-grid[columns="7"] section > grid-item:nth-of-type(14n + 9), md-table[columns="7"] section > grid-item:nth-of-type(14n + 9) {
-      background: #f5f5f5; }
-    flex-grid[columns="7"] section > grid-item:nth-of-type(14n + 10), md-grid[columns="7"] section > grid-item:nth-of-type(14n + 10), md-table[columns="7"] section > grid-item:nth-of-type(14n + 10) {
-      background: #f5f5f5; }
-    flex-grid[columns="7"] section > grid-item:nth-of-type(14n + 11), md-grid[columns="7"] section > grid-item:nth-of-type(14n + 11), md-table[columns="7"] section > grid-item:nth-of-type(14n + 11) {
-      background: #f5f5f5; }
-    flex-grid[columns="7"] section > grid-item:nth-of-type(14n + 12), md-grid[columns="7"] section > grid-item:nth-of-type(14n + 12), md-table[columns="7"] section > grid-item:nth-of-type(14n + 12) {
-      background: #f5f5f5; }
-    flex-grid[columns="7"] section > grid-item:nth-of-type(14n + 13), md-grid[columns="7"] section > grid-item:nth-of-type(14n + 13), md-table[columns="7"] section > grid-item:nth-of-type(14n + 13) {
-      background: #f5f5f5; }
-    flex-grid[columns="7"] section > grid-item:nth-of-type(14n + 14), md-grid[columns="7"] section > grid-item:nth-of-type(14n + 14), md-table[columns="7"] section > grid-item:nth-of-type(14n + 14) {
-      background: #f5f5f5; }
-  flex-grid[columns="7"] footer > column-footer, md-grid[columns="7"] footer > column-footer, md-table[columns="7"] footer > column-footer {
-    width: 14.28571%; }
-  flex-grid[columns="8"] > header > *, md-grid[columns="8"] > header > *, md-table[columns="8"] > header > * {
-    width: 12.5%; }
-  flex-grid[columns="8"] section > grid-item, md-grid[columns="8"] section > grid-item, md-table[columns="8"] section > grid-item {
-    width: 12.5%; }
-    flex-grid[columns="8"] section > grid-item:nth-of-type(16n + 9), md-grid[columns="8"] section > grid-item:nth-of-type(16n + 9), md-table[columns="8"] section > grid-item:nth-of-type(16n + 9) {
-      background: #f5f5f5; }
-    flex-grid[columns="8"] section > grid-item:nth-of-type(16n + 10), md-grid[columns="8"] section > grid-item:nth-of-type(16n + 10), md-table[columns="8"] section > grid-item:nth-of-type(16n + 10) {
-      background: #f5f5f5; }
-    flex-grid[columns="8"] section > grid-item:nth-of-type(16n + 11), md-grid[columns="8"] section > grid-item:nth-of-type(16n + 11), md-table[columns="8"] section > grid-item:nth-of-type(16n + 11) {
-      background: #f5f5f5; }
-    flex-grid[columns="8"] section > grid-item:nth-of-type(16n + 12), md-grid[columns="8"] section > grid-item:nth-of-type(16n + 12), md-table[columns="8"] section > grid-item:nth-of-type(16n + 12) {
-      background: #f5f5f5; }
-    flex-grid[columns="8"] section > grid-item:nth-of-type(16n + 13), md-grid[columns="8"] section > grid-item:nth-of-type(16n + 13), md-table[columns="8"] section > grid-item:nth-of-type(16n + 13) {
-      background: #f5f5f5; }
-    flex-grid[columns="8"] section > grid-item:nth-of-type(16n + 14), md-grid[columns="8"] section > grid-item:nth-of-type(16n + 14), md-table[columns="8"] section > grid-item:nth-of-type(16n + 14) {
-      background: #f5f5f5; }
-    flex-grid[columns="8"] section > grid-item:nth-of-type(16n + 15), md-grid[columns="8"] section > grid-item:nth-of-type(16n + 15), md-table[columns="8"] section > grid-item:nth-of-type(16n + 15) {
-      background: #f5f5f5; }
-    flex-grid[columns="8"] section > grid-item:nth-of-type(16n + 16), md-grid[columns="8"] section > grid-item:nth-of-type(16n + 16), md-table[columns="8"] section > grid-item:nth-of-type(16n + 16) {
-      background: #f5f5f5; }
-  flex-grid[columns="8"] footer > column-footer, md-grid[columns="8"] footer > column-footer, md-table[columns="8"] footer > column-footer {
-    width: 12.5%; }
   flex-grid footer, md-grid footer, md-table footer {
     background: #fff;
     position: relative;
@@ -264,7 +152,7 @@ flex-grid, md-grid, md-table {
       min-height: 40px;
       max-height: 40px;
       overflow: hidden; }
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1024px) {
     flex-grid[breakpoint="1024"], md-grid[breakpoint="1024"], md-table[breakpoint="1024"] {
       border-radius: 0; }
       flex-grid[breakpoint="1024"] > header, md-grid[breakpoint="1024"] > header, md-table[breakpoint="1024"] > header {
@@ -299,7 +187,7 @@ flex-grid, md-grid, md-table {
             border-bottom: 1px solid #ddd !important; }
           flex-grid[breakpoint="1024"] section > grid-item:last-of-type, md-grid[breakpoint="1024"] section > grid-item:last-of-type, md-table[breakpoint="1024"] section > grid-item:last-of-type {
             border-bottom: 0 !important; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 640px) {
     flex-grid[breakpoint="1024"], md-grid[breakpoint="1024"], md-table[breakpoint="1024"] {
       margin-right: -15px !important;
       margin-left: -15px !important;
@@ -347,7 +235,7 @@ flex-grid, md-grid, md-table {
             border-bottom: 1px solid #ddd !important; }
           flex-grid[breakpoint="900"] section > grid-item:last-of-type, md-grid[breakpoint="900"] section > grid-item:last-of-type, md-table[breakpoint="900"] section > grid-item:last-of-type {
             border-bottom: 0 !important; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 640px) {
     flex-grid[breakpoint="900"], md-grid[breakpoint="900"], md-table[breakpoint="900"] {
       margin-right: -15px !important;
       margin-left: -15px !important;
@@ -359,54 +247,6 @@ flex-grid, md-grid, md-table {
         padding-right: 16px;
         font-size: 14px; }
         flex-grid[breakpoint="900"] section > grid-item:nth-of-type(n):before, md-grid[breakpoint="900"] section > grid-item:nth-of-type(n):before, md-table[breakpoint="900"] section > grid-item:nth-of-type(n):before {
-          left: 16px; } }
-  @media only screen and (max-width: 800px) {
-    flex-grid[breakpoint="800"], md-grid[breakpoint="800"], md-table[breakpoint="800"] {
-      border-radius: 0; }
-      flex-grid[breakpoint="800"] > header, md-grid[breakpoint="800"] > header, md-table[breakpoint="800"] > header {
-        display: none; }
-      flex-grid[breakpoint="800"] section, md-grid[breakpoint="800"] section, md-table[breakpoint="800"] section {
-        font-size: 16px;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        flex-direction: column;
-        -webkit-justify-content: flex-start;
-        justify-content: flex-start;
-        -webkit-align-items: flex-start;
-        align-items: flex-start; }
-        flex-grid[breakpoint="800"] section > grid-item, md-grid[breakpoint="800"] section > grid-item, md-table[breakpoint="800"] section > grid-item {
-          border-right: 0 !important;
-          width: 100%;
-          padding: 0 0.5em 1em 11em; }
-          flex-grid[breakpoint="800"] section > grid-item:nth-of-type(n), md-grid[breakpoint="800"] section > grid-item:nth-of-type(n), md-table[breakpoint="800"] section > grid-item:nth-of-type(n) {
-            background: none; }
-            flex-grid[breakpoint="800"] section > grid-item:nth-of-type(n):before, md-grid[breakpoint="800"] section > grid-item:nth-of-type(n):before, md-table[breakpoint="800"] section > grid-item:nth-of-type(n):before {
-              position: absolute;
-              top: 0;
-              left: 10px; }
-          flex-grid[breakpoint="800"] section > grid-item:nth-of-type(4n+1), md-grid[breakpoint="800"] section > grid-item:nth-of-type(4n+1), md-table[breakpoint="800"] section > grid-item:nth-of-type(4n+1) {
-            margin-top: 1em; }
-          flex-grid[breakpoint="800"] section > grid-item:nth-of-type(4n+4), md-grid[breakpoint="800"] section > grid-item:nth-of-type(4n+4), md-table[breakpoint="800"] section > grid-item:nth-of-type(4n+4) {
-            padding-bottom: 2em;
-            border-top: 0 !important;
-            border-left: 0 !important;
-            border-right: 0 !important;
-            border-bottom: 1px solid #ddd !important; }
-          flex-grid[breakpoint="800"] section > grid-item:last-of-type, md-grid[breakpoint="800"] section > grid-item:last-of-type, md-table[breakpoint="800"] section > grid-item:last-of-type {
-            border-bottom: 0 !important; } }
-  @media only screen and (max-width: 600px) {
-    flex-grid[breakpoint="800"], md-grid[breakpoint="800"], md-table[breakpoint="800"] {
-      margin-right: -15px !important;
-      margin-left: -15px !important;
-      width: 108%;
-      border-right: 0 !important;
-      border-left: 0 !important;
-      padding-left: .5em; }
-      flex-grid[breakpoint="800"] section > grid-item, md-grid[breakpoint="800"] section > grid-item, md-table[breakpoint="800"] section > grid-item {
-        padding-right: 16px;
-        font-size: 14px; }
-        flex-grid[breakpoint="800"] section > grid-item:nth-of-type(n):before, md-grid[breakpoint="800"] section > grid-item:nth-of-type(n):before, md-table[breakpoint="800"] section > grid-item:nth-of-type(n):before {
           left: 16px; } }
   @media only screen and (max-width: 768px) {
     flex-grid[breakpoint="768"], md-grid[breakpoint="768"], md-table[breakpoint="768"] {
@@ -443,7 +283,7 @@ flex-grid, md-grid, md-table {
             border-bottom: 1px solid #ddd !important; }
           flex-grid[breakpoint="768"] section > grid-item:last-of-type, md-grid[breakpoint="768"] section > grid-item:last-of-type, md-table[breakpoint="768"] section > grid-item:last-of-type {
             border-bottom: 0 !important; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 640px) {
     flex-grid[breakpoint="768"], md-grid[breakpoint="768"], md-table[breakpoint="768"] {
       margin-right: -15px !important;
       margin-left: -15px !important;
@@ -456,12 +296,12 @@ flex-grid, md-grid, md-table {
         font-size: 14px; }
         flex-grid[breakpoint="768"] section > grid-item:nth-of-type(n):before, md-grid[breakpoint="768"] section > grid-item:nth-of-type(n):before, md-table[breakpoint="768"] section > grid-item:nth-of-type(n):before {
           left: 16px; } }
-  @media only screen and (max-width: 700px) {
-    flex-grid[breakpoint="700"], md-grid[breakpoint="700"], md-table[breakpoint="700"] {
+  @media only screen and (max-width: 640px) {
+    flex-grid[breakpoint="640"], md-grid[breakpoint="640"], md-table[breakpoint="640"] {
       border-radius: 0; }
-      flex-grid[breakpoint="700"] > header, md-grid[breakpoint="700"] > header, md-table[breakpoint="700"] > header {
+      flex-grid[breakpoint="640"] > header, md-grid[breakpoint="640"] > header, md-table[breakpoint="640"] > header {
         display: none; }
-      flex-grid[breakpoint="700"] section, md-grid[breakpoint="700"] section, md-table[breakpoint="700"] section {
+      flex-grid[breakpoint="640"] section, md-grid[breakpoint="640"] section, md-table[breakpoint="640"] section {
         font-size: 16px;
         display: -webkit-flex;
         display: flex;
@@ -471,86 +311,38 @@ flex-grid, md-grid, md-table {
         justify-content: flex-start;
         -webkit-align-items: flex-start;
         align-items: flex-start; }
-        flex-grid[breakpoint="700"] section > grid-item, md-grid[breakpoint="700"] section > grid-item, md-table[breakpoint="700"] section > grid-item {
+        flex-grid[breakpoint="640"] section > grid-item, md-grid[breakpoint="640"] section > grid-item, md-table[breakpoint="640"] section > grid-item {
           border-right: 0 !important;
           width: 100%;
           padding: 0 0.5em 1em 11em; }
-          flex-grid[breakpoint="700"] section > grid-item:nth-of-type(n), md-grid[breakpoint="700"] section > grid-item:nth-of-type(n), md-table[breakpoint="700"] section > grid-item:nth-of-type(n) {
+          flex-grid[breakpoint="640"] section > grid-item:nth-of-type(n), md-grid[breakpoint="640"] section > grid-item:nth-of-type(n), md-table[breakpoint="640"] section > grid-item:nth-of-type(n) {
             background: none; }
-            flex-grid[breakpoint="700"] section > grid-item:nth-of-type(n):before, md-grid[breakpoint="700"] section > grid-item:nth-of-type(n):before, md-table[breakpoint="700"] section > grid-item:nth-of-type(n):before {
+            flex-grid[breakpoint="640"] section > grid-item:nth-of-type(n):before, md-grid[breakpoint="640"] section > grid-item:nth-of-type(n):before, md-table[breakpoint="640"] section > grid-item:nth-of-type(n):before {
               position: absolute;
               top: 0;
               left: 10px; }
-          flex-grid[breakpoint="700"] section > grid-item:nth-of-type(4n+1), md-grid[breakpoint="700"] section > grid-item:nth-of-type(4n+1), md-table[breakpoint="700"] section > grid-item:nth-of-type(4n+1) {
+          flex-grid[breakpoint="640"] section > grid-item:nth-of-type(4n+1), md-grid[breakpoint="640"] section > grid-item:nth-of-type(4n+1), md-table[breakpoint="640"] section > grid-item:nth-of-type(4n+1) {
             margin-top: 1em; }
-          flex-grid[breakpoint="700"] section > grid-item:nth-of-type(4n+4), md-grid[breakpoint="700"] section > grid-item:nth-of-type(4n+4), md-table[breakpoint="700"] section > grid-item:nth-of-type(4n+4) {
+          flex-grid[breakpoint="640"] section > grid-item:nth-of-type(4n+4), md-grid[breakpoint="640"] section > grid-item:nth-of-type(4n+4), md-table[breakpoint="640"] section > grid-item:nth-of-type(4n+4) {
             padding-bottom: 2em;
             border-top: 0 !important;
             border-left: 0 !important;
             border-right: 0 !important;
             border-bottom: 1px solid #ddd !important; }
-          flex-grid[breakpoint="700"] section > grid-item:last-of-type, md-grid[breakpoint="700"] section > grid-item:last-of-type, md-table[breakpoint="700"] section > grid-item:last-of-type {
+          flex-grid[breakpoint="640"] section > grid-item:last-of-type, md-grid[breakpoint="640"] section > grid-item:last-of-type, md-table[breakpoint="640"] section > grid-item:last-of-type {
             border-bottom: 0 !important; } }
-  @media only screen and (max-width: 600px) {
-    flex-grid[breakpoint="700"], md-grid[breakpoint="700"], md-table[breakpoint="700"] {
+  @media only screen and (max-width: 640px) {
+    flex-grid[breakpoint="640"], md-grid[breakpoint="640"], md-table[breakpoint="640"] {
       margin-right: -15px !important;
       margin-left: -15px !important;
       width: 108%;
       border-right: 0 !important;
       border-left: 0 !important;
       padding-left: .5em; }
-      flex-grid[breakpoint="700"] section > grid-item, md-grid[breakpoint="700"] section > grid-item, md-table[breakpoint="700"] section > grid-item {
+      flex-grid[breakpoint="640"] section > grid-item, md-grid[breakpoint="640"] section > grid-item, md-table[breakpoint="640"] section > grid-item {
         padding-right: 16px;
         font-size: 14px; }
-        flex-grid[breakpoint="700"] section > grid-item:nth-of-type(n):before, md-grid[breakpoint="700"] section > grid-item:nth-of-type(n):before, md-table[breakpoint="700"] section > grid-item:nth-of-type(n):before {
-          left: 16px; } }
-  @media only screen and (max-width: 600px) {
-    flex-grid[breakpoint="600"], md-grid[breakpoint="600"], md-table[breakpoint="600"] {
-      border-radius: 0; }
-      flex-grid[breakpoint="600"] > header, md-grid[breakpoint="600"] > header, md-table[breakpoint="600"] > header {
-        display: none; }
-      flex-grid[breakpoint="600"] section, md-grid[breakpoint="600"] section, md-table[breakpoint="600"] section {
-        font-size: 16px;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        flex-direction: column;
-        -webkit-justify-content: flex-start;
-        justify-content: flex-start;
-        -webkit-align-items: flex-start;
-        align-items: flex-start; }
-        flex-grid[breakpoint="600"] section > grid-item, md-grid[breakpoint="600"] section > grid-item, md-table[breakpoint="600"] section > grid-item {
-          border-right: 0 !important;
-          width: 100%;
-          padding: 0 0.5em 1em 11em; }
-          flex-grid[breakpoint="600"] section > grid-item:nth-of-type(n), md-grid[breakpoint="600"] section > grid-item:nth-of-type(n), md-table[breakpoint="600"] section > grid-item:nth-of-type(n) {
-            background: none; }
-            flex-grid[breakpoint="600"] section > grid-item:nth-of-type(n):before, md-grid[breakpoint="600"] section > grid-item:nth-of-type(n):before, md-table[breakpoint="600"] section > grid-item:nth-of-type(n):before {
-              position: absolute;
-              top: 0;
-              left: 10px; }
-          flex-grid[breakpoint="600"] section > grid-item:nth-of-type(4n+1), md-grid[breakpoint="600"] section > grid-item:nth-of-type(4n+1), md-table[breakpoint="600"] section > grid-item:nth-of-type(4n+1) {
-            margin-top: 1em; }
-          flex-grid[breakpoint="600"] section > grid-item:nth-of-type(4n+4), md-grid[breakpoint="600"] section > grid-item:nth-of-type(4n+4), md-table[breakpoint="600"] section > grid-item:nth-of-type(4n+4) {
-            padding-bottom: 2em;
-            border-top: 0 !important;
-            border-left: 0 !important;
-            border-right: 0 !important;
-            border-bottom: 1px solid #ddd !important; }
-          flex-grid[breakpoint="600"] section > grid-item:last-of-type, md-grid[breakpoint="600"] section > grid-item:last-of-type, md-table[breakpoint="600"] section > grid-item:last-of-type {
-            border-bottom: 0 !important; } }
-  @media only screen and (max-width: 600px) {
-    flex-grid[breakpoint="600"], md-grid[breakpoint="600"], md-table[breakpoint="600"] {
-      margin-right: -15px !important;
-      margin-left: -15px !important;
-      width: 108%;
-      border-right: 0 !important;
-      border-left: 0 !important;
-      padding-left: .5em; }
-      flex-grid[breakpoint="600"] section > grid-item, md-grid[breakpoint="600"] section > grid-item, md-table[breakpoint="600"] section > grid-item {
-        padding-right: 16px;
-        font-size: 14px; }
-        flex-grid[breakpoint="600"] section > grid-item:nth-of-type(n):before, md-grid[breakpoint="600"] section > grid-item:nth-of-type(n):before, md-table[breakpoint="600"] section > grid-item:nth-of-type(n):before {
+        flex-grid[breakpoint="640"] section > grid-item:nth-of-type(n):before, md-grid[breakpoint="640"] section > grid-item:nth-of-type(n):before, md-table[breakpoint="640"] section > grid-item:nth-of-type(n):before {
           left: 16px; } }
   flex-grid > header, md-grid > header, md-table > header {
     border-bottom: 0; }
@@ -593,16 +385,6 @@ flex-grid, md-grid, md-table {
       flex-grid[columns="2"][breakpoint="900"] section grid-item:nth-of-type(2n + 2):before, md-grid[columns="2"][breakpoint="900"] section grid-item:nth-of-type(2n + 2):before, md-table[columns="2"][breakpoint="900"] section grid-item:nth-of-type(2n + 2):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
-  @media only screen and (max-width: 800px) {
-    flex-grid[columns="2"][breakpoint="800"] section grid-item, md-grid[columns="2"][breakpoint="800"] section grid-item, md-table[columns="2"][breakpoint="800"] section grid-item {
-      width: 100%;
-      min-width: 100%; }
-      flex-grid[columns="2"][breakpoint="800"] section grid-item:nth-of-type(2n + 1):before, md-grid[columns="2"][breakpoint="800"] section grid-item:nth-of-type(2n + 1):before, md-table[columns="2"][breakpoint="800"] section grid-item:nth-of-type(2n + 1):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="2"][breakpoint="800"] section grid-item:nth-of-type(2n + 2):before, md-grid[columns="2"][breakpoint="800"] section grid-item:nth-of-type(2n + 2):before, md-table[columns="2"][breakpoint="800"] section grid-item:nth-of-type(2n + 2):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; } }
   @media only screen and (max-width: 768px) {
     flex-grid[columns="2"][breakpoint="768"] section grid-item, md-grid[columns="2"][breakpoint="768"] section grid-item, md-table[columns="2"][breakpoint="768"] section grid-item {
       width: 100%;
@@ -613,24 +395,14 @@ flex-grid, md-grid, md-table {
       flex-grid[columns="2"][breakpoint="768"] section grid-item:nth-of-type(2n + 2):before, md-grid[columns="2"][breakpoint="768"] section grid-item:nth-of-type(2n + 2):before, md-table[columns="2"][breakpoint="768"] section grid-item:nth-of-type(2n + 2):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
-  @media only screen and (max-width: 700px) {
-    flex-grid[columns="2"][breakpoint="700"] section grid-item, md-grid[columns="2"][breakpoint="700"] section grid-item, md-table[columns="2"][breakpoint="700"] section grid-item {
+  @media only screen and (max-width: 640px) {
+    flex-grid[columns="2"][breakpoint="640"] section grid-item, md-grid[columns="2"][breakpoint="640"] section grid-item, md-table[columns="2"][breakpoint="640"] section grid-item {
       width: 100%;
       min-width: 100%; }
-      flex-grid[columns="2"][breakpoint="700"] section grid-item:nth-of-type(2n + 1):before, md-grid[columns="2"][breakpoint="700"] section grid-item:nth-of-type(2n + 1):before, md-table[columns="2"][breakpoint="700"] section grid-item:nth-of-type(2n + 1):before {
+      flex-grid[columns="2"][breakpoint="640"] section grid-item:nth-of-type(2n + 1):before, md-grid[columns="2"][breakpoint="640"] section grid-item:nth-of-type(2n + 1):before, md-table[columns="2"][breakpoint="640"] section grid-item:nth-of-type(2n + 1):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="2"][breakpoint="700"] section grid-item:nth-of-type(2n + 2):before, md-grid[columns="2"][breakpoint="700"] section grid-item:nth-of-type(2n + 2):before, md-table[columns="2"][breakpoint="700"] section grid-item:nth-of-type(2n + 2):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; } }
-  @media only screen and (max-width: 600px) {
-    flex-grid[columns="2"][breakpoint="600"] section grid-item, md-grid[columns="2"][breakpoint="600"] section grid-item, md-table[columns="2"][breakpoint="600"] section grid-item {
-      width: 100%;
-      min-width: 100%; }
-      flex-grid[columns="2"][breakpoint="600"] section grid-item:nth-of-type(2n + 1):before, md-grid[columns="2"][breakpoint="600"] section grid-item:nth-of-type(2n + 1):before, md-table[columns="2"][breakpoint="600"] section grid-item:nth-of-type(2n + 1):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="2"][breakpoint="600"] section grid-item:nth-of-type(2n + 2):before, md-grid[columns="2"][breakpoint="600"] section grid-item:nth-of-type(2n + 2):before, md-table[columns="2"][breakpoint="600"] section grid-item:nth-of-type(2n + 2):before {
+      flex-grid[columns="2"][breakpoint="640"] section grid-item:nth-of-type(2n + 2):before, md-grid[columns="2"][breakpoint="640"] section grid-item:nth-of-type(2n + 2):before, md-table[columns="2"][breakpoint="640"] section grid-item:nth-of-type(2n + 2):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
   @media only screen and (max-width: 1024px) {
@@ -659,19 +431,6 @@ flex-grid, md-grid, md-table {
       flex-grid[columns="3"][breakpoint="900"] section grid-item:nth-of-type(3n + 3):before, md-grid[columns="3"][breakpoint="900"] section grid-item:nth-of-type(3n + 3):before, md-table[columns="3"][breakpoint="900"] section grid-item:nth-of-type(3n + 3):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
-  @media only screen and (max-width: 800px) {
-    flex-grid[columns="3"][breakpoint="800"] section grid-item, md-grid[columns="3"][breakpoint="800"] section grid-item, md-table[columns="3"][breakpoint="800"] section grid-item {
-      width: 100%;
-      min-width: 100%; }
-      flex-grid[columns="3"][breakpoint="800"] section grid-item:nth-of-type(3n + 1):before, md-grid[columns="3"][breakpoint="800"] section grid-item:nth-of-type(3n + 1):before, md-table[columns="3"][breakpoint="800"] section grid-item:nth-of-type(3n + 1):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="3"][breakpoint="800"] section grid-item:nth-of-type(3n + 2):before, md-grid[columns="3"][breakpoint="800"] section grid-item:nth-of-type(3n + 2):before, md-table[columns="3"][breakpoint="800"] section grid-item:nth-of-type(3n + 2):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="3"][breakpoint="800"] section grid-item:nth-of-type(3n + 3):before, md-grid[columns="3"][breakpoint="800"] section grid-item:nth-of-type(3n + 3):before, md-table[columns="3"][breakpoint="800"] section grid-item:nth-of-type(3n + 3):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; } }
   @media only screen and (max-width: 768px) {
     flex-grid[columns="3"][breakpoint="768"] section grid-item, md-grid[columns="3"][breakpoint="768"] section grid-item, md-table[columns="3"][breakpoint="768"] section grid-item {
       width: 100%;
@@ -685,30 +444,17 @@ flex-grid, md-grid, md-table {
       flex-grid[columns="3"][breakpoint="768"] section grid-item:nth-of-type(3n + 3):before, md-grid[columns="3"][breakpoint="768"] section grid-item:nth-of-type(3n + 3):before, md-table[columns="3"][breakpoint="768"] section grid-item:nth-of-type(3n + 3):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
-  @media only screen and (max-width: 700px) {
-    flex-grid[columns="3"][breakpoint="700"] section grid-item, md-grid[columns="3"][breakpoint="700"] section grid-item, md-table[columns="3"][breakpoint="700"] section grid-item {
+  @media only screen and (max-width: 640px) {
+    flex-grid[columns="3"][breakpoint="640"] section grid-item, md-grid[columns="3"][breakpoint="640"] section grid-item, md-table[columns="3"][breakpoint="640"] section grid-item {
       width: 100%;
       min-width: 100%; }
-      flex-grid[columns="3"][breakpoint="700"] section grid-item:nth-of-type(3n + 1):before, md-grid[columns="3"][breakpoint="700"] section grid-item:nth-of-type(3n + 1):before, md-table[columns="3"][breakpoint="700"] section grid-item:nth-of-type(3n + 1):before {
+      flex-grid[columns="3"][breakpoint="640"] section grid-item:nth-of-type(3n + 1):before, md-grid[columns="3"][breakpoint="640"] section grid-item:nth-of-type(3n + 1):before, md-table[columns="3"][breakpoint="640"] section grid-item:nth-of-type(3n + 1):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="3"][breakpoint="700"] section grid-item:nth-of-type(3n + 2):before, md-grid[columns="3"][breakpoint="700"] section grid-item:nth-of-type(3n + 2):before, md-table[columns="3"][breakpoint="700"] section grid-item:nth-of-type(3n + 2):before {
+      flex-grid[columns="3"][breakpoint="640"] section grid-item:nth-of-type(3n + 2):before, md-grid[columns="3"][breakpoint="640"] section grid-item:nth-of-type(3n + 2):before, md-table[columns="3"][breakpoint="640"] section grid-item:nth-of-type(3n + 2):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="3"][breakpoint="700"] section grid-item:nth-of-type(3n + 3):before, md-grid[columns="3"][breakpoint="700"] section grid-item:nth-of-type(3n + 3):before, md-table[columns="3"][breakpoint="700"] section grid-item:nth-of-type(3n + 3):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; } }
-  @media only screen and (max-width: 600px) {
-    flex-grid[columns="3"][breakpoint="600"] section grid-item, md-grid[columns="3"][breakpoint="600"] section grid-item, md-table[columns="3"][breakpoint="600"] section grid-item {
-      width: 100%;
-      min-width: 100%; }
-      flex-grid[columns="3"][breakpoint="600"] section grid-item:nth-of-type(3n + 1):before, md-grid[columns="3"][breakpoint="600"] section grid-item:nth-of-type(3n + 1):before, md-table[columns="3"][breakpoint="600"] section grid-item:nth-of-type(3n + 1):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="3"][breakpoint="600"] section grid-item:nth-of-type(3n + 2):before, md-grid[columns="3"][breakpoint="600"] section grid-item:nth-of-type(3n + 2):before, md-table[columns="3"][breakpoint="600"] section grid-item:nth-of-type(3n + 2):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="3"][breakpoint="600"] section grid-item:nth-of-type(3n + 3):before, md-grid[columns="3"][breakpoint="600"] section grid-item:nth-of-type(3n + 3):before, md-table[columns="3"][breakpoint="600"] section grid-item:nth-of-type(3n + 3):before {
+      flex-grid[columns="3"][breakpoint="640"] section grid-item:nth-of-type(3n + 3):before, md-grid[columns="3"][breakpoint="640"] section grid-item:nth-of-type(3n + 3):before, md-table[columns="3"][breakpoint="640"] section grid-item:nth-of-type(3n + 3):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
   @media only screen and (max-width: 1024px) {
@@ -743,22 +489,6 @@ flex-grid, md-grid, md-table {
       flex-grid[columns="4"][breakpoint="900"] section grid-item:nth-of-type(4n + 4):before, md-grid[columns="4"][breakpoint="900"] section grid-item:nth-of-type(4n + 4):before, md-table[columns="4"][breakpoint="900"] section grid-item:nth-of-type(4n + 4):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
-  @media only screen and (max-width: 800px) {
-    flex-grid[columns="4"][breakpoint="800"] section grid-item, md-grid[columns="4"][breakpoint="800"] section grid-item, md-table[columns="4"][breakpoint="800"] section grid-item {
-      width: 100%;
-      min-width: 100%; }
-      flex-grid[columns="4"][breakpoint="800"] section grid-item:nth-of-type(4n + 1):before, md-grid[columns="4"][breakpoint="800"] section grid-item:nth-of-type(4n + 1):before, md-table[columns="4"][breakpoint="800"] section grid-item:nth-of-type(4n + 1):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="4"][breakpoint="800"] section grid-item:nth-of-type(4n + 2):before, md-grid[columns="4"][breakpoint="800"] section grid-item:nth-of-type(4n + 2):before, md-table[columns="4"][breakpoint="800"] section grid-item:nth-of-type(4n + 2):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="4"][breakpoint="800"] section grid-item:nth-of-type(4n + 3):before, md-grid[columns="4"][breakpoint="800"] section grid-item:nth-of-type(4n + 3):before, md-table[columns="4"][breakpoint="800"] section grid-item:nth-of-type(4n + 3):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="4"][breakpoint="800"] section grid-item:nth-of-type(4n + 4):before, md-grid[columns="4"][breakpoint="800"] section grid-item:nth-of-type(4n + 4):before, md-table[columns="4"][breakpoint="800"] section grid-item:nth-of-type(4n + 4):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; } }
   @media only screen and (max-width: 768px) {
     flex-grid[columns="4"][breakpoint="768"] section grid-item, md-grid[columns="4"][breakpoint="768"] section grid-item, md-table[columns="4"][breakpoint="768"] section grid-item {
       width: 100%;
@@ -775,36 +505,20 @@ flex-grid, md-grid, md-table {
       flex-grid[columns="4"][breakpoint="768"] section grid-item:nth-of-type(4n + 4):before, md-grid[columns="4"][breakpoint="768"] section grid-item:nth-of-type(4n + 4):before, md-table[columns="4"][breakpoint="768"] section grid-item:nth-of-type(4n + 4):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
-  @media only screen and (max-width: 700px) {
-    flex-grid[columns="4"][breakpoint="700"] section grid-item, md-grid[columns="4"][breakpoint="700"] section grid-item, md-table[columns="4"][breakpoint="700"] section grid-item {
+  @media only screen and (max-width: 640px) {
+    flex-grid[columns="4"][breakpoint="640"] section grid-item, md-grid[columns="4"][breakpoint="640"] section grid-item, md-table[columns="4"][breakpoint="640"] section grid-item {
       width: 100%;
       min-width: 100%; }
-      flex-grid[columns="4"][breakpoint="700"] section grid-item:nth-of-type(4n + 1):before, md-grid[columns="4"][breakpoint="700"] section grid-item:nth-of-type(4n + 1):before, md-table[columns="4"][breakpoint="700"] section grid-item:nth-of-type(4n + 1):before {
+      flex-grid[columns="4"][breakpoint="640"] section grid-item:nth-of-type(4n + 1):before, md-grid[columns="4"][breakpoint="640"] section grid-item:nth-of-type(4n + 1):before, md-table[columns="4"][breakpoint="640"] section grid-item:nth-of-type(4n + 1):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="4"][breakpoint="700"] section grid-item:nth-of-type(4n + 2):before, md-grid[columns="4"][breakpoint="700"] section grid-item:nth-of-type(4n + 2):before, md-table[columns="4"][breakpoint="700"] section grid-item:nth-of-type(4n + 2):before {
+      flex-grid[columns="4"][breakpoint="640"] section grid-item:nth-of-type(4n + 2):before, md-grid[columns="4"][breakpoint="640"] section grid-item:nth-of-type(4n + 2):before, md-table[columns="4"][breakpoint="640"] section grid-item:nth-of-type(4n + 2):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="4"][breakpoint="700"] section grid-item:nth-of-type(4n + 3):before, md-grid[columns="4"][breakpoint="700"] section grid-item:nth-of-type(4n + 3):before, md-table[columns="4"][breakpoint="700"] section grid-item:nth-of-type(4n + 3):before {
+      flex-grid[columns="4"][breakpoint="640"] section grid-item:nth-of-type(4n + 3):before, md-grid[columns="4"][breakpoint="640"] section grid-item:nth-of-type(4n + 3):before, md-table[columns="4"][breakpoint="640"] section grid-item:nth-of-type(4n + 3):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="4"][breakpoint="700"] section grid-item:nth-of-type(4n + 4):before, md-grid[columns="4"][breakpoint="700"] section grid-item:nth-of-type(4n + 4):before, md-table[columns="4"][breakpoint="700"] section grid-item:nth-of-type(4n + 4):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; } }
-  @media only screen and (max-width: 600px) {
-    flex-grid[columns="4"][breakpoint="600"] section grid-item, md-grid[columns="4"][breakpoint="600"] section grid-item, md-table[columns="4"][breakpoint="600"] section grid-item {
-      width: 100%;
-      min-width: 100%; }
-      flex-grid[columns="4"][breakpoint="600"] section grid-item:nth-of-type(4n + 1):before, md-grid[columns="4"][breakpoint="600"] section grid-item:nth-of-type(4n + 1):before, md-table[columns="4"][breakpoint="600"] section grid-item:nth-of-type(4n + 1):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="4"][breakpoint="600"] section grid-item:nth-of-type(4n + 2):before, md-grid[columns="4"][breakpoint="600"] section grid-item:nth-of-type(4n + 2):before, md-table[columns="4"][breakpoint="600"] section grid-item:nth-of-type(4n + 2):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="4"][breakpoint="600"] section grid-item:nth-of-type(4n + 3):before, md-grid[columns="4"][breakpoint="600"] section grid-item:nth-of-type(4n + 3):before, md-table[columns="4"][breakpoint="600"] section grid-item:nth-of-type(4n + 3):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="4"][breakpoint="600"] section grid-item:nth-of-type(4n + 4):before, md-grid[columns="4"][breakpoint="600"] section grid-item:nth-of-type(4n + 4):before, md-table[columns="4"][breakpoint="600"] section grid-item:nth-of-type(4n + 4):before {
+      flex-grid[columns="4"][breakpoint="640"] section grid-item:nth-of-type(4n + 4):before, md-grid[columns="4"][breakpoint="640"] section grid-item:nth-of-type(4n + 4):before, md-table[columns="4"][breakpoint="640"] section grid-item:nth-of-type(4n + 4):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
   @media only screen and (max-width: 1024px) {
@@ -845,25 +559,6 @@ flex-grid, md-grid, md-table {
       flex-grid[columns="5"][breakpoint="900"] section grid-item:nth-of-type(5n + 5):before, md-grid[columns="5"][breakpoint="900"] section grid-item:nth-of-type(5n + 5):before, md-table[columns="5"][breakpoint="900"] section grid-item:nth-of-type(5n + 5):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
-  @media only screen and (max-width: 800px) {
-    flex-grid[columns="5"][breakpoint="800"] section grid-item, md-grid[columns="5"][breakpoint="800"] section grid-item, md-table[columns="5"][breakpoint="800"] section grid-item {
-      width: 100%;
-      min-width: 100%; }
-      flex-grid[columns="5"][breakpoint="800"] section grid-item:nth-of-type(5n + 1):before, md-grid[columns="5"][breakpoint="800"] section grid-item:nth-of-type(5n + 1):before, md-table[columns="5"][breakpoint="800"] section grid-item:nth-of-type(5n + 1):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="5"][breakpoint="800"] section grid-item:nth-of-type(5n + 2):before, md-grid[columns="5"][breakpoint="800"] section grid-item:nth-of-type(5n + 2):before, md-table[columns="5"][breakpoint="800"] section grid-item:nth-of-type(5n + 2):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="5"][breakpoint="800"] section grid-item:nth-of-type(5n + 3):before, md-grid[columns="5"][breakpoint="800"] section grid-item:nth-of-type(5n + 3):before, md-table[columns="5"][breakpoint="800"] section grid-item:nth-of-type(5n + 3):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="5"][breakpoint="800"] section grid-item:nth-of-type(5n + 4):before, md-grid[columns="5"][breakpoint="800"] section grid-item:nth-of-type(5n + 4):before, md-table[columns="5"][breakpoint="800"] section grid-item:nth-of-type(5n + 4):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="5"][breakpoint="800"] section grid-item:nth-of-type(5n + 5):before, md-grid[columns="5"][breakpoint="800"] section grid-item:nth-of-type(5n + 5):before, md-table[columns="5"][breakpoint="800"] section grid-item:nth-of-type(5n + 5):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; } }
   @media only screen and (max-width: 768px) {
     flex-grid[columns="5"][breakpoint="768"] section grid-item, md-grid[columns="5"][breakpoint="768"] section grid-item, md-table[columns="5"][breakpoint="768"] section grid-item {
       width: 100%;
@@ -883,42 +578,23 @@ flex-grid, md-grid, md-table {
       flex-grid[columns="5"][breakpoint="768"] section grid-item:nth-of-type(5n + 5):before, md-grid[columns="5"][breakpoint="768"] section grid-item:nth-of-type(5n + 5):before, md-table[columns="5"][breakpoint="768"] section grid-item:nth-of-type(5n + 5):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
-  @media only screen and (max-width: 700px) {
-    flex-grid[columns="5"][breakpoint="700"] section grid-item, md-grid[columns="5"][breakpoint="700"] section grid-item, md-table[columns="5"][breakpoint="700"] section grid-item {
+  @media only screen and (max-width: 640px) {
+    flex-grid[columns="5"][breakpoint="640"] section grid-item, md-grid[columns="5"][breakpoint="640"] section grid-item, md-table[columns="5"][breakpoint="640"] section grid-item {
       width: 100%;
       min-width: 100%; }
-      flex-grid[columns="5"][breakpoint="700"] section grid-item:nth-of-type(5n + 1):before, md-grid[columns="5"][breakpoint="700"] section grid-item:nth-of-type(5n + 1):before, md-table[columns="5"][breakpoint="700"] section grid-item:nth-of-type(5n + 1):before {
+      flex-grid[columns="5"][breakpoint="640"] section grid-item:nth-of-type(5n + 1):before, md-grid[columns="5"][breakpoint="640"] section grid-item:nth-of-type(5n + 1):before, md-table[columns="5"][breakpoint="640"] section grid-item:nth-of-type(5n + 1):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="5"][breakpoint="700"] section grid-item:nth-of-type(5n + 2):before, md-grid[columns="5"][breakpoint="700"] section grid-item:nth-of-type(5n + 2):before, md-table[columns="5"][breakpoint="700"] section grid-item:nth-of-type(5n + 2):before {
+      flex-grid[columns="5"][breakpoint="640"] section grid-item:nth-of-type(5n + 2):before, md-grid[columns="5"][breakpoint="640"] section grid-item:nth-of-type(5n + 2):before, md-table[columns="5"][breakpoint="640"] section grid-item:nth-of-type(5n + 2):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="5"][breakpoint="700"] section grid-item:nth-of-type(5n + 3):before, md-grid[columns="5"][breakpoint="700"] section grid-item:nth-of-type(5n + 3):before, md-table[columns="5"][breakpoint="700"] section grid-item:nth-of-type(5n + 3):before {
+      flex-grid[columns="5"][breakpoint="640"] section grid-item:nth-of-type(5n + 3):before, md-grid[columns="5"][breakpoint="640"] section grid-item:nth-of-type(5n + 3):before, md-table[columns="5"][breakpoint="640"] section grid-item:nth-of-type(5n + 3):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="5"][breakpoint="700"] section grid-item:nth-of-type(5n + 4):before, md-grid[columns="5"][breakpoint="700"] section grid-item:nth-of-type(5n + 4):before, md-table[columns="5"][breakpoint="700"] section grid-item:nth-of-type(5n + 4):before {
+      flex-grid[columns="5"][breakpoint="640"] section grid-item:nth-of-type(5n + 4):before, md-grid[columns="5"][breakpoint="640"] section grid-item:nth-of-type(5n + 4):before, md-table[columns="5"][breakpoint="640"] section grid-item:nth-of-type(5n + 4):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="5"][breakpoint="700"] section grid-item:nth-of-type(5n + 5):before, md-grid[columns="5"][breakpoint="700"] section grid-item:nth-of-type(5n + 5):before, md-table[columns="5"][breakpoint="700"] section grid-item:nth-of-type(5n + 5):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; } }
-  @media only screen and (max-width: 600px) {
-    flex-grid[columns="5"][breakpoint="600"] section grid-item, md-grid[columns="5"][breakpoint="600"] section grid-item, md-table[columns="5"][breakpoint="600"] section grid-item {
-      width: 100%;
-      min-width: 100%; }
-      flex-grid[columns="5"][breakpoint="600"] section grid-item:nth-of-type(5n + 1):before, md-grid[columns="5"][breakpoint="600"] section grid-item:nth-of-type(5n + 1):before, md-table[columns="5"][breakpoint="600"] section grid-item:nth-of-type(5n + 1):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="5"][breakpoint="600"] section grid-item:nth-of-type(5n + 2):before, md-grid[columns="5"][breakpoint="600"] section grid-item:nth-of-type(5n + 2):before, md-table[columns="5"][breakpoint="600"] section grid-item:nth-of-type(5n + 2):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="5"][breakpoint="600"] section grid-item:nth-of-type(5n + 3):before, md-grid[columns="5"][breakpoint="600"] section grid-item:nth-of-type(5n + 3):before, md-table[columns="5"][breakpoint="600"] section grid-item:nth-of-type(5n + 3):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="5"][breakpoint="600"] section grid-item:nth-of-type(5n + 4):before, md-grid[columns="5"][breakpoint="600"] section grid-item:nth-of-type(5n + 4):before, md-table[columns="5"][breakpoint="600"] section grid-item:nth-of-type(5n + 4):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="5"][breakpoint="600"] section grid-item:nth-of-type(5n + 5):before, md-grid[columns="5"][breakpoint="600"] section grid-item:nth-of-type(5n + 5):before, md-table[columns="5"][breakpoint="600"] section grid-item:nth-of-type(5n + 5):before {
+      flex-grid[columns="5"][breakpoint="640"] section grid-item:nth-of-type(5n + 5):before, md-grid[columns="5"][breakpoint="640"] section grid-item:nth-of-type(5n + 5):before, md-table[columns="5"][breakpoint="640"] section grid-item:nth-of-type(5n + 5):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
   @media only screen and (max-width: 1024px) {
@@ -965,28 +641,6 @@ flex-grid, md-grid, md-table {
       flex-grid[columns="6"][breakpoint="900"] section grid-item:nth-of-type(6n + 6):before, md-grid[columns="6"][breakpoint="900"] section grid-item:nth-of-type(6n + 6):before, md-table[columns="6"][breakpoint="900"] section grid-item:nth-of-type(6n + 6):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
-  @media only screen and (max-width: 800px) {
-    flex-grid[columns="6"][breakpoint="800"] section grid-item, md-grid[columns="6"][breakpoint="800"] section grid-item, md-table[columns="6"][breakpoint="800"] section grid-item {
-      width: 100%;
-      min-width: 100%; }
-      flex-grid[columns="6"][breakpoint="800"] section grid-item:nth-of-type(6n + 1):before, md-grid[columns="6"][breakpoint="800"] section grid-item:nth-of-type(6n + 1):before, md-table[columns="6"][breakpoint="800"] section grid-item:nth-of-type(6n + 1):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="6"][breakpoint="800"] section grid-item:nth-of-type(6n + 2):before, md-grid[columns="6"][breakpoint="800"] section grid-item:nth-of-type(6n + 2):before, md-table[columns="6"][breakpoint="800"] section grid-item:nth-of-type(6n + 2):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="6"][breakpoint="800"] section grid-item:nth-of-type(6n + 3):before, md-grid[columns="6"][breakpoint="800"] section grid-item:nth-of-type(6n + 3):before, md-table[columns="6"][breakpoint="800"] section grid-item:nth-of-type(6n + 3):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="6"][breakpoint="800"] section grid-item:nth-of-type(6n + 4):before, md-grid[columns="6"][breakpoint="800"] section grid-item:nth-of-type(6n + 4):before, md-table[columns="6"][breakpoint="800"] section grid-item:nth-of-type(6n + 4):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="6"][breakpoint="800"] section grid-item:nth-of-type(6n + 5):before, md-grid[columns="6"][breakpoint="800"] section grid-item:nth-of-type(6n + 5):before, md-table[columns="6"][breakpoint="800"] section grid-item:nth-of-type(6n + 5):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="6"][breakpoint="800"] section grid-item:nth-of-type(6n + 6):before, md-grid[columns="6"][breakpoint="800"] section grid-item:nth-of-type(6n + 6):before, md-table[columns="6"][breakpoint="800"] section grid-item:nth-of-type(6n + 6):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; } }
   @media only screen and (max-width: 768px) {
     flex-grid[columns="6"][breakpoint="768"] section grid-item, md-grid[columns="6"][breakpoint="768"] section grid-item, md-table[columns="6"][breakpoint="768"] section grid-item {
       width: 100%;
@@ -1009,48 +663,26 @@ flex-grid, md-grid, md-table {
       flex-grid[columns="6"][breakpoint="768"] section grid-item:nth-of-type(6n + 6):before, md-grid[columns="6"][breakpoint="768"] section grid-item:nth-of-type(6n + 6):before, md-table[columns="6"][breakpoint="768"] section grid-item:nth-of-type(6n + 6):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
-  @media only screen and (max-width: 700px) {
-    flex-grid[columns="6"][breakpoint="700"] section grid-item, md-grid[columns="6"][breakpoint="700"] section grid-item, md-table[columns="6"][breakpoint="700"] section grid-item {
+  @media only screen and (max-width: 640px) {
+    flex-grid[columns="6"][breakpoint="640"] section grid-item, md-grid[columns="6"][breakpoint="640"] section grid-item, md-table[columns="6"][breakpoint="640"] section grid-item {
       width: 100%;
       min-width: 100%; }
-      flex-grid[columns="6"][breakpoint="700"] section grid-item:nth-of-type(6n + 1):before, md-grid[columns="6"][breakpoint="700"] section grid-item:nth-of-type(6n + 1):before, md-table[columns="6"][breakpoint="700"] section grid-item:nth-of-type(6n + 1):before {
+      flex-grid[columns="6"][breakpoint="640"] section grid-item:nth-of-type(6n + 1):before, md-grid[columns="6"][breakpoint="640"] section grid-item:nth-of-type(6n + 1):before, md-table[columns="6"][breakpoint="640"] section grid-item:nth-of-type(6n + 1):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="6"][breakpoint="700"] section grid-item:nth-of-type(6n + 2):before, md-grid[columns="6"][breakpoint="700"] section grid-item:nth-of-type(6n + 2):before, md-table[columns="6"][breakpoint="700"] section grid-item:nth-of-type(6n + 2):before {
+      flex-grid[columns="6"][breakpoint="640"] section grid-item:nth-of-type(6n + 2):before, md-grid[columns="6"][breakpoint="640"] section grid-item:nth-of-type(6n + 2):before, md-table[columns="6"][breakpoint="640"] section grid-item:nth-of-type(6n + 2):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="6"][breakpoint="700"] section grid-item:nth-of-type(6n + 3):before, md-grid[columns="6"][breakpoint="700"] section grid-item:nth-of-type(6n + 3):before, md-table[columns="6"][breakpoint="700"] section grid-item:nth-of-type(6n + 3):before {
+      flex-grid[columns="6"][breakpoint="640"] section grid-item:nth-of-type(6n + 3):before, md-grid[columns="6"][breakpoint="640"] section grid-item:nth-of-type(6n + 3):before, md-table[columns="6"][breakpoint="640"] section grid-item:nth-of-type(6n + 3):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="6"][breakpoint="700"] section grid-item:nth-of-type(6n + 4):before, md-grid[columns="6"][breakpoint="700"] section grid-item:nth-of-type(6n + 4):before, md-table[columns="6"][breakpoint="700"] section grid-item:nth-of-type(6n + 4):before {
+      flex-grid[columns="6"][breakpoint="640"] section grid-item:nth-of-type(6n + 4):before, md-grid[columns="6"][breakpoint="640"] section grid-item:nth-of-type(6n + 4):before, md-table[columns="6"][breakpoint="640"] section grid-item:nth-of-type(6n + 4):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="6"][breakpoint="700"] section grid-item:nth-of-type(6n + 5):before, md-grid[columns="6"][breakpoint="700"] section grid-item:nth-of-type(6n + 5):before, md-table[columns="6"][breakpoint="700"] section grid-item:nth-of-type(6n + 5):before {
+      flex-grid[columns="6"][breakpoint="640"] section grid-item:nth-of-type(6n + 5):before, md-grid[columns="6"][breakpoint="640"] section grid-item:nth-of-type(6n + 5):before, md-table[columns="6"][breakpoint="640"] section grid-item:nth-of-type(6n + 5):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="6"][breakpoint="700"] section grid-item:nth-of-type(6n + 6):before, md-grid[columns="6"][breakpoint="700"] section grid-item:nth-of-type(6n + 6):before, md-table[columns="6"][breakpoint="700"] section grid-item:nth-of-type(6n + 6):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; } }
-  @media only screen and (max-width: 600px) {
-    flex-grid[columns="6"][breakpoint="600"] section grid-item, md-grid[columns="6"][breakpoint="600"] section grid-item, md-table[columns="6"][breakpoint="600"] section grid-item {
-      width: 100%;
-      min-width: 100%; }
-      flex-grid[columns="6"][breakpoint="600"] section grid-item:nth-of-type(6n + 1):before, md-grid[columns="6"][breakpoint="600"] section grid-item:nth-of-type(6n + 1):before, md-table[columns="6"][breakpoint="600"] section grid-item:nth-of-type(6n + 1):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="6"][breakpoint="600"] section grid-item:nth-of-type(6n + 2):before, md-grid[columns="6"][breakpoint="600"] section grid-item:nth-of-type(6n + 2):before, md-table[columns="6"][breakpoint="600"] section grid-item:nth-of-type(6n + 2):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="6"][breakpoint="600"] section grid-item:nth-of-type(6n + 3):before, md-grid[columns="6"][breakpoint="600"] section grid-item:nth-of-type(6n + 3):before, md-table[columns="6"][breakpoint="600"] section grid-item:nth-of-type(6n + 3):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="6"][breakpoint="600"] section grid-item:nth-of-type(6n + 4):before, md-grid[columns="6"][breakpoint="600"] section grid-item:nth-of-type(6n + 4):before, md-table[columns="6"][breakpoint="600"] section grid-item:nth-of-type(6n + 4):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="6"][breakpoint="600"] section grid-item:nth-of-type(6n + 5):before, md-grid[columns="6"][breakpoint="600"] section grid-item:nth-of-type(6n + 5):before, md-table[columns="6"][breakpoint="600"] section grid-item:nth-of-type(6n + 5):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="6"][breakpoint="600"] section grid-item:nth-of-type(6n + 6):before, md-grid[columns="6"][breakpoint="600"] section grid-item:nth-of-type(6n + 6):before, md-table[columns="6"][breakpoint="600"] section grid-item:nth-of-type(6n + 6):before {
+      flex-grid[columns="6"][breakpoint="640"] section grid-item:nth-of-type(6n + 6):before, md-grid[columns="6"][breakpoint="640"] section grid-item:nth-of-type(6n + 6):before, md-table[columns="6"][breakpoint="640"] section grid-item:nth-of-type(6n + 6):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
   @media only screen and (max-width: 1024px) {
@@ -1103,31 +735,6 @@ flex-grid, md-grid, md-table {
       flex-grid[columns="7"][breakpoint="900"] section grid-item:nth-of-type(7n + 7):before, md-grid[columns="7"][breakpoint="900"] section grid-item:nth-of-type(7n + 7):before, md-table[columns="7"][breakpoint="900"] section grid-item:nth-of-type(7n + 7):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
-  @media only screen and (max-width: 800px) {
-    flex-grid[columns="7"][breakpoint="800"] section grid-item, md-grid[columns="7"][breakpoint="800"] section grid-item, md-table[columns="7"][breakpoint="800"] section grid-item {
-      width: 100%;
-      min-width: 100%; }
-      flex-grid[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 1):before, md-grid[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 1):before, md-table[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 1):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 2):before, md-grid[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 2):before, md-table[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 2):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 3):before, md-grid[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 3):before, md-table[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 3):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 4):before, md-grid[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 4):before, md-table[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 4):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 5):before, md-grid[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 5):before, md-table[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 5):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 6):before, md-grid[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 6):before, md-table[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 6):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 7):before, md-grid[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 7):before, md-table[columns="7"][breakpoint="800"] section grid-item:nth-of-type(7n + 7):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; } }
   @media only screen and (max-width: 768px) {
     flex-grid[columns="7"][breakpoint="768"] section grid-item, md-grid[columns="7"][breakpoint="768"] section grid-item, md-table[columns="7"][breakpoint="768"] section grid-item {
       width: 100%;
@@ -1153,54 +760,29 @@ flex-grid, md-grid, md-table {
       flex-grid[columns="7"][breakpoint="768"] section grid-item:nth-of-type(7n + 7):before, md-grid[columns="7"][breakpoint="768"] section grid-item:nth-of-type(7n + 7):before, md-table[columns="7"][breakpoint="768"] section grid-item:nth-of-type(7n + 7):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
-  @media only screen and (max-width: 700px) {
-    flex-grid[columns="7"][breakpoint="700"] section grid-item, md-grid[columns="7"][breakpoint="700"] section grid-item, md-table[columns="7"][breakpoint="700"] section grid-item {
+  @media only screen and (max-width: 640px) {
+    flex-grid[columns="7"][breakpoint="640"] section grid-item, md-grid[columns="7"][breakpoint="640"] section grid-item, md-table[columns="7"][breakpoint="640"] section grid-item {
       width: 100%;
       min-width: 100%; }
-      flex-grid[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 1):before, md-grid[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 1):before, md-table[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 1):before {
+      flex-grid[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 1):before, md-grid[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 1):before, md-table[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 1):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 2):before, md-grid[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 2):before, md-table[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 2):before {
+      flex-grid[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 2):before, md-grid[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 2):before, md-table[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 2):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 3):before, md-grid[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 3):before, md-table[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 3):before {
+      flex-grid[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 3):before, md-grid[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 3):before, md-table[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 3):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 4):before, md-grid[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 4):before, md-table[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 4):before {
+      flex-grid[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 4):before, md-grid[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 4):before, md-table[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 4):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 5):before, md-grid[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 5):before, md-table[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 5):before {
+      flex-grid[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 5):before, md-grid[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 5):before, md-table[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 5):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 6):before, md-grid[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 6):before, md-table[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 6):before {
+      flex-grid[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 6):before, md-grid[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 6):before, md-table[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 6):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 7):before, md-grid[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 7):before, md-table[columns="7"][breakpoint="700"] section grid-item:nth-of-type(7n + 7):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; } }
-  @media only screen and (max-width: 600px) {
-    flex-grid[columns="7"][breakpoint="600"] section grid-item, md-grid[columns="7"][breakpoint="600"] section grid-item, md-table[columns="7"][breakpoint="600"] section grid-item {
-      width: 100%;
-      min-width: 100%; }
-      flex-grid[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 1):before, md-grid[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 1):before, md-table[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 1):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 2):before, md-grid[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 2):before, md-table[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 2):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 3):before, md-grid[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 3):before, md-table[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 3):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 4):before, md-grid[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 4):before, md-table[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 4):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 5):before, md-grid[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 5):before, md-table[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 5):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 6):before, md-grid[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 6):before, md-table[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 6):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 7):before, md-grid[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 7):before, md-table[columns="7"][breakpoint="600"] section grid-item:nth-of-type(7n + 7):before {
+      flex-grid[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 7):before, md-grid[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 7):before, md-table[columns="7"][breakpoint="640"] section grid-item:nth-of-type(7n + 7):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
   @media only screen and (max-width: 1024px) {
@@ -1259,34 +841,6 @@ flex-grid, md-grid, md-table {
       flex-grid[columns="8"][breakpoint="900"] section grid-item:nth-of-type(8n + 8):before, md-grid[columns="8"][breakpoint="900"] section grid-item:nth-of-type(8n + 8):before, md-table[columns="8"][breakpoint="900"] section grid-item:nth-of-type(8n + 8):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
-  @media only screen and (max-width: 800px) {
-    flex-grid[columns="8"][breakpoint="800"] section grid-item, md-grid[columns="8"][breakpoint="800"] section grid-item, md-table[columns="8"][breakpoint="800"] section grid-item {
-      width: 100%;
-      min-width: 100%; }
-      flex-grid[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 1):before, md-grid[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 1):before, md-table[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 1):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 2):before, md-grid[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 2):before, md-table[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 2):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 3):before, md-grid[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 3):before, md-table[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 3):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 4):before, md-grid[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 4):before, md-table[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 4):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 5):before, md-grid[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 5):before, md-table[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 5):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 6):before, md-grid[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 6):before, md-table[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 6):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 7):before, md-grid[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 7):before, md-table[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 7):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 8):before, md-grid[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 8):before, md-table[columns="8"][breakpoint="800"] section grid-item:nth-of-type(8n + 8):before {
-        content: attr(data-header);
-        font-family: "robotomedium"; } }
   @media only screen and (max-width: 768px) {
     flex-grid[columns="8"][breakpoint="768"] section grid-item, md-grid[columns="8"][breakpoint="768"] section grid-item, md-table[columns="8"][breakpoint="768"] section grid-item {
       width: 100%;
@@ -1315,60 +869,292 @@ flex-grid, md-grid, md-table {
       flex-grid[columns="8"][breakpoint="768"] section grid-item:nth-of-type(8n + 8):before, md-grid[columns="8"][breakpoint="768"] section grid-item:nth-of-type(8n + 8):before, md-table[columns="8"][breakpoint="768"] section grid-item:nth-of-type(8n + 8):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
-  @media only screen and (max-width: 700px) {
-    flex-grid[columns="8"][breakpoint="700"] section grid-item, md-grid[columns="8"][breakpoint="700"] section grid-item, md-table[columns="8"][breakpoint="700"] section grid-item {
+  @media only screen and (max-width: 640px) {
+    flex-grid[columns="8"][breakpoint="640"] section grid-item, md-grid[columns="8"][breakpoint="640"] section grid-item, md-table[columns="8"][breakpoint="640"] section grid-item {
       width: 100%;
       min-width: 100%; }
-      flex-grid[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 1):before, md-grid[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 1):before, md-table[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 1):before {
+      flex-grid[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 1):before, md-grid[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 1):before, md-table[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 1):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 2):before, md-grid[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 2):before, md-table[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 2):before {
+      flex-grid[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 2):before, md-grid[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 2):before, md-table[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 2):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 3):before, md-grid[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 3):before, md-table[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 3):before {
+      flex-grid[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 3):before, md-grid[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 3):before, md-table[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 3):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 4):before, md-grid[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 4):before, md-table[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 4):before {
+      flex-grid[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 4):before, md-grid[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 4):before, md-table[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 4):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 5):before, md-grid[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 5):before, md-table[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 5):before {
+      flex-grid[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 5):before, md-grid[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 5):before, md-table[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 5):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 6):before, md-grid[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 6):before, md-table[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 6):before {
+      flex-grid[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 6):before, md-grid[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 6):before, md-table[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 6):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 7):before, md-grid[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 7):before, md-table[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 7):before {
+      flex-grid[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 7):before, md-grid[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 7):before, md-table[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 7):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 8):before, md-grid[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 8):before, md-table[columns="8"][breakpoint="700"] section grid-item:nth-of-type(8n + 8):before {
+      flex-grid[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 8):before, md-grid[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 8):before, md-table[columns="8"][breakpoint="640"] section grid-item:nth-of-type(8n + 8):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
-  @media only screen and (max-width: 600px) {
-    flex-grid[columns="8"][breakpoint="600"] section grid-item, md-grid[columns="8"][breakpoint="600"] section grid-item, md-table[columns="8"][breakpoint="600"] section grid-item {
+  @media only screen and (max-width: 1024px) {
+    flex-grid[columns="9"][breakpoint="1024"] section grid-item, md-grid[columns="9"][breakpoint="1024"] section grid-item, md-table[columns="9"][breakpoint="1024"] section grid-item {
       width: 100%;
       min-width: 100%; }
-      flex-grid[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 1):before, md-grid[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 1):before, md-table[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 1):before {
+      flex-grid[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 1):before, md-grid[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 1):before, md-table[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 1):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 2):before, md-grid[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 2):before, md-table[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 2):before {
+      flex-grid[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 2):before, md-grid[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 2):before, md-table[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 2):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 3):before, md-grid[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 3):before, md-table[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 3):before {
+      flex-grid[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 3):before, md-grid[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 3):before, md-table[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 3):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 4):before, md-grid[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 4):before, md-table[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 4):before {
+      flex-grid[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 4):before, md-grid[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 4):before, md-table[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 4):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 5):before, md-grid[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 5):before, md-table[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 5):before {
+      flex-grid[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 5):before, md-grid[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 5):before, md-table[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 5):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 6):before, md-grid[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 6):before, md-table[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 6):before {
+      flex-grid[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 6):before, md-grid[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 6):before, md-table[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 6):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 7):before, md-grid[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 7):before, md-table[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 7):before {
+      flex-grid[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 7):before, md-grid[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 7):before, md-table[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 7):before {
         content: attr(data-header);
         font-family: "robotomedium"; }
-      flex-grid[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 8):before, md-grid[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 8):before, md-table[columns="8"][breakpoint="600"] section grid-item:nth-of-type(8n + 8):before {
+      flex-grid[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 8):before, md-grid[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 8):before, md-table[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 8):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 9):before, md-grid[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 9):before, md-table[columns="9"][breakpoint="1024"] section grid-item:nth-of-type(9n + 9):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; } }
+  @media only screen and (max-width: 900px) {
+    flex-grid[columns="9"][breakpoint="900"] section grid-item, md-grid[columns="9"][breakpoint="900"] section grid-item, md-table[columns="9"][breakpoint="900"] section grid-item {
+      width: 100%;
+      min-width: 100%; }
+      flex-grid[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 1):before, md-grid[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 1):before, md-table[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 1):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 2):before, md-grid[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 2):before, md-table[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 2):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 3):before, md-grid[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 3):before, md-table[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 3):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 4):before, md-grid[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 4):before, md-table[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 4):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 5):before, md-grid[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 5):before, md-table[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 5):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 6):before, md-grid[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 6):before, md-table[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 6):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 7):before, md-grid[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 7):before, md-table[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 7):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 8):before, md-grid[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 8):before, md-table[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 8):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 9):before, md-grid[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 9):before, md-table[columns="9"][breakpoint="900"] section grid-item:nth-of-type(9n + 9):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; } }
+  @media only screen and (max-width: 768px) {
+    flex-grid[columns="9"][breakpoint="768"] section grid-item, md-grid[columns="9"][breakpoint="768"] section grid-item, md-table[columns="9"][breakpoint="768"] section grid-item {
+      width: 100%;
+      min-width: 100%; }
+      flex-grid[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 1):before, md-grid[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 1):before, md-table[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 1):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 2):before, md-grid[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 2):before, md-table[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 2):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 3):before, md-grid[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 3):before, md-table[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 3):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 4):before, md-grid[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 4):before, md-table[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 4):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 5):before, md-grid[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 5):before, md-table[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 5):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 6):before, md-grid[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 6):before, md-table[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 6):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 7):before, md-grid[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 7):before, md-table[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 7):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 8):before, md-grid[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 8):before, md-table[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 8):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 9):before, md-grid[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 9):before, md-table[columns="9"][breakpoint="768"] section grid-item:nth-of-type(9n + 9):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; } }
+  @media only screen and (max-width: 640px) {
+    flex-grid[columns="9"][breakpoint="640"] section grid-item, md-grid[columns="9"][breakpoint="640"] section grid-item, md-table[columns="9"][breakpoint="640"] section grid-item {
+      width: 100%;
+      min-width: 100%; }
+      flex-grid[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 1):before, md-grid[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 1):before, md-table[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 1):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 2):before, md-grid[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 2):before, md-table[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 2):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 3):before, md-grid[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 3):before, md-table[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 3):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 4):before, md-grid[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 4):before, md-table[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 4):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 5):before, md-grid[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 5):before, md-table[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 5):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 6):before, md-grid[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 6):before, md-table[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 6):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 7):before, md-grid[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 7):before, md-table[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 7):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 8):before, md-grid[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 8):before, md-table[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 8):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 9):before, md-grid[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 9):before, md-table[columns="9"][breakpoint="640"] section grid-item:nth-of-type(9n + 9):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; } }
+  @media only screen and (max-width: 1024px) {
+    flex-grid[columns="10"][breakpoint="1024"] section grid-item, md-grid[columns="10"][breakpoint="1024"] section grid-item, md-table[columns="10"][breakpoint="1024"] section grid-item {
+      width: 100%;
+      min-width: 100%; }
+      flex-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 1):before, md-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 1):before, md-table[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 1):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 2):before, md-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 2):before, md-table[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 2):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 3):before, md-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 3):before, md-table[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 3):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 4):before, md-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 4):before, md-table[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 4):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 5):before, md-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 5):before, md-table[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 5):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 6):before, md-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 6):before, md-table[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 6):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 7):before, md-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 7):before, md-table[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 7):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 8):before, md-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 8):before, md-table[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 8):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 9):before, md-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 9):before, md-table[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 9):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 10):before, md-grid[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 10):before, md-table[columns="10"][breakpoint="1024"] section grid-item:nth-of-type(10n + 10):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; } }
+  @media only screen and (max-width: 900px) {
+    flex-grid[columns="10"][breakpoint="900"] section grid-item, md-grid[columns="10"][breakpoint="900"] section grid-item, md-table[columns="10"][breakpoint="900"] section grid-item {
+      width: 100%;
+      min-width: 100%; }
+      flex-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 1):before, md-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 1):before, md-table[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 1):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 2):before, md-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 2):before, md-table[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 2):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 3):before, md-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 3):before, md-table[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 3):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 4):before, md-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 4):before, md-table[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 4):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 5):before, md-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 5):before, md-table[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 5):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 6):before, md-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 6):before, md-table[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 6):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 7):before, md-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 7):before, md-table[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 7):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 8):before, md-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 8):before, md-table[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 8):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 9):before, md-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 9):before, md-table[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 9):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 10):before, md-grid[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 10):before, md-table[columns="10"][breakpoint="900"] section grid-item:nth-of-type(10n + 10):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; } }
+  @media only screen and (max-width: 768px) {
+    flex-grid[columns="10"][breakpoint="768"] section grid-item, md-grid[columns="10"][breakpoint="768"] section grid-item, md-table[columns="10"][breakpoint="768"] section grid-item {
+      width: 100%;
+      min-width: 100%; }
+      flex-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 1):before, md-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 1):before, md-table[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 1):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 2):before, md-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 2):before, md-table[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 2):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 3):before, md-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 3):before, md-table[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 3):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 4):before, md-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 4):before, md-table[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 4):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 5):before, md-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 5):before, md-table[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 5):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 6):before, md-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 6):before, md-table[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 6):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 7):before, md-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 7):before, md-table[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 7):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 8):before, md-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 8):before, md-table[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 8):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 9):before, md-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 9):before, md-table[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 9):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 10):before, md-grid[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 10):before, md-table[columns="10"][breakpoint="768"] section grid-item:nth-of-type(10n + 10):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; } }
+  @media only screen and (max-width: 640px) {
+    flex-grid[columns="10"][breakpoint="640"] section grid-item, md-grid[columns="10"][breakpoint="640"] section grid-item, md-table[columns="10"][breakpoint="640"] section grid-item {
+      width: 100%;
+      min-width: 100%; }
+      flex-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 1):before, md-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 1):before, md-table[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 1):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 2):before, md-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 2):before, md-table[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 2):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 3):before, md-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 3):before, md-table[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 3):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 4):before, md-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 4):before, md-table[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 4):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 5):before, md-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 5):before, md-table[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 5):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 6):before, md-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 6):before, md-table[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 6):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 7):before, md-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 7):before, md-table[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 7):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 8):before, md-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 8):before, md-table[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 8):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 9):before, md-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 9):before, md-table[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 9):before {
+        content: attr(data-header);
+        font-family: "robotomedium"; }
+      flex-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 10):before, md-grid[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 10):before, md-table[columns="10"][breakpoint="640"] section grid-item:nth-of-type(10n + 10):before {
         content: attr(data-header);
         font-family: "robotomedium"; } }
 
@@ -1448,14 +1234,14 @@ grid-pagination {
     grid-pagination > page-info div {
       font-size: 16px;
       text-shadow: none !important; }
-      @media only screen and (max-width: 500px) {
+      @media only screen and (max-width: 640px) {
         grid-pagination > page-info div {
           font-size: 14px; } }
     grid-pagination > page-info span[refresh] {
       margin-left: 2em;
       font-size: 32px;
       text-shadow: none !important; }
-      @media only screen and (max-width: 500px) {
+      @media only screen and (max-width: 640px) {
         grid-pagination > page-info span[refresh] {
           margin-left: .3em; } }
       grid-pagination > page-info span[refresh]:hover {
