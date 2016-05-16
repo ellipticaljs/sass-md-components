@@ -947,7 +947,7 @@ button:focus {
 *[disabled] {
   opacity: .5; }
 
-md-input, md-textarea {
+md-input, md-textarea, md-datepicker.md, md-input-validate {
   position: relative;
   margin-top: 1em;
   display: block; }
@@ -971,7 +971,27 @@ md-input, md-textarea {
   md-textarea input[type="tel"],
   md-textarea input[type="time"],
   md-textarea input[type="url"],
-  md-textarea textarea {
+  md-textarea textarea, md-datepicker.md input[type="text"],
+  md-datepicker.md input[type="password"],
+  md-datepicker.md input[type="date"],
+  md-datepicker.md input[type="datetime"],
+  md-datepicker.md input[type="email"],
+  md-datepicker.md input[type="number"],
+  md-datepicker.md input[type="search"],
+  md-datepicker.md input[type="tel"],
+  md-datepicker.md input[type="time"],
+  md-datepicker.md input[type="url"],
+  md-datepicker.md textarea, md-input-validate input[type="text"],
+  md-input-validate input[type="password"],
+  md-input-validate input[type="date"],
+  md-input-validate input[type="datetime"],
+  md-input-validate input[type="email"],
+  md-input-validate input[type="number"],
+  md-input-validate input[type="search"],
+  md-input-validate input[type="tel"],
+  md-input-validate input[type="time"],
+  md-input-validate input[type="url"],
+  md-input-validate textarea {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #9E9E9E;
@@ -1007,7 +1027,27 @@ md-input, md-textarea {
     md-textarea input[type="tel"]::-webkit-input-placeholder,
     md-textarea input[type="time"]::-webkit-input-placeholder,
     md-textarea input[type="url"]::-webkit-input-placeholder,
-    md-textarea textarea::-webkit-input-placeholder {
+    md-textarea textarea::-webkit-input-placeholder, md-datepicker.md input[type="text"]::-webkit-input-placeholder,
+    md-datepicker.md input[type="password"]::-webkit-input-placeholder,
+    md-datepicker.md input[type="date"]::-webkit-input-placeholder,
+    md-datepicker.md input[type="datetime"]::-webkit-input-placeholder,
+    md-datepicker.md input[type="email"]::-webkit-input-placeholder,
+    md-datepicker.md input[type="number"]::-webkit-input-placeholder,
+    md-datepicker.md input[type="search"]::-webkit-input-placeholder,
+    md-datepicker.md input[type="tel"]::-webkit-input-placeholder,
+    md-datepicker.md input[type="time"]::-webkit-input-placeholder,
+    md-datepicker.md input[type="url"]::-webkit-input-placeholder,
+    md-datepicker.md textarea::-webkit-input-placeholder, md-input-validate input[type="text"]::-webkit-input-placeholder,
+    md-input-validate input[type="password"]::-webkit-input-placeholder,
+    md-input-validate input[type="date"]::-webkit-input-placeholder,
+    md-input-validate input[type="datetime"]::-webkit-input-placeholder,
+    md-input-validate input[type="email"]::-webkit-input-placeholder,
+    md-input-validate input[type="number"]::-webkit-input-placeholder,
+    md-input-validate input[type="search"]::-webkit-input-placeholder,
+    md-input-validate input[type="tel"]::-webkit-input-placeholder,
+    md-input-validate input[type="time"]::-webkit-input-placeholder,
+    md-input-validate input[type="url"]::-webkit-input-placeholder,
+    md-input-validate textarea::-webkit-input-placeholder {
       color: rgba(158, 158, 158, 0.54) !important; }
     md-input input[type="text"]::-moz-placeholder,
     md-input input[type="password"]::-moz-placeholder,
@@ -1029,7 +1069,27 @@ md-input, md-textarea {
     md-textarea input[type="tel"]::-moz-placeholder,
     md-textarea input[type="time"]::-moz-placeholder,
     md-textarea input[type="url"]::-moz-placeholder,
-    md-textarea textarea::-moz-placeholder {
+    md-textarea textarea::-moz-placeholder, md-datepicker.md input[type="text"]::-moz-placeholder,
+    md-datepicker.md input[type="password"]::-moz-placeholder,
+    md-datepicker.md input[type="date"]::-moz-placeholder,
+    md-datepicker.md input[type="datetime"]::-moz-placeholder,
+    md-datepicker.md input[type="email"]::-moz-placeholder,
+    md-datepicker.md input[type="number"]::-moz-placeholder,
+    md-datepicker.md input[type="search"]::-moz-placeholder,
+    md-datepicker.md input[type="tel"]::-moz-placeholder,
+    md-datepicker.md input[type="time"]::-moz-placeholder,
+    md-datepicker.md input[type="url"]::-moz-placeholder,
+    md-datepicker.md textarea::-moz-placeholder, md-input-validate input[type="text"]::-moz-placeholder,
+    md-input-validate input[type="password"]::-moz-placeholder,
+    md-input-validate input[type="date"]::-moz-placeholder,
+    md-input-validate input[type="datetime"]::-moz-placeholder,
+    md-input-validate input[type="email"]::-moz-placeholder,
+    md-input-validate input[type="number"]::-moz-placeholder,
+    md-input-validate input[type="search"]::-moz-placeholder,
+    md-input-validate input[type="tel"]::-moz-placeholder,
+    md-input-validate input[type="time"]::-moz-placeholder,
+    md-input-validate input[type="url"]::-moz-placeholder,
+    md-input-validate textarea::-moz-placeholder {
       color: rgba(158, 158, 158, 0.54) !important; }
     md-input input[type="text"]::-o-placeholder,
     md-input input[type="password"]::-o-placeholder,
@@ -1051,7 +1111,27 @@ md-input, md-textarea {
     md-textarea input[type="tel"]::-o-placeholder,
     md-textarea input[type="time"]::-o-placeholder,
     md-textarea input[type="url"]::-o-placeholder,
-    md-textarea textarea::-o-placeholder {
+    md-textarea textarea::-o-placeholder, md-datepicker.md input[type="text"]::-o-placeholder,
+    md-datepicker.md input[type="password"]::-o-placeholder,
+    md-datepicker.md input[type="date"]::-o-placeholder,
+    md-datepicker.md input[type="datetime"]::-o-placeholder,
+    md-datepicker.md input[type="email"]::-o-placeholder,
+    md-datepicker.md input[type="number"]::-o-placeholder,
+    md-datepicker.md input[type="search"]::-o-placeholder,
+    md-datepicker.md input[type="tel"]::-o-placeholder,
+    md-datepicker.md input[type="time"]::-o-placeholder,
+    md-datepicker.md input[type="url"]::-o-placeholder,
+    md-datepicker.md textarea::-o-placeholder, md-input-validate input[type="text"]::-o-placeholder,
+    md-input-validate input[type="password"]::-o-placeholder,
+    md-input-validate input[type="date"]::-o-placeholder,
+    md-input-validate input[type="datetime"]::-o-placeholder,
+    md-input-validate input[type="email"]::-o-placeholder,
+    md-input-validate input[type="number"]::-o-placeholder,
+    md-input-validate input[type="search"]::-o-placeholder,
+    md-input-validate input[type="tel"]::-o-placeholder,
+    md-input-validate input[type="time"]::-o-placeholder,
+    md-input-validate input[type="url"]::-o-placeholder,
+    md-input-validate textarea::-o-placeholder {
       color: rgba(158, 158, 158, 0.54) !important; }
     md-input input[type="text"]:-ms-input-placeholder,
     md-input input[type="password"]:-ms-input-placeholder,
@@ -1073,7 +1153,27 @@ md-input, md-textarea {
     md-textarea input[type="tel"]:-ms-input-placeholder,
     md-textarea input[type="time"]:-ms-input-placeholder,
     md-textarea input[type="url"]:-ms-input-placeholder,
-    md-textarea textarea:-ms-input-placeholder {
+    md-textarea textarea:-ms-input-placeholder, md-datepicker.md input[type="text"]:-ms-input-placeholder,
+    md-datepicker.md input[type="password"]:-ms-input-placeholder,
+    md-datepicker.md input[type="date"]:-ms-input-placeholder,
+    md-datepicker.md input[type="datetime"]:-ms-input-placeholder,
+    md-datepicker.md input[type="email"]:-ms-input-placeholder,
+    md-datepicker.md input[type="number"]:-ms-input-placeholder,
+    md-datepicker.md input[type="search"]:-ms-input-placeholder,
+    md-datepicker.md input[type="tel"]:-ms-input-placeholder,
+    md-datepicker.md input[type="time"]:-ms-input-placeholder,
+    md-datepicker.md input[type="url"]:-ms-input-placeholder,
+    md-datepicker.md textarea:-ms-input-placeholder, md-input-validate input[type="text"]:-ms-input-placeholder,
+    md-input-validate input[type="password"]:-ms-input-placeholder,
+    md-input-validate input[type="date"]:-ms-input-placeholder,
+    md-input-validate input[type="datetime"]:-ms-input-placeholder,
+    md-input-validate input[type="email"]:-ms-input-placeholder,
+    md-input-validate input[type="number"]:-ms-input-placeholder,
+    md-input-validate input[type="search"]:-ms-input-placeholder,
+    md-input-validate input[type="tel"]:-ms-input-placeholder,
+    md-input-validate input[type="time"]:-ms-input-placeholder,
+    md-input-validate input[type="url"]:-ms-input-placeholder,
+    md-input-validate textarea:-ms-input-placeholder {
       color: rgba(158, 158, 158, 0.54) !important; }
     md-input input[type="text"][disabled],
     md-input input[type="password"][disabled],
@@ -1095,7 +1195,27 @@ md-input, md-textarea {
     md-textarea input[type="tel"][disabled],
     md-textarea input[type="time"][disabled],
     md-textarea input[type="url"][disabled],
-    md-textarea textarea[disabled] {
+    md-textarea textarea[disabled], md-datepicker.md input[type="text"][disabled],
+    md-datepicker.md input[type="password"][disabled],
+    md-datepicker.md input[type="date"][disabled],
+    md-datepicker.md input[type="datetime"][disabled],
+    md-datepicker.md input[type="email"][disabled],
+    md-datepicker.md input[type="number"][disabled],
+    md-datepicker.md input[type="search"][disabled],
+    md-datepicker.md input[type="tel"][disabled],
+    md-datepicker.md input[type="time"][disabled],
+    md-datepicker.md input[type="url"][disabled],
+    md-datepicker.md textarea[disabled], md-input-validate input[type="text"][disabled],
+    md-input-validate input[type="password"][disabled],
+    md-input-validate input[type="date"][disabled],
+    md-input-validate input[type="datetime"][disabled],
+    md-input-validate input[type="email"][disabled],
+    md-input-validate input[type="number"][disabled],
+    md-input-validate input[type="search"][disabled],
+    md-input-validate input[type="tel"][disabled],
+    md-input-validate input[type="time"][disabled],
+    md-input-validate input[type="url"][disabled],
+    md-input-validate textarea[disabled] {
       opacity: .5;
       background: none !important;
       border-bottom: 1px solid #9E9E9E !important; }
@@ -1139,7 +1259,47 @@ md-input, md-textarea {
       md-textarea input[type="url"][disabled]:focus,
       md-textarea input[type="url"][disabled]:active,
       md-textarea textarea[disabled]:focus,
-      md-textarea textarea[disabled]:active {
+      md-textarea textarea[disabled]:active, md-datepicker.md input[type="text"][disabled]:focus, md-datepicker.md input[type="text"][disabled]:active,
+      md-datepicker.md input[type="password"][disabled]:focus,
+      md-datepicker.md input[type="password"][disabled]:active,
+      md-datepicker.md input[type="date"][disabled]:focus,
+      md-datepicker.md input[type="date"][disabled]:active,
+      md-datepicker.md input[type="datetime"][disabled]:focus,
+      md-datepicker.md input[type="datetime"][disabled]:active,
+      md-datepicker.md input[type="email"][disabled]:focus,
+      md-datepicker.md input[type="email"][disabled]:active,
+      md-datepicker.md input[type="number"][disabled]:focus,
+      md-datepicker.md input[type="number"][disabled]:active,
+      md-datepicker.md input[type="search"][disabled]:focus,
+      md-datepicker.md input[type="search"][disabled]:active,
+      md-datepicker.md input[type="tel"][disabled]:focus,
+      md-datepicker.md input[type="tel"][disabled]:active,
+      md-datepicker.md input[type="time"][disabled]:focus,
+      md-datepicker.md input[type="time"][disabled]:active,
+      md-datepicker.md input[type="url"][disabled]:focus,
+      md-datepicker.md input[type="url"][disabled]:active,
+      md-datepicker.md textarea[disabled]:focus,
+      md-datepicker.md textarea[disabled]:active, md-input-validate input[type="text"][disabled]:focus, md-input-validate input[type="text"][disabled]:active,
+      md-input-validate input[type="password"][disabled]:focus,
+      md-input-validate input[type="password"][disabled]:active,
+      md-input-validate input[type="date"][disabled]:focus,
+      md-input-validate input[type="date"][disabled]:active,
+      md-input-validate input[type="datetime"][disabled]:focus,
+      md-input-validate input[type="datetime"][disabled]:active,
+      md-input-validate input[type="email"][disabled]:focus,
+      md-input-validate input[type="email"][disabled]:active,
+      md-input-validate input[type="number"][disabled]:focus,
+      md-input-validate input[type="number"][disabled]:active,
+      md-input-validate input[type="search"][disabled]:focus,
+      md-input-validate input[type="search"][disabled]:active,
+      md-input-validate input[type="tel"][disabled]:focus,
+      md-input-validate input[type="tel"][disabled]:active,
+      md-input-validate input[type="time"][disabled]:focus,
+      md-input-validate input[type="time"][disabled]:active,
+      md-input-validate input[type="url"][disabled]:focus,
+      md-input-validate input[type="url"][disabled]:active,
+      md-input-validate textarea[disabled]:focus,
+      md-input-validate textarea[disabled]:active {
         outline: 0 !important;
         border-bottom: 1px solid #9E9E9E !important;
         border-radius: 0;
@@ -1164,7 +1324,27 @@ md-input, md-textarea {
     md-textarea input[type="tel"][readonly],
     md-textarea input[type="time"][readonly],
     md-textarea input[type="url"][readonly],
-    md-textarea textarea[readonly] {
+    md-textarea textarea[readonly], md-datepicker.md input[type="text"][readonly],
+    md-datepicker.md input[type="password"][readonly],
+    md-datepicker.md input[type="date"][readonly],
+    md-datepicker.md input[type="datetime"][readonly],
+    md-datepicker.md input[type="email"][readonly],
+    md-datepicker.md input[type="number"][readonly],
+    md-datepicker.md input[type="search"][readonly],
+    md-datepicker.md input[type="tel"][readonly],
+    md-datepicker.md input[type="time"][readonly],
+    md-datepicker.md input[type="url"][readonly],
+    md-datepicker.md textarea[readonly], md-input-validate input[type="text"][readonly],
+    md-input-validate input[type="password"][readonly],
+    md-input-validate input[type="date"][readonly],
+    md-input-validate input[type="datetime"][readonly],
+    md-input-validate input[type="email"][readonly],
+    md-input-validate input[type="number"][readonly],
+    md-input-validate input[type="search"][readonly],
+    md-input-validate input[type="tel"][readonly],
+    md-input-validate input[type="time"][readonly],
+    md-input-validate input[type="url"][readonly],
+    md-input-validate textarea[readonly] {
       background: none !important;
       border-bottom: 1px solid #9E9E9E !important; }
       md-input input[type="text"][readonly]:focus, md-input input[type="text"][readonly]:active,
@@ -1207,7 +1387,47 @@ md-input, md-textarea {
       md-textarea input[type="url"][readonly]:focus,
       md-textarea input[type="url"][readonly]:active,
       md-textarea textarea[readonly]:focus,
-      md-textarea textarea[readonly]:active {
+      md-textarea textarea[readonly]:active, md-datepicker.md input[type="text"][readonly]:focus, md-datepicker.md input[type="text"][readonly]:active,
+      md-datepicker.md input[type="password"][readonly]:focus,
+      md-datepicker.md input[type="password"][readonly]:active,
+      md-datepicker.md input[type="date"][readonly]:focus,
+      md-datepicker.md input[type="date"][readonly]:active,
+      md-datepicker.md input[type="datetime"][readonly]:focus,
+      md-datepicker.md input[type="datetime"][readonly]:active,
+      md-datepicker.md input[type="email"][readonly]:focus,
+      md-datepicker.md input[type="email"][readonly]:active,
+      md-datepicker.md input[type="number"][readonly]:focus,
+      md-datepicker.md input[type="number"][readonly]:active,
+      md-datepicker.md input[type="search"][readonly]:focus,
+      md-datepicker.md input[type="search"][readonly]:active,
+      md-datepicker.md input[type="tel"][readonly]:focus,
+      md-datepicker.md input[type="tel"][readonly]:active,
+      md-datepicker.md input[type="time"][readonly]:focus,
+      md-datepicker.md input[type="time"][readonly]:active,
+      md-datepicker.md input[type="url"][readonly]:focus,
+      md-datepicker.md input[type="url"][readonly]:active,
+      md-datepicker.md textarea[readonly]:focus,
+      md-datepicker.md textarea[readonly]:active, md-input-validate input[type="text"][readonly]:focus, md-input-validate input[type="text"][readonly]:active,
+      md-input-validate input[type="password"][readonly]:focus,
+      md-input-validate input[type="password"][readonly]:active,
+      md-input-validate input[type="date"][readonly]:focus,
+      md-input-validate input[type="date"][readonly]:active,
+      md-input-validate input[type="datetime"][readonly]:focus,
+      md-input-validate input[type="datetime"][readonly]:active,
+      md-input-validate input[type="email"][readonly]:focus,
+      md-input-validate input[type="email"][readonly]:active,
+      md-input-validate input[type="number"][readonly]:focus,
+      md-input-validate input[type="number"][readonly]:active,
+      md-input-validate input[type="search"][readonly]:focus,
+      md-input-validate input[type="search"][readonly]:active,
+      md-input-validate input[type="tel"][readonly]:focus,
+      md-input-validate input[type="tel"][readonly]:active,
+      md-input-validate input[type="time"][readonly]:focus,
+      md-input-validate input[type="time"][readonly]:active,
+      md-input-validate input[type="url"][readonly]:focus,
+      md-input-validate input[type="url"][readonly]:active,
+      md-input-validate textarea[readonly]:focus,
+      md-input-validate textarea[readonly]:active {
         border: 0;
         outline: 0 !important;
         border-bottom: 1px solid #9E9E9E !important;
@@ -1253,7 +1473,47 @@ md-input, md-textarea {
     md-textarea input[type="url"]:focus,
     md-textarea input[type="url"]:active,
     md-textarea textarea:focus,
-    md-textarea textarea:active {
+    md-textarea textarea:active, md-datepicker.md input[type="text"]:focus, md-datepicker.md input[type="text"]:active,
+    md-datepicker.md input[type="password"]:focus,
+    md-datepicker.md input[type="password"]:active,
+    md-datepicker.md input[type="date"]:focus,
+    md-datepicker.md input[type="date"]:active,
+    md-datepicker.md input[type="datetime"]:focus,
+    md-datepicker.md input[type="datetime"]:active,
+    md-datepicker.md input[type="email"]:focus,
+    md-datepicker.md input[type="email"]:active,
+    md-datepicker.md input[type="number"]:focus,
+    md-datepicker.md input[type="number"]:active,
+    md-datepicker.md input[type="search"]:focus,
+    md-datepicker.md input[type="search"]:active,
+    md-datepicker.md input[type="tel"]:focus,
+    md-datepicker.md input[type="tel"]:active,
+    md-datepicker.md input[type="time"]:focus,
+    md-datepicker.md input[type="time"]:active,
+    md-datepicker.md input[type="url"]:focus,
+    md-datepicker.md input[type="url"]:active,
+    md-datepicker.md textarea:focus,
+    md-datepicker.md textarea:active, md-input-validate input[type="text"]:focus, md-input-validate input[type="text"]:active,
+    md-input-validate input[type="password"]:focus,
+    md-input-validate input[type="password"]:active,
+    md-input-validate input[type="date"]:focus,
+    md-input-validate input[type="date"]:active,
+    md-input-validate input[type="datetime"]:focus,
+    md-input-validate input[type="datetime"]:active,
+    md-input-validate input[type="email"]:focus,
+    md-input-validate input[type="email"]:active,
+    md-input-validate input[type="number"]:focus,
+    md-input-validate input[type="number"]:active,
+    md-input-validate input[type="search"]:focus,
+    md-input-validate input[type="search"]:active,
+    md-input-validate input[type="tel"]:focus,
+    md-input-validate input[type="tel"]:active,
+    md-input-validate input[type="time"]:focus,
+    md-input-validate input[type="time"]:active,
+    md-input-validate input[type="url"]:focus,
+    md-input-validate input[type="url"]:active,
+    md-input-validate textarea:focus,
+    md-input-validate textarea:active {
       outline: 0 !important;
       border: 0;
       border-bottom: 1px solid #2196F3;
@@ -1278,7 +1538,27 @@ md-input, md-textarea {
     md-textarea input[type="tel"]:focus:not([readonly]) + label,
     md-textarea input[type="time"]:focus:not([readonly]) + label,
     md-textarea input[type="url"]:focus:not([readonly]) + label,
-    md-textarea textarea:focus:not([readonly]) + label {
+    md-textarea textarea:focus:not([readonly]) + label, md-datepicker.md input[type="text"]:focus:not([readonly]) + label,
+    md-datepicker.md input[type="password"]:focus:not([readonly]) + label,
+    md-datepicker.md input[type="date"]:focus:not([readonly]) + label,
+    md-datepicker.md input[type="datetime"]:focus:not([readonly]) + label,
+    md-datepicker.md input[type="email"]:focus:not([readonly]) + label,
+    md-datepicker.md input[type="number"]:focus:not([readonly]) + label,
+    md-datepicker.md input[type="search"]:focus:not([readonly]) + label,
+    md-datepicker.md input[type="tel"]:focus:not([readonly]) + label,
+    md-datepicker.md input[type="time"]:focus:not([readonly]) + label,
+    md-datepicker.md input[type="url"]:focus:not([readonly]) + label,
+    md-datepicker.md textarea:focus:not([readonly]) + label, md-input-validate input[type="text"]:focus:not([readonly]) + label,
+    md-input-validate input[type="password"]:focus:not([readonly]) + label,
+    md-input-validate input[type="date"]:focus:not([readonly]) + label,
+    md-input-validate input[type="datetime"]:focus:not([readonly]) + label,
+    md-input-validate input[type="email"]:focus:not([readonly]) + label,
+    md-input-validate input[type="number"]:focus:not([readonly]) + label,
+    md-input-validate input[type="search"]:focus:not([readonly]) + label,
+    md-input-validate input[type="tel"]:focus:not([readonly]) + label,
+    md-input-validate input[type="time"]:focus:not([readonly]) + label,
+    md-input-validate input[type="url"]:focus:not([readonly]) + label,
+    md-input-validate textarea:focus:not([readonly]) + label {
       color: #2196F3; }
     md-input input[type="text"] + label:after,
     md-input input[type="password"] + label:after,
@@ -1300,7 +1580,27 @@ md-input, md-textarea {
     md-textarea input[type="tel"] + label:after,
     md-textarea input[type="time"] + label:after,
     md-textarea input[type="url"] + label:after,
-    md-textarea textarea + label:after {
+    md-textarea textarea + label:after, md-datepicker.md input[type="text"] + label:after,
+    md-datepicker.md input[type="password"] + label:after,
+    md-datepicker.md input[type="date"] + label:after,
+    md-datepicker.md input[type="datetime"] + label:after,
+    md-datepicker.md input[type="email"] + label:after,
+    md-datepicker.md input[type="number"] + label:after,
+    md-datepicker.md input[type="search"] + label:after,
+    md-datepicker.md input[type="tel"] + label:after,
+    md-datepicker.md input[type="time"] + label:after,
+    md-datepicker.md input[type="url"] + label:after,
+    md-datepicker.md textarea + label:after, md-input-validate input[type="text"] + label:after,
+    md-input-validate input[type="password"] + label:after,
+    md-input-validate input[type="date"] + label:after,
+    md-input-validate input[type="datetime"] + label:after,
+    md-input-validate input[type="email"] + label:after,
+    md-input-validate input[type="number"] + label:after,
+    md-input-validate input[type="search"] + label:after,
+    md-input-validate input[type="tel"] + label:after,
+    md-input-validate input[type="time"] + label:after,
+    md-input-validate input[type="url"] + label:after,
+    md-input-validate textarea + label:after {
       display: block;
       content: "";
       position: absolute;
@@ -1308,16 +1608,16 @@ md-input, md-textarea {
       opacity: 0;
       -webkit-transition: .2s opacity ease-out, .2s color ease-out;
       transition: .2s opacity ease-out, .2s color ease-out; }
-  md-input label, md-textarea label {
+  md-input label, md-textarea label, md-datepicker.md label, md-input-validate label {
     font-size: .8em;
     color: #9E9E9E; }
-  md-input textarea, md-textarea textarea {
+  md-input textarea, md-textarea textarea, md-datepicker.md textarea, md-input-validate textarea {
     width: 100%;
     height: 3em;
     background-color: transparent; }
-  md-input span.icon-, md-textarea span.icon- {
+  md-input span.icon-, md-textarea span.icon-, md-datepicker.md span.icon-, md-input-validate span.icon- {
     display: none; }
-  md-input label, md-textarea label {
+  md-input label, md-textarea label, md-datepicker.md label, md-input-validate label {
     color: #9E9E9E;
     position: absolute;
     top: 0.65em;
@@ -1326,14 +1626,14 @@ md-input, md-textarea {
     cursor: text;
     -webkit-transiton: .2s ease-out;
     transition: .2s ease-out; }
-  md-input label.active, md-textarea label.active {
+  md-input label.active, md-textarea label.active, md-datepicker.md label.active, md-input-validate label.active {
     font-size: .8em;
     -webkit-transform: translateY(-90%);
     transform: translateY(-90%); }
-  md-input[disabled], md-textarea[disabled] {
+  md-input[disabled], md-textarea[disabled], md-datepicker.md[disabled], md-input-validate[disabled] {
     opacity: .5;
     background: none !important; }
-  md-input .prefix, md-textarea .prefix {
+  md-input .prefix, md-textarea .prefix, md-datepicker.md .prefix, md-input-validate .prefix {
     display: inherit;
     position: absolute;
     width: 2em;
@@ -1342,18 +1642,20 @@ md-input, md-textarea {
     transition: color 0.2s;
     color: rgba(158, 158, 158, 0.54);
     top: 10px; }
-    md-input .prefix.active, md-textarea .prefix.active {
+    md-input .prefix.active, md-textarea .prefix.active, md-datepicker.md .prefix.active, md-input-validate .prefix.active {
       color: #2196F3; }
   md-input .prefix ~ input,
   md-input .prefix ~ textarea, md-textarea .prefix ~ input,
-  md-textarea .prefix ~ textarea {
+  md-textarea .prefix ~ textarea, md-datepicker.md .prefix ~ input,
+  md-datepicker.md .prefix ~ textarea, md-input-validate .prefix ~ input,
+  md-input-validate .prefix ~ textarea {
     margin-left: 2em;
     width: calc(100% - 2em); }
-  md-input .prefix ~ textarea, md-textarea .prefix ~ textarea {
+  md-input .prefix ~ textarea, md-textarea .prefix ~ textarea, md-datepicker.md .prefix ~ textarea, md-input-validate .prefix ~ textarea {
     padding-top: .8em; }
-  md-input .prefix ~ label, md-textarea .prefix ~ label {
+  md-input .prefix ~ label, md-textarea .prefix ~ label, md-datepicker.md .prefix ~ label, md-input-validate .prefix ~ label {
     margin-left: 2.5em; }
-  md-input[readonly], md-textarea[readonly] {
+  md-input[readonly], md-textarea[readonly], md-datepicker.md[readonly], md-input-validate[readonly] {
     color: rgba(158, 158, 158, 0.54); }
 
 md-textarea {
