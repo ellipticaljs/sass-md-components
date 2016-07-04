@@ -1,7 +1,7 @@
 {
   "name": "sass-md-components",
   "description": "Sass Material Design Components",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "author": "S. Francis",
   "license": "MIT",
   "repository": {
@@ -16,7 +16,6 @@
     "sass-semantic-components": "git+https://github.com/ellipticaljs/sass-semantic-components.git",
     "sass-element-tag": "git+https://github.com/ellipticaljs/sass-element-tag.git",
     "sass-flex-grid":"git+https://github.com/ellipticaljs/sass-flex-grid.git",
-    "sass-responsive-grid": "git+https://github.com/ellipticaljs/sass-responsive-grid.git",
     "sass-animations": "git+https://github.com/ellipticaljs/sass-animations.git",
     "sass-mixins": "git+https://github.com/ellipticaljs/sass-mixins.git",
     "material-design-colors": "git+https://github.com/ellipticaljs/material-design-colors.git",
