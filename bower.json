@@ -1,7 +1,7 @@
 {
   "name": "sass-md-components",
   "description": "Sass Material Design Components",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "main": "dist/md.components.css",
   "authors": [
     "S. Francis"
@@ -46,6 +46,6 @@
     "test.scss"
   ],
   "dependencies": {
-    "elliptical-css-register": "~1.0.2"
+    "md-icons": "~1.0.6"
   }
 }
