@@ -863,7 +863,7 @@ md-menu {
       md-menu > menu-item > header.dropdown:after {
         font-family: "material";
         position: absolute;
-        content: "";
+        content: "";
         right: .5em;
         top: .75em; }
     md-menu > menu-item > menu-dropdown {
@@ -890,9 +890,9 @@ md-menu {
             position: absolute;
             left: -20px;
             font-family: "material";
-            content: ""; }
+            content: ""; }
     md-menu > menu-item.expand .dropdown:after {
-      content: ""; }
+      content: ""; }
     md-menu > menu-item header + menu-dropdown {
       height: 0;
       display: block;
