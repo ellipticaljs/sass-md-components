@@ -20,12 +20,14 @@ gulp.task('dist', function () {
     compileSass('md.components.scss');
     compileSass('md.grid.scss');
     compileSass('md.forms.scss');
+    compileSass('md.semantic.scss');
 });
 
 gulp.task('minify',function(){
     minifyComponents();
     minifyGrid();
     minifyForms();
+    minifySemantic();
 });
 
 function compileSass(src){
@@ -48,6 +50,12 @@ function minifyGrid(){
 
 function minifyForms(){
   concatStream('./dist/md.forms.css','md.forms.min.css')
+    .pipe(minify())
+    .pipe(gulp.dest('./dist'));
+}
+
+function minifySemantic(){
+  concatStream('./dist/md.semantic.css','md.semantic.min.css')
     .pipe(minify())
     .pipe(gulp.dest('./dist'));
 }
