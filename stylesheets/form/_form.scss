@@ -1161,7 +1161,7 @@
 ///@param {String} $class
 ///@param {Map} $map
 @mixin md-select($class:md,$map:()) {
-  md-select,[md-select] {
+  md-select{
     @include _md-select($map);
     @content;
   }
@@ -1188,6 +1188,15 @@
 ///@param {Map} $map
 @mixin md-input($class:md,$map:()) {
   md-input, md-textarea,md-datepicker.md,md-input-validate {
+    @include _md-input($map);
+    @content;
+  }
+  @include _md-textarea();
+
+}
+
+@mixin md-input-min($class:md,$map:()) {
+  md-input, md-textarea{
     @include _md-input($map);
     @content;
   }
@@ -1236,5 +1245,26 @@
   @include md-checkbox-list();
   @content;
 }
+
+@mixin md-forms-min($class:null,$map:()){
+  button:focus {
+    outline: none;
+  }
+
+  *[disabled] {
+    opacity: .5;
+  }
+
+  @include md-input-min($class, $map);
+  @include md-radio($class, $map);
+  @include md-checkbox($class, $map);
+  @include md-select($class, $map);
+  @include md-switch($class, $map);
+  @include md-radio-list();
+  @include md-checkbox-list();
+  @content;
+}
+
+
 
 

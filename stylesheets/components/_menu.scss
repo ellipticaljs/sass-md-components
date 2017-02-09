@@ -43,12 +43,13 @@
     background:none;
 
     &>header{
+      @include flexbox($alignment:center);
       padding:$_header-padding;
       width:100%;
       position:relative;
       @include transition($_transition);
       @extend %#{$header-component}-font !optional;
-      &>span{
+      &>span,&>iron-icon{
         margin:$_icon-margin;
         @extend %#{$header-component}-icon !optional;
       }
@@ -62,7 +63,7 @@
         &>a{
           @extend %#{$header-component}-font-hover !optional;
         }
-        &>span{
+        &>span,&>iron-icon{
           @extend %#{$header-component}-icon-hover !optional;
         }
         &.dropdown{
@@ -77,7 +78,7 @@
         &>a{
           @extend %#{$header-component}-font-active !optional;
         }
-        &>span{
+        &>span,&>iron-icon{
           @extend %#{$header-component}-icon-active !optional;
         }
       }
@@ -105,6 +106,9 @@
       &>header{
         @extend %#{$header-component}-background-hover !optional;
         @extend %#{$header-component}-font-hover !optional;
+        &>span,&>iron-icon{
+          @extend %#{$header-component}-icon-hover !optional;
+        }
       }
       &>menu-dropdown{
         padding:$_item-dropdown-padding;

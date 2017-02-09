@@ -41,8 +41,9 @@
     @include flexbox($justification:space-around,$alignment:center);
     width:$_width;
     height:$_height;
-    @include span-icon(){
-      font-size:$_icon-size;
+    &>iron-icon.card-icon{
+      height:$_icon-size;
+      width:$_icon-size;
     }
     .card-text{
       h2{

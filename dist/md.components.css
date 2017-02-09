@@ -18,7 +18,7 @@ md-menu > menu-item > header:hover, md-menu > menu-item.expand > header {
 md-menu > menu-item > header.active {
   background: #eee; }
 
-md-menu > menu-item > header > span, md-menu > menu-item > header.dropdown:after, md-menu > menu-item > header, md-menu > menu-item > header > a {
+md-menu > menu-item > header > span, md-menu > menu-item > header > iron-icon, md-menu > menu-item > header.dropdown:after, md-menu > menu-item > header, md-menu > menu-item > header > a {
   text-shadow: none; }
 
 md-menu > menu-item > header.active, md-menu > menu-item > header.active > a, md-menu > menu-item > header:hover, md-menu > menu-item > header:hover > a, md-menu > menu-item.expand > header {
@@ -28,10 +28,10 @@ md-menu > menu-item > header.active, md-menu > menu-item > header.active > a, md
 md-menu > menu-item > header.active, md-menu > menu-item > header.active > a {
   color: #009688; }
 
-md-menu > menu-item > header:hover > span, md-menu > menu-item > header.dropdown:hover:after, md-menu > menu-item.expand .dropdown:after {
+md-menu > menu-item > header:hover > span, md-menu > menu-item > header:hover > iron-icon, md-menu > menu-item > header.dropdown:hover:after, md-menu > menu-item.expand > header > span, md-menu > menu-item.expand > header > iron-icon, md-menu > menu-item.expand .dropdown:after {
   color: #009688; }
 
-md-menu > menu-item > header.active > span {
+md-menu > menu-item > header.active > span, md-menu > menu-item > header.active > iron-icon {
   color: #009688; }
 
 md-menu > menu-item.expand {
@@ -53,7 +53,7 @@ md-menu > menu-item > header:hover, md-menu > menu-item.expand > header {
 md-menu > menu-item > header.active {
   background: #eee; }
 
-md-menu > menu-item > header > span, md-menu > menu-item > header.dropdown:after, md-menu > menu-item > header, md-menu > menu-item > header > a {
+md-menu > menu-item > header > span, md-menu > menu-item > header > iron-icon, md-menu > menu-item > header.dropdown:after, md-menu > menu-item > header, md-menu > menu-item > header > a {
   text-shadow: none; }
 
 md-menu > menu-item > header.active, md-menu > menu-item > header.active > a, md-menu > menu-item > header:hover, md-menu > menu-item > header:hover > a, md-menu > menu-item.expand > header {
@@ -63,10 +63,10 @@ md-menu > menu-item > header.active, md-menu > menu-item > header.active > a, md
 md-menu > menu-item > header.active, md-menu > menu-item > header.active > a {
   color: #009688; }
 
-md-menu > menu-item > header:hover > span, md-menu > menu-item > header.dropdown:hover:after, md-menu > menu-item.expand .dropdown:after {
+md-menu > menu-item > header:hover > span, md-menu > menu-item > header:hover > iron-icon, md-menu > menu-item > header.dropdown:hover:after, md-menu > menu-item.expand > header > span, md-menu > menu-item.expand > header > iron-icon, md-menu > menu-item.expand .dropdown:after {
   color: #009688; }
 
-md-menu > menu-item > header.active > span {
+md-menu > menu-item > header.active > span, md-menu > menu-item > header.active > iron-icon {
   color: #009688; }
 
 md-avatar {
@@ -754,8 +754,9 @@ md-icon-card {
   align-items: center;
   width: 100%;
   height: 10em; }
-  md-icon-card span[class*='icon-'] {
-    font-size: 72px; }
+  md-icon-card > iron-icon.card-icon {
+    height: 72px;
+    width: 72px; }
   md-icon-card .card-text h2 {
     margin: 0 0 -4px 0; }
   md-icon-card .card-text span {
@@ -851,12 +852,18 @@ md-menu {
     position: relative;
     background: none; }
     md-menu > menu-item > header {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+      -webkit-align-items: center;
+      align-items: center;
       padding: 0.5em 0 0.5em 1em;
       width: 100%;
       position: relative;
       -webkit-transition: all 350ms;
       transition: all 350ms; }
-      md-menu > menu-item > header > span {
+      md-menu > menu-item > header > span, md-menu > menu-item > header > iron-icon {
         margin: 0 0.25em 0 0; }
       md-menu > menu-item > header:hover {
         cursor: pointer; }
@@ -2100,21 +2107,21 @@ md-switch[disabled] {
 md-switch input[type=checkbox][disabled] {
   background: none !important; }
 
-md-select, [md-select] {
+md-select {
   position: relative;
   margin: 1em 0 2em 0;
   display: block; }
-  md-select[disabled], [md-select][disabled] {
+  md-select[disabled] {
     background: none !important;
     opacity: .5; }
-    md-select[disabled] *, [md-select][disabled] * {
+    md-select[disabled] * {
       opacity: 1; }
-    md-select[disabled] select, [md-select][disabled] select {
+    md-select[disabled] select {
       background: none !important;
       border-bottom: 1px solid #9E9E9E !important; }
-      md-select[disabled] select:hover, [md-select][disabled] select:hover {
+      md-select[disabled] select:hover {
         border-bottom: 1px solid #9E9E9E !important; }
-  md-select > select, [md-select] > select {
+  md-select > select {
     background: none;
     display: block;
     appearance: none;
@@ -2131,20 +2138,20 @@ md-select, [md-select] {
     border-radius: 0;
     box-shadow: none;
     padding: 0 1.5em 0 0; }
-    md-select > select:focus, [md-select] > select:focus {
+    md-select > select:focus {
       border-bottom: 1px solid #2196F3;
       box-shadow: 0 1px 0 0 #2196F3;
       outline: 0 !important; }
-    md-select > select:focus + label, [md-select] > select:focus + label {
+    md-select > select:focus + label {
       color: #2196F3; }
-  md-select span[class*='icon-'], [md-select] span[class*='icon-'] {
+  md-select span[class*='icon-'] {
     color: initial;
     position: absolute;
     right: 5px;
     top: 8px;
     font-size: 24px;
     pointer-events: none; }
-    md-select span[class*='icon-'].prefix, [md-select] span[class*='icon-'].prefix {
+    md-select span[class*='icon-'].prefix {
       width: 2em;
       font-size: 24px;
       -webkit-transition: color 0.2s;
@@ -2153,18 +2160,18 @@ md-select, [md-select] {
       top: 10px;
       left: 0;
       right: auto; }
-      md-select span[class*='icon-'].prefix.active, [md-select] span[class*='icon-'].prefix.active {
+      md-select span[class*='icon-'].prefix.active {
         color: #2196F3; }
-  md-select label, [md-select] label {
+  md-select label {
     position: absolute;
     top: -1.3em;
     font-size: .8em; }
-  md-select .prefix ~ select, [md-select] .prefix ~ select {
+  md-select .prefix ~ select {
     margin-left: 2em;
     width: calc(100% - 2em); }
-  md-select .prefix ~ label, [md-select] .prefix ~ label {
+  md-select .prefix ~ label {
     margin-left: 2.5em; }
-  md-select[readonly], [md-select][readonly] {
+  md-select[readonly] {
     color: rgba(158, 158, 158, 0.54); }
 
 md-file md-file {
