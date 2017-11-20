@@ -1161,7 +1161,7 @@
 ///@param {String} $class
 ///@param {Map} $map
 @mixin md-select($class:md,$map:()) {
-  md-select{
+  md-select,[md-select]{
     @include _md-select($map);
     @content;
   }
