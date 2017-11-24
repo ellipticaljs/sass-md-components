@@ -14,8 +14,8 @@
   $_font-medium:map-nested-get-default($map,font,medium,'robotomedium');
   $_font-icon:map-nested-get-default($map,icon,font,'material');
   $_icon-color:map-nested-get-default($map,icon,color,#676767);
-  $_icon-next:map-nested-get-default($map,icon,next,"\e8a8");
-  $_icon-prev:map-nested-get-default($map,icon,prev,"\e8a7");
+  $_icon-next:map-nested-get-default($map,icon,next,"\e999");
+  $_icon-prev:map-nested-get-default($map,icon,prev,"\e998");
   $_md-depth:map-get-default($map,depth,$_elevation);
 
   .ui-datepicker,
